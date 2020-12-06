@@ -1,0 +1,242 @@
+#panel_holder {
+    width: 1478px;
+    background-color: white;
+    height: 780px;
+    border-radius: 38px;
+    margin-right: -740px;
+    position: absolute;
+    top: 54%;
+    right: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+#right{
+    float: right;
+    width:347px;
+    height:100%;
+    background: url("../../img/Rectangle 35.svg");
+}
+#user_inf {
+    width: 170.8px;
+    height: 228px;
+    position: relative;
+    left: 84px;
+    top: 24px;
+}
+#user_inf img {
+    width: 91%;
+    border: 7px solid white;
+    border-radius: 21px;
+    height: 146px;
+}
+#user_name {
+    width: 100%;
+    height: 45px;
+    position: relative;
+    bottom: 0;
+    border-radius: 16px;
+    background: white;
+}
+@font-face {
+    font-family: 'yek';
+    src: url('../../fonts/yek.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'yekan_bakh';
+    src: url('../../fonts/YekanBakh_Bold.ttf') format('truetype');
+}
+.name {
+    color: #704ED4;
+    font-size: 30px;
+    font-family: 'yek';
+    position: relative;
+    left: 115.7px;
+}
+#id {
+    font-family: 'yekan_bakh';
+    font-size: 17px;
+    color: #704ED4;
+    position: absolute;
+    top: -3px;
+    left: 9px;
+}
+#panel_menu{
+        width: 260px;
+        height: 431px;
+        position: relative;
+        left: 20px;
+        top: 36px;
+}
+#panel_menu li {
+    width: 89%;
+    height: 83px;
+    border-radius: 14px;
+    font-size: 30px;
+    font-family: 'yek';
+    text-align: right;
+    align-items: center;
+    display: grid;
+    padding-right: 68px;
+    left: -39px;
+    position: relative;
+    margin-bottom: 25px;
+}
+.my_cour{
+    background: white;
+    background-image: url("../../img/Iconly-Bold-Play.svg");
+    background-repeat:no-repeat ;
+    background-position: 250px 30px;
+    color: #704ED4 ;
+}
+.singup{
+    background: white;
+    background-image: url("../../img/Iconly-Bold-Add User.svg");
+    background-repeat:no-repeat ;
+    background-position: 250px 30px;
+    color: #704ED4 ;
+}
+.edit{
+    background: white;
+    background-image:  url("../../img/Iconly-Bold-Edit Square.svg");
+    background-repeat:no-repeat ;
+    background-position: 250px 30px;
+    color: #704ED4 ;
+}
+.leave{
+    background: white;
+    background-image: url("../../img/Iconly-Bold-Close Square.svg");
+    background-repeat:no-repeat ;
+    background-position: 250px 30px;
+    color: #704ED4 ;
+}
+#bell{
+        float: right;
+        position: relative;
+        top: 12px;
+        right: 22px;
+}
+.my_cur {
+    font-family: 'yek';
+    color: #704ED4;
+    font-size: 30px;
+    position: relative;
+    left: 35%;
+    top: 44px;
+}
+#cart {
+    float: left;
+    position: absolute;
+    top: 17px;
+    left: 22px;
+}
+.courses_inf li {
+    list-style: none;
+    display: inline-block;
+    font-size: 27px;
+    font-family: 'yek';
+    text-align: center;
+    width: 172px;
+}
+.courses_inf {
+    width: 100%;
+    direction: rtl;
+    height: 30px;
+    position: relative;
+}
+#courses_holder{
+        width: 1066px;
+        height: 603px;
+        position: relative;
+        left: 34px;
+        top: 52px;
+}
+.sec_cur{
+        width: 100%;
+        height: 540px;
+}
+.items {
+    border-radius: 17px;
+    height: 55px;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    margin-bottom: 14px;
+    background: rgb(107,88,219);
+    background: linear-gradient(169deg, rgba(107,88,219,0.3457864482751053) 0%, rgba(23,151,236,0.1800561111964537) 100%);
+    direction: rtl;
+}
+.items li {
+    font-size: 20px;
+    color: #868788;
+    text-align: center;
+    display: inline-block;
+    font-family: 'yek';
+}
+#cur_img {
+    width: 37.37px;
+    height: 33.28px;
+    margin-right: 68px;
+    position: relative;
+    top: 11px;
+}
+#cur_img img{
+    width: 100%;
+    height: 100%;
+}
+.dore {
+    width: 168px;
+    position: relative;
+    right: 73px;
+}
+.kargah {
+    width: 65px;
+    position: relative;
+    right: 125px;
+}
+.cash {
+    width: 163px;
+    position: relative;
+    right: 179px;
+}
+.tar {
+    width: 105px;
+    position: relative;
+    right: 224px;
+}
+.vaz {
+    width: 116px;
+    position: relative;
+    right: 281px;
+}
+#next {
+    position: relative;
+    bottom: 62px;
+    width: 124px;
+    height: 44px;
+    left: 485px;
+    font-family: 'yek';
+    display: inline-flex;
+}
+.page{
+    font-size: 30px;
+    color: #704ED4;
+}
+.left {
+    position: relative;
+    left: -22px;
+    top: 15px;
+}
+.right {
+    position: relative;
+    right: -11px;
+    top: 11px;
+}
+.page{
+    width: 45px;
+    height: 45px;
+    background: #D8D5F6;
+    border-radius: 100px;
+    text-align: center;
+}
