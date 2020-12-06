@@ -1,0 +1,185 @@
+#header {
+    border: 1px solid transparent;
+    width: 1581px;
+    height: 950px;
+    background: url('../img/header_shape.svg') no-repeat -12% -76px;
+    background-size: 60%;
+}
+
+
+/* Header > Menu */
+
+#menu {
+    position: relative;
+    border: 1px solid transparent;
+    width: 1579px;
+    height: 120px;
+}
+
+.menu-logo img {
+    margin: 12px;
+    margin-right: 19px;
+    float: right;
+}
+
+ul {
+    list-style: none;
+}
+
+.menu-tab {
+    border: 1px solid transparent;
+    width: 740px;
+    height: 110px;
+    display: inline-block;
+    margin-top: 1px;
+}
+
+.menu-tab li {
+    display: inline-block;
+    font-size: 33px;
+    margin-left: 45px;
+    margin-top: 35px;
+    color: #777;
+}
+
+.menu-tab li:nth-child(1) {
+    display: inline-block;
+    font-size: 33px;
+    margin-left: 45px;
+    margin-top: 35px;
+    color: #444;
+}
+
+.border-bottom {
+    border-radius: 30px;
+    width: 24px;
+    height: 8px;
+    position: relative;
+    bottom: 1px;
+    right: 11px;
+    background: linear-gradient(0deg, rgba(156, 90, 247, 1) 0%, rgba(70, 91, 234, 1) 100%);
+}
+
+#search-holder {
+    width: 398px;
+    height: 71px;
+    border: 1px solid transparent;
+    float: left;
+    position: relative;
+    left: 35px;
+    top: 21px;
+}
+
+#search-box {
+    background: url("../img/Iconly-Light-Search.svg") no-repeat 15px 15px;
+    background-color: #7D74E2;
+    font-family: yek;
+    font-size: 20px;
+    color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    float: left;
+    transition: .5s;
+    position: relative;
+    float: left;
+    text-indent: 25px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#search-box:focus {
+    color: white;
+    transition: .5s;
+    width: 315px;
+    cursor: text;
+}
+
+#user {
+    background: url("../img/Iconly-Light-Profile.svg") no-repeat 14px 13px;
+    background-color: #7D74E2;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    margin-top: 5px;
+    border: none;
+    float: left;
+    margin-left: 10px;
+}
+
+.little-des {
+    color: white;
+    transform: rotate(270deg);
+    font-size: 25px;
+    position: absolute;
+    line-height: 10px;
+    top: 182px;
+    right: 249px;
+    width: 242px;
+}
+
+
+/* Header > Skill > Right */
+
+#right-skill {
+    float: right;
+    width: 575px;
+    height: 520px;
+    margin-top: 80px;
+    color: #707070;
+    position: relative;
+    right: -103px;
+}
+
+.title-skill {
+    font-size: 55px;
+    text-align: center;
+    line-height: 4px;
+}
+
+.title-skill>strong {
+    color: #744FD6;
+    font-weight: lighter;
+}
+
+.border-bottom-skill {
+    border-radius: 30px;
+    width: 575px;
+    height: 10px;
+    background: linear-gradient(0deg, rgba(156, 90, 247, 1) 0%, rgba(70, 91, 234, 1) 100%);
+    margin-top: -15px;
+    margin-right: 0px;
+}
+
+.des-skill {
+    width: 575px;
+    font-size: 34px;
+    text-align: right;
+    line-height: 43px;
+    margin-top: 25px;
+    margin-right: 3px;
+}
+
+.see-curses {
+    float: right;
+    width: 300px;
+    height: 80px;
+    background: linear-gradient(90deg, rgba(70, 91, 234, 1) 0%, rgba(164, 90, 248, 1) 100%);
+    border-radius: 15px;
+    margin-right: 4px;
+    font-size: 33px;
+    color: white;
+    line-height: 80px;
+    text-indent: 25px;
+}
+
+
+/* Header > Skill > Left */
+
+.laptop-vector-skill {
+    width: 800px;
+    float: left;
+    margin-left: 30px;
+}
