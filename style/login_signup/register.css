@@ -298,6 +298,9 @@ ul {
     float: left;
     text-indent: 25px;
     margin-top: 5px;
+    text-align: right;
+    padding-right: 21px;
+    padding-left: 21px;
     cursor: pointer;
 }
 

@@ -275,6 +275,9 @@ ul {
     height: 50px;
     float: left;
     transition: .5s;
+    text-align: right;
+    padding-right: 21px;
+    padding-left: 21px;
     position: relative;
     float: left;
     text-indent: 25px;
