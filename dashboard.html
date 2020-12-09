@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style/login_signup/style.css">
     <link rel="stylesheet" href="style/cssreset.css">
     <link rel="stylesheet" href="style/panel/Courses.css">
+    <link rel="stylesheet" href="style/panel/dash.css">
     <title>Dashboard</title>
 </head>
 <body>
@@ -58,106 +59,48 @@
                 <li class="menu leave">خروج</li>
             </ul>
         </div>
-            <img id="bell" src="img/Group 277.svg"/>
-            <p class="my_cur">دوره های من</p>
-            <div id="courses_holder">
-                <ul class="courses_inf">
-                    <li>تصویر</li>
-                    <li>نام دوره ها</li>
-                    <li>سطح</li>
-                    <li>قیمت</li>
-                    <li>تاریخ آغاز</li>
-                    <li>وضعیت</li>
-                </ul>
-                <div class="sec_cur">
-                    <ul class="items">
-                        <li id="cur_img">
-                            <img src="img/React-icon.svg"/>
-                        </li>
-                        <li class="dore">ریکت مقدماتی تا پیشرفته</li>
-                        <li class="kargah">کارگاه</li>
-                        <li class="cash">تومان 150,000</li>
-                        <li class="tar">1399/09/18</li>
-                        <li class="vaz">اتمام دوره</li>
-                    </ul>
+     <div class="leftprof_holder">
+         <img src="img/woman-holding-her-head-3280131.png" class="prfimg"/>
+         <div class="blackbg">
+           
+         </div>
+         <div class="editimg">
+            <label class="getimg" for="chngeimg"></label>
+            <input class="chngeimg" type="file"/>
+        </div>
+     </div>
+     <div class="down">
+         <p class="title">ویرایش اطلاعات</p>
+         <div class="inputs_holder">
+             <div class="item a1">
+                 <p>نام</p>
+                 <input class="fname" value="sara" type="text"/>
+             </div>
 
-                    <ul class="items">
-                        <li id="cur_img">
-                            <img src="img/React-icon.svg"/>
-                        </li>
-                        <li class="dore">ریکت مقدماتی تا پیشرفته</li>
-                        <li class="kargah">کارگاه</li>
-                        <li class="cash">تومان 150,000</li>
-                        <li class="tar">1399/09/18</li>
-                        <li class="vaz">اتمام دوره</li>
-                    </ul>
-
-                    <ul class="items">
-                        <li id="cur_img">
-                            <img src="img/React-icon.svg"/>
-                        </li>
-                        <li class="dore">ریکت مقدماتی تا پیشرفته</li>
-                        <li class="kargah">کارگاه</li>
-                        <li class="cash">تومان 150,000</li>
-                        <li class="tar">1399/09/18</li>
-                        <li class="vaz">اتمام دوره</li>
-                    </ul>
-
-                    <ul class="items">
-                        <li id="cur_img">
-                            <img src="img/React-icon.svg"/>
-                        </li>
-                        <li class="dore">ریکت مقدماتی تا پیشرفته</li>
-                        <li class="kargah">کارگاه</li>
-                        <li class="cash">تومان 150,000</li>
-                        <li class="tar">1399/09/18</li>
-                        <li class="vaz">اتمام دوره</li>
-                    </ul>
-                    <ul class="items">
-                        <li id="cur_img">
-                            <img src="img/React-icon.svg"/>
-                        </li>
-                        <li class="dore">ریکت مقدماتی تا پیشرفته</li>
-                        <li class="kargah">کارگاه</li>
-                        <li class="cash">تومان 150,000</li>
-                        <li class="tar">1399/09/18</li>
-                        <li class="vaz">اتمام دوره</li>
-                    </ul>
-
-                    <ul class="items">
-                        <li id="cur_img">
-                            <img src="img/React-icon.svg"/>
-                        </li>
-                        <li class="dore">ریکت مقدماتی تا پیشرفته</li>
-                        <li class="kargah">کارگاه</li>
-                        <li class="cash">تومان 150,000</li>
-                        <li class="tar">1399/09/18</li>
-                        <li class="vaz">اتمام دوره</li>
-                    </ul>
-
-                    <ul class="items">
-                        <li id="cur_img">
-                            <img src="img/React-icon.svg"/>
-                        </li>
-                        <li class="dore">ریکت مقدماتی تا پیشرفته</li>
-                        <li class="kargah">کارگاه</li>
-                        <li class="cash">تومان 150,000</li>
-                        <li class="tar">1399/09/18</li>
-                        <li class="vaz">اتمام دوره</li>
-                    </ul>
-                    
-                </div>
-                <ul id="next">
-                    <li class="left">
-                        <img src="img/Arrow - Left 2.svg"/>
-                    </li>
-                    <li class="page">1</li>
-                    <li class="right">
-                        <img src="img/Iconly-Light-Arrow - Right 2.svg"/>
-                    </li>
-                </ul>
+             <div class="item a2">
+                <p>نام خانوادگی</p>
+                <input class="lname" value="بزرگوار" type="text"/>
             </div>
-            <img id="cart" src="img/Group 278.svg"/>
+
+            <div class="item a1">
+                <p>ایمیل</p>
+                <input class="email" value="ایمیل" type="text"/>
+            </div>
+
+            <div class="item a1">
+                <p>تاریخ تولد</p>
+                <input class="birthdate" value="تاریخ تولد" type="text"/>
+            </div>
+         </div>
+         <div class="button_holder">
+            <input class="cansel" type="button"/>
+            <div>
+            <input class="sub" value="ثبت تغییرات" type="submit"/>
+            <img class="true" src="img/Iconly-Light-Tick Square.svg"/>
+        </div>
+        </div>
+     </div>
+   
     </div>
     <!-- end of panel -->
 
