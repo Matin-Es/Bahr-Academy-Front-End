@@ -55,23 +55,23 @@
 }
 
 .math {
-    background: url('../img/') no-repeat 50% 20% white;
+    background: url('../img2/math.svg') no-repeat 50% 20% white;
     background-size: 70px;
     margin-right: 0;
 }
 
 .technology {
-    background: url('../img/laptop-1.svg') no-repeat 50% 21% white;
+    background: url('../img2/laptop-1.svg') no-repeat 50% 21% white;
     background-size: 90px;
 }
 
 .chemistry {
-    background: url('../img/chemi.svg') no-repeat 50% 22% white;
+    background: url('../img2/chemi.svg') no-repeat 50% 22% white;
     background-size: 50px;
 }
 
 .physics {
-    background: url('../img/fizik.svg') no-repeat 50% 22% white;
+    background: url('../img2/fizik.svg') no-repeat 50% 22% white;
     background-size: 70px;
 }
 
@@ -174,7 +174,7 @@ h3 {
 }
 
 .develop>span {
-    background: url("../img/star.svg") no-repeat 20% 50%;
+    background: url("../img2/star.svg") no-repeat 20% 50%;
     width: 50px;
     position: absolute;
     bottom: 18px;
@@ -253,7 +253,7 @@ h2,
 }
 
 .input-circle {
-    background: url("../img/right_arrow.svg") no-repeat 50% 50% #8165cf;
+    background: url("../img2/right_arrow.svg") no-repeat 50% 50% #8165cf;
     background-size: 27px;
     position: absolute;
     top: 159px;
@@ -482,7 +482,7 @@ h2,
 }
 
 .send {
-    background: rgb(173, 136, 224) url('../img/left-arrow.png') no-repeat 15% 50%;
+    background: rgb(173, 136, 224) url('../img2/left-arrow.png') no-repeat 15% 50%;
     background-size: 24px;
     margin-right: 290px;
     margin-top: 15px;
