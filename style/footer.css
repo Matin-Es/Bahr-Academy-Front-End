@@ -7,7 +7,7 @@
 /* Top-Footer */
 
 .top-foot {
-    background: url("../img/too.png") no-repeat 50% 50%;
+    background: url("../img2/too.png") no-repeat 50% 50%;
     border-bottom: 1px solid #5b26af;
     background-size: 100% 100%;
     height: 420px;
@@ -94,18 +94,18 @@
 }
 
 .namad-1 {
-    background: url('../img/logo.aspx.svg') no-repeat 50% 50%;
+    background: url('../img2/logo.aspx.svg') no-repeat 50% 50%;
     background-size: cover;
     margin-left: 100px;
 }
 
 .namad-2 {
-    background: url('../img/logo1.aspx.svg') no-repeat 50% 50%;
+    background: url('../img2/logo1.aspx.svg') no-repeat 50% 50%;
     background-size: cover;
 }
 
 .namad-3 {
-    background: url('../img/namad-1.svg') no-repeat 50% 50%;
+    background: url('../img2/namad-1.svg') no-repeat 50% 50%;
     background-size: cover;
 }
 
@@ -113,7 +113,7 @@
 
 .bottom-foot {
     position: relative;
-    background: url("../img/bottomi.svg") no-repeat 50% 50%;
+    background: url("../img2/bottomi.svg") no-repeat 50% 50%;
     border: 1px solid #514baa;
     background-size: cover;
     height: 60px;

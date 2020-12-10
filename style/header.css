@@ -2,7 +2,7 @@
     border: 1px solid transparent;
     width: 1581px;
     height: 900px;
-    background: url('../img/header_shape.svg') no-repeat -12% -76px;
+    background: url('../img2/header_shape.svg') no-repeat -12% -76px;
     background-size: 60%;
 }
 
@@ -73,7 +73,7 @@ ul {
 }
 
 #search-box {
-    background: url("../img/Iconly-Light-Search.svg") no-repeat 15px 15px;
+    background: url("../img2/Iconly-Light-Search.svg") no-repeat 15px 15px;
     background-size: 24px;
     background-color: #7D74E2;
     font-family: yek;
@@ -101,7 +101,7 @@ ul {
 }
 
 #user {
-    background: url("../img/Iconly-Light-Profile.svg") no-repeat 15px 13px;
+    background: url("../img2/Iconly-Light-Profile.svg") no-repeat 15px 13px;
     background-size: 27px;
     background-color: #7D74E2;
     width: 55px;

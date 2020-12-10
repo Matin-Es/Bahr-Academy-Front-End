@@ -234,7 +234,7 @@
     }
 
     #search-box {
-        background: url("../img/Iconly-Light-Search.svg") no-repeat 13px 13px;
+        background: url("../img2/Iconly-Light-Search.svg") no-repeat 13px 13px;
         background-size: 23px;
         background-color: #7D74E2;
         width: 50px;
@@ -246,7 +246,7 @@
     }
 
     #user {
-        background: url("../img/Iconly-Light-Profile.svg") no-repeat 13px 12px;
+        background: url("../img2/Iconly-Light-Profile.svg") no-repeat 13px 12px;
         background-size: 26px;
         background-color: #7D74E2;
         width: 50px;
@@ -682,7 +682,7 @@
     }
 
     #search-box {
-        background: url("../img/Iconly-Light-Search.svg") no-repeat 12px 12px;
+        background: url("../img2/Iconly-Light-Search.svg") no-repeat 12px 12px;
         background-size: 20px;
         background-color: #7D74E2;
         width: 45px;
@@ -691,7 +691,7 @@
     }
 
     #user {
-        background: url("../img/Iconly-Light-Profile.svg") no-repeat 12px 11px;
+        background: url("../img2/Iconly-Light-Profile.svg") no-repeat 12px 11px;
         background-size: 23px;
         background-color: #7D74E2;
         width: 45px;
@@ -1334,7 +1334,7 @@
         border: 1px solid transparent;
         width: 373px;
         height: 350px;
-        background: url('../img/Group\ 306.jpg') no-repeat 50% 50%;
+        background: url('../img2/Group\ 306.jpg') no-repeat 50% 50%;
         background-size: cover;
     }
 
@@ -1356,7 +1356,7 @@
     }
 
     .menu-logo {
-        background: url('../img/Category.svg') no-repeat 50% 50%;
+        background: url('../img2/Category.svg') no-repeat 50% 50%;
         background-size: 20px;
         width: 30px;
         height: 30px;
@@ -1367,7 +1367,7 @@
     .menu-bag {
         width: 30px;
         height: 30px;
-        background: url('../img/Bag.svg') no-repeat 50% 50%;
+        background: url('../img2/Bag.svg') no-repeat 50% 50%;
         background-size: 20px;
         float: left;
         position: absolute;
@@ -1700,7 +1700,7 @@
     }
 
     .top-foot {
-        background: url("../img/took.png") no-repeat 50% 50%;
+        background: url("../img2/took.png") no-repeat 50% 50%;
         border-bottom: 1px solid #5b26af;
         background-size: 100% 100%;
         width: 372px;
