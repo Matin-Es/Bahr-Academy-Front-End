@@ -1,0 +1,59 @@
+/* @media only screen and (max-width: 375px) {
+    #menu{
+        visibility: hidden;
+    }
+    #search-holder{
+        visibility: hidden;
+    }
+    #right{
+        visibility: hidden;
+    }
+} */
+@media only screen and (max-width:1600px){
+    #panel_holder {
+        width: 1094px;
+        height: 633px;
+        margin-right: -540px;
+        top: 56%;
+        right: 50%;
+    }
+    .shape1_holder {
+        width: 724.1px;
+        height: 1110.1px;
+        background-size: 661px;
+    }
+    .shape2_holder {
+        bottom: 1px;
+        right: -97.7px;
+        width: 635px;
+        height: 591px;
+    }
+    .leftprof_holder img {
+        position: absolute;
+        height: 323px;
+        width: 68.6%;
+    }
+    .blackbg {
+        background-color: #000000;
+        opacity: 69%;
+        width: 66%;
+        height: 100%;
+    }
+    .editimg {
+        left: 262px;
+    }
+    .inputs_holder {
+        width: 751px;
+        height: 223px;
+        margin-left: -5px;
+    }
+    .item {
+        width: 345px;
+    }
+    .title{
+        margin: 20px 317px;
+    }
+    .item p {
+        margin: 0px 110px;
+    }
+}

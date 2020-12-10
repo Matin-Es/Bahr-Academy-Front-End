@@ -31,6 +31,7 @@
 }
 .editimg{
         position: absolute;
+        height: 0;
         bottom: 128px;
         top: 53px;
         left: 466px;
