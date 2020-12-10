@@ -9,12 +9,13 @@
         visibility: hidden;
     }
 } */
+
 @media only screen and (max-width:1600px){
     #panel_holder {
-        width: 1094px;
-        height: 633px;
-        margin-right: -540px;
-        top: 56%;
+        width: 1217px;
+        height: 643px;
+        margin-right: -656px;
+        top: 54%;
         right: 50%;
     }
     .shape1_holder {
@@ -31,29 +32,257 @@
     .leftprof_holder img {
         position: absolute;
         height: 323px;
-        width: 68.6%;
+        width: 71.5%;
     }
     .blackbg {
         background-color: #000000;
         opacity: 69%;
-        width: 66%;
-        height: 100%;
+        width: 77%;
+        height: 99%;
     }
     .editimg {
-        left: 262px;
+        left: 324px;
     }
     .inputs_holder {
-        width: 751px;
+        width: 647px;
         height: 223px;
-        margin-left: -5px;
+        margin-left: 104px;
+        position: relative;
+        bottom: 12px;
+    }
+    .button_holder {
+        width: 273px;
+        height: 59px;
+        display: inline-flex;
+        position: relative;
+        left: 277px;
+        direction: rtl;
+        top: -29px;
+    }
+    .true {
+        position: relative;
+        right: 115px;
+        bottom: 38px;
+    }
+    .cansel {
+        width: 112px;
+        height: 48px;
+        background: url("../../img/1600.svg") no-repeat 18px 3px;
+    }
+    .sub {
+        margin-left: 11px;
+        width: 146px;
+        height: 49px;
+        font-size: 24px;
     }
     .item {
-        width: 345px;
+        width: 293px;
+        margin-bottom: 53px;
+        height: 45px;
     }
     .title{
-        margin: 20px 317px;
+        margin: 10px 380px;
+        font-size: 22px;
     }
     .item p {
-        margin: 0px 110px;
+        font-size: 20px;
+        margin: 0px 66px;
+    }
+    #panel_menu {
+        width: 260px;
+        height: 431px;
+        position: relative;
+        left: 20px;
+        top: 20px;
+    }
+    .leftprof_holder {
+        width: 1131px;
+        height: 296px;
+    }
+    .leftprof_holder img {
+        position: absolute;
+        height: 291px;
+        width: 71.5%;
+    }
+    #panel_menu li {
+        width: 89%;
+        height: 69px;
+        margin-bottom: 29px;
+    }
+    .singup {
+        background-position: 250px 22px;
+        color: #6E6E6E;
+    }
+    #user_inf {
+        width: 165px;
+        height: 228px;
+        position: relative;
+        left: 84px;
+        top: 13px;
+    }
+    #user_inf img {
+        width: 91%;
+        border: 7px solid white;
+        border-radius: 21px;
+        height: 127px;
+    }
+    .my_cour{
+        background-position: 250px 24px;
+        color: #6E6E6E;
+        background-image: url("../../img/playw.svg");
+    }
+    .edit{
+        background-position: 250px 26px;
+        background-image: url("../../img/edit.svg");
+        color: #704ED4;
+    }
+    .leave{
+        background-position: 250px 22px;
+        color: #6E6E6E;
+    }
+    .little-des {
+        right: 271px;
+    }
+    .menu-tab {
+        font-size: 33px;
+    }
+    .menu-tab li{
+        margin-left: 65px;
+    }
+    .inputs_holder input {
+        font-size: 20px;
+    }
+   
+}
+@media only screen and (max-width:1380px){
+    .menu-tab {
+        font-size: 30px;
+    }
+    .menu-tab li {
+        margin-left: 47px;
+    }
+
+}
+@media only screen and (max-width:1300px){
+    .shape1_holder {
+        width: 724.1px;
+        height: 1110.1px;
+        background-size: 575px;
+    }
+    .shape2_holder {
+        bottom: -67px;
+        right: -168.7px;
+        width: 635px;
+        background-size: 467px;
+        height: 591px;
+    }
+}
+@media only screen and (max-width:1150px){
+    #panel_holder {
+        width: 900px;
+        height: 532px;
+        margin-right: -469px;
+        top: 56%;
+        right: 52%;
+    }
+    .blackbg {
+        width: 49%;
+    }
+    .leftprof_holder img {
+        width: 61.5%;
+    }
+    .editimg {
+        position: absolute;
+        height: 0;
+        bottom: 128px;
+        top: 66px;
+        left: 176PX;
+        background-size: 169px;
+    }
+    .blackbg {
+        background-color: #000000;
+        opacity: 69%;
+        width: 49%;
+        height: 77%;
+    }
+    .leftprof_holder img {
+        position: absolute;
+        height: 250px;
+        width: 61.5%;
+    }
+    .editimg {
+        top: 47px;
+        left: 195px;
+    }
+    .getimg {
+        background-size: 137px;
+    }
+    .down {
+        width: 62%;
+        bottom: 82.7px;
+        position: relative;
+        height: 57%;
+    }
+    .shape1_holder {
+        height: 684.9px;
+    }
+    .title{
+        margin: 19px 207px;
+        font-size: 22px;
+    }
+    .item {
+        float: right;
+        width: 250px;
+        height: 102px;
+        margin-right: 14px;
+        margin-left: 12px;
+    }
+    .shape2_holder {
+        bottom: 0;
+        right: -230.7px;
+        width: 635px;
+        background-size: 404px;
+        height: 454px;
+    }
+    #user_inf {
+        width: 159.8px;
+        height: 210px;
+        position: relative;
+        left: 84px;
+        top: 24px;
+    }
+    #user_name {
+        width: 100%;
+        height: 41px;
+        position: relative;
+        bottom: 16px;
+        border-radius: 16px;
+        background: white;
+    }
+    .name {
+        font-size: 25px;
+    }
+    #panel_menu {
+        left: 40px;
+        height: 259px;
+    }
+    .my_cour {
+        background-position: 224px 18px;
+    }
+    .singup {
+        background-position: 227px 13px;
+    }
+    .edit {
+        background-position: 228px 18px;
+    
+    }
+    .leave {
+        background-position: 226px 16px;
+    }
+    #panel_menu li {
+        width: 79%;
+        height: 54.8px;
+        margin-bottom: 13px;
+        font-size: 22px;
     }
 }
