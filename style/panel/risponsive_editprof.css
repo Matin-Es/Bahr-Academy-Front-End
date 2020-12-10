@@ -1,14 +1,3 @@
-/* @media only screen and (max-width: 375px) {
-    #menu{
-        visibility: hidden;
-    }
-    #search-holder{
-        visibility: hidden;
-    }
-    #right{
-        visibility: hidden;
-    }
-} */
 
 @media only screen and (max-width:1600px){
     #panel_holder {
@@ -178,111 +167,269 @@
     }
 }
 @media only screen and (max-width:1150px){
+    .menu-tab li {
+        font-size:20px ;
+    }
+    .menu-logo img {
+        width: 92px;
+        height: 68px;
+    }
+    .border-bottom {
+        width: 19px;
+        right: 5px;
+    }
+    .menu-tab {
+        border: 1px solid transparent;
+        width: 591px;
+        height: 110px;
+        display: inline-block;
+        margin-top: -12px;
+        font-size: 35px;
+        margin-right: -24px;
+    }
     #panel_holder {
-        width: 900px;
-        height: 532px;
-        margin-right: -469px;
-        top: 56%;
-        right: 52%;
+        margin-right: -407px;
+        width:876px;
+        height: 463px;
     }
-    .blackbg {
-        width: 49%;
-    }
-    .leftprof_holder img {
-        width: 61.5%;
+    .getimg {
+        background-size: 128px;
     }
     .editimg {
-        position: absolute;
-        height: 0;
-        bottom: 128px;
-        top: 66px;
-        left: 176PX;
-        background-size: 169px;
+        left: 269px;
+        top: 37px;
+    }
+    .inputs_holder {
+        width: 494px;
+        height: 178px;
+        margin-left: 73px;
+        position: relative;
+        bottom: -93px;
+        }
+    .item {
+        width: 211px;
+        height: 39px;
+        font-size: 20px;
+    }
+    .inputs_holder input {
+        height: 33px;
+        border-radius: 8px;
+        }
+        .title {
+            margin: -87px 298px;
+            font-size: 18px;
+        }
+    .item p{
+        font-size: 20px;
+        margin: 0px -8px;
     }
     .blackbg {
         background-color: #000000;
         opacity: 69%;
-        width: 49%;
-        height: 77%;
+        width: 77%;
+        height: 99%;
     }
     .leftprof_holder img {
-        position: absolute;
-        height: 250px;
-        width: 61.5%;
+        height: 204px;
+        width: 671px;
     }
-    .editimg {
-        top: 47px;
-        left: 195px;
+    .blackbg {
+        height: 204px;
+        width: 671px;
     }
-    .getimg {
-        background-size: 137px;
+    #right{
+        width: 206px;
+        height: 463px;
     }
-    .down {
-        width: 62%;
-        bottom: 82.7px;
+    .sub {
+        margin-left: 11px;
+        font-size: 17px;
+        width: 105px;
+        height: 35px;
+        border-radius: 8px;
+    }
+    .button_holder {
+        width: 218px;
+        height: 39px;
+        display: inline-flex;
         position: relative;
-        height: 57%;
+        left: 205px;
+        direction: rtl;
+        top: 85px;
     }
-    .shape1_holder {
-        height: 684.9px;
+    .cansel{
+        width: 80px;
+        height: 35px;
+        background-image: url("../../img/1150.svg");
+        border-radius: 8px;
+        background-position: 12px 3px;
     }
-    .title{
-        margin: 19px 207px;
-        font-size: 22px;
-    }
-    .item {
-        float: right;
-        width: 250px;
-        height: 102px;
-        margin-right: 14px;
-        margin-left: 12px;
-    }
-    .shape2_holder {
-        bottom: 0;
-        right: -230.7px;
-        width: 635px;
-        background-size: 404px;
-        height: 454px;
-    }
-    #user_inf {
-        width: 159.8px;
-        height: 210px;
+    .true {
         position: relative;
-        left: 84px;
-        top: 24px;
+        right: 76px;
+        bottom: 29px;
     }
-    #user_name {
-        width: 100%;
-        height: 41px;
+    .little-des {
+        right: 271px;
+        top: 101px;
+        font-size: 15px;
+    }
+    #search-box {
+        background: url(../../img/Iconly-Light-Search.svg) no-repeat 9px 10px;
+            background-color: rgba(0, 0, 0, 0);
+            background-size: auto;
+        background-color: #7D74E2;
+        font-family: yek;
+        font-size: 20px;
+        color: transparent;
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        width: 45px;
+        height: 46px;
+        float: left;
+        transition: .5s;
         position: relative;
-        bottom: 16px;
-        border-radius: 16px;
-        background: white;
-    }
-    .name {
-        font-size: 25px;
-    }
-    #panel_menu {
-        left: 40px;
-        height: 259px;
-    }
-    .my_cour {
-        background-position: 224px 18px;
-    }
-    .singup {
-        background-position: 227px 13px;
-    }
-    .edit {
-        background-position: 228px 18px;
-    
-    }
-    .leave {
-        background-position: 226px 16px;
+        text-align: right;
+        float: left;
+        text-indent: 25px;
+        margin-top: 5px;
+        cursor: pointer;
+        background-size: 25px;    }
+    #user {
+        width: 45px;
+        height: 46px;
+        background-size: 30px;
     }
     #panel_menu li {
-        width: 79%;
-        height: 54.8px;
-        margin-bottom: 13px;
-        font-size: 22px;
+        width: 134px;
+        font-size: 17px;
+        height: 50px;
+        padding-right: 36px;
+        margin-bottom: 14px;
+    }
+    #panel_menu {
+        width: 140px;
+        height: 261px;
+        position: relative;
+        left: 20px;
+        top: -52px;
+    }
+    #user_inf img {
+        width: 89px;
+        border: 7px solid white;
+        border-radius: 21px;
+        height: 89px;
+    }
+    #user_name {
+        width: 97px;
+        height: 29px;
+        position: relative;
+        bottom: 0;
+        border-radius: 7px;
+        background: white;
+    }
+    #user_inf {
+        width: 110px;
+        height: 228px;
+        position: relative;
+        left: 55px;
+        top: 9px;
+    }
+    .name{
+        font-size: 17px;
+        left: 65.7px;
+    }
+    .my_cour {
+        background-position: 141px 14px;
+    }
+    .singup{        background-position: 142px 11px;
+    }
+    .edit{        background-position: 141px 14px;
+    }
+    .leave{       background-position: 141px 12px;
+    }
+    #id{
+        font-size: 9px;
+        top: 6px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    #menu{
+        visibility: hidden;
+    }
+    #search-holder{
+        visibility: hidden;
+    }
+    #right{
+        visibility: hidden;
+    }
+    #panel_holder{
+        width: 100%;
+        left: 0;
+        height: 890px;
+        border-radius: 0;
+    }
+    .inputs_holder input {
+        width: 310px;
+        height: 55px;
+        text-align: center;
+        font-size: 26px;
+        padding-right: 0;
+    }
+    .inputs_holder {
+        width: 100%;
+        height: 431px;
+        margin-left: -34px;
+        position: relative;
+        bottom: 109px;
+    }
+    .item p {
+        font-size: 25px;
+        margin: -3px 57px;
+        text-align: center;
+    }
+    .button_holder {
+        width: 72%;
+        height: 39px;
+        display: inline-flex;
+        position: relative;
+        left: 65px;
+        direction: rtl;
+        top: -79px;
+    }
+    .sub{
+        width: 119px;
+        height: 40px;
+    }
+    .cansel{
+        width: 91px;
+        height: 40px;
+        background-position: 8px 3px;
+    }
+    .true {
+        position: relative;
+        right: 85px;
+        bottom: 33px;
+    }
+    .title{
+        bottom: 158px;
+right: 178px;
+margin: -87px 298px;
+font-size: 27px;
+position: relative;
+    }
+    .leftprof_holder {
+        width: 100%;
+        height: 209px;
+        margin-top: 75px;
+    }
+    .leftprof_holder img {
+        height: 204px;
+        width: 100%;
+    }
+    .editimg {
+        left: 115px;
+        top: 113px;
     }
 }
