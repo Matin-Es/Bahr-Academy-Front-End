@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    direction: rtl;
+    font-family: 'yek';
+    list-style: none;
+}
+
+/* Holder  */
+
+#center-holder {
+    width: 1583px;
+    height: 5170px;
+    margin: 0 auto;
+    background: url('../img/back-set.png') no-repeat 0% -16px;
+    background-size: 100%;
+}
+
+@font-face {
+    font-family: 'yek';
+    src: url('../fonts/yek.ttf') format('truetype');
+}
