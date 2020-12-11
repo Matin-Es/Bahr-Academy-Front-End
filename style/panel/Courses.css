@@ -24,7 +24,7 @@
     left: 84px;
     top: 24px;
 }
-#user_inf img {
+#user_inf .imgprof {
     width: 91%;
     border: 7px solid white;
     border-radius: 21px;

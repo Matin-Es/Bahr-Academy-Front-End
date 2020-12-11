@@ -109,7 +109,7 @@
         left: 84px;
         top: 13px;
     }
-    #user_inf img {
+    #user_inf .imgprof {
         width: 91%;
         border: 7px solid white;
         border-radius: 21px;
@@ -315,7 +315,7 @@
         left: 20px;
         top: -52px;
     }
-    #user_inf img {
+    #user_inf .imgprof {
         width: 89px;
         border: 7px solid white;
         border-radius: 21px;
