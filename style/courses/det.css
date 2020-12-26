@@ -87,7 +87,7 @@ li.path{
 
 .courses_holder {
     width: 850px;
-    height: 1500px;
+    height: auto;
     margin: 150px auto;
     font-family: yek;
 }
@@ -108,7 +108,7 @@ li.path{
 
 .courses_holder > .itemeholder{
     width: 100%;
-    height: 1200px;
+    height: auto;
 }
 .courses_holder > .itemeholder > .items{
     width: 99%;
@@ -199,6 +199,29 @@ span.rate{
 }
 
 
+
+ul#next{
+    margin: 20px auto;
+    width: 200px;
+    height: 70px;
+    text-align: center;
+}
+
+
+#next > li{
+    display: inline-block;
+    border-radius: 50%;
+    background: red;
+    width: 30px;
+    height: 30px;
+}
+
+li.right{
+    border-radius: 50%;
+    background: red;
+    width: 30px;
+    height: 30px;
+}
 
 
 
