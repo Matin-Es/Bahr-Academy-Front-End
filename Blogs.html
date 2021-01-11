@@ -1,4 +1,4 @@
-<!DOCTYPE html>
++<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="style/login_signup/responsive_log.css">
     <link rel="stylesheet" href="bootstrap rtl/css/bootstrap-reboot.css">
     <link href="style/footer.css" rel="stylesheet">
+    <link href="style/responsive.css" rel="stylesheet">
+
 </head>
 <style>
     body {
@@ -61,7 +63,7 @@
         }
     }
     .blogs-bg{
-        box-shadow: 0 0 14px !important;
+        box-shadow: 0 0 5px #000000 !important;
         border-radius: 20px !important;
     }
 </style>
@@ -269,7 +271,33 @@
     <!--end footer-->
     <script src="bootstrap rtl/js/jquery.js"></script>
     <script src="bootstrap rtl/js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).on('click', '.showPass1', function() {
 
+            $('.showPass1').addClass('hidepass').removeClass('showPass1');
+            $(shp1).attr('type', 'text');
+
+        });
+        $(document).on('click', '.hidepass', function() {
+
+            $('.hidepass').addClass('showPass1').removeClass('hidepass');
+            $(shp1).attr('type', 'password');
+
+        });
+    </script>
+    <script>
+        $(document).on('click', '.header_button', function() {
+        
+            $(".drop_down").css("display", "block");
+        
+                });
+                $(document).on('click', '.back', function() {
+        
+        $(".drop_down").css("display", "none");
+        
+            });
+        </script>
 </body>
 
 </html>
