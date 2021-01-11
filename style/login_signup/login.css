@@ -69,7 +69,8 @@ body {
     bottom: 0px;
     right: -20px;
     width: 400px;
-    height: 400px;
+    height: 448px;
+    transform: rotate(180deg);
 }
 
 #form_holder {
