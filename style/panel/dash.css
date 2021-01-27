@@ -14,8 +14,9 @@
     height: 323px;
     width: 76.6%;
 }
-.editimg{
- 
+body{
+    overflow-y: visible !important; /* Hide vertical scrollbar */
+    overflow-x: hidden !important; /* Hide vertical scrollbar */
 }
 .chngeimg{
     visibility: hidden;

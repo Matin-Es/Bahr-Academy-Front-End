@@ -17,6 +17,10 @@
     height:100%;
     background: url("../../img/Rectangle 35.svg");
 }
+body{
+    overflow-y: visible !important; /* Hide vertical scrollbar */
+    overflow-x: hidden !important; /* Hide vertical scrollbar */
+}
 #user_inf {
     width: 170.8px;
     height: 228px;
