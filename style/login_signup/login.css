@@ -312,7 +312,7 @@ ul {
     position: absolute;
     line-height: 10px;
     top: 198px;
-    right: 249px;
+    right: 272px;
     width: 242px;
 }
 
@@ -445,7 +445,7 @@ input:focus {
 }
 .purse{
     float: left;
-    margin-left: 50px;
+    margin-left: 9px;
     background: url("../../img/Group\ 68.svg") no-repeat;
     background-size: 30px;
 }
@@ -458,8 +458,9 @@ input:focus {
    left: 563px;
 }
 .header_button{
+    
     float: right;
-    margin-right: 50px;
+    margin-right: 14px;
     background: url("../../img/Category.svg") no-repeat;
     background-size: 30px;
 }

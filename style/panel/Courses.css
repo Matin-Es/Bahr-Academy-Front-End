@@ -57,20 +57,26 @@ body{
     font-family: 'yek';
     position: relative;
     left: 115.7px;
+    top: 8px;
+}
+.editprof{
+        top: -22px;
+        position: relative;
+        left: 12px;
 }
 #id {
     font-family: 'yekan_bakh';
     font-size: 17px;
     color: #704ED4;
     position: absolute;
-    top: -3px;
+    top: 7px;
     left: 9px;
 }
 #panel_menu{
         width: 260px;
         height: 431px;
         position: relative;
-        left: 20px;
+        left: 61px;
         top: 36px;
 }
 #panel_menu li {
@@ -154,8 +160,8 @@ body{
         height: 603px;
         position: relative;
         left: 34px;
-        top: 52px;
-}
+        top: 99px;
+    }
 .sec_cur{
         width: 100%;
         height: 540px;
@@ -219,7 +225,7 @@ body{
     bottom: 62px;
     width: 124px;
     height: 44px;
-    left: 485px;
+    left: 514px;
     font-family: 'yek';
     display: inline-flex;
 }
@@ -243,4 +249,5 @@ body{
     background: #D8D5F6;
     border-radius: 100px;
     text-align: center;
+    line-height: 49px;
 }

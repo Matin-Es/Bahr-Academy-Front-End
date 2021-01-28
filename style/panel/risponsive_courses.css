@@ -14,8 +14,8 @@
     }
     #courses_holder {
         width: 828px;
+        top: 75px;
         height: 493px;
-        top: 16px;
         left: 20px;
     }
     .my_cur {
@@ -32,7 +32,7 @@
         font-size: 22px;
         font-family: 'yek';
         text-align: center;
-        width: 133px;
+        width: 129px;
     }
     #cur_img {
         width: 37.37px;
@@ -72,13 +72,14 @@
         border-radius: 100px;
         text-align: center;
         font-size: 24px;
+        line-height: 42px;
     }
     #next {
         position: relative;
         bottom: 83px;
         width: 124px;
         height: 44px;
-        left: 367px;
+        left: 400px;
         font-family: 'yek';
         display: inline-flex;
     }
@@ -251,6 +252,7 @@
         width: 100%;
         left: 0;
         height: 100%;
+        top: 397px;
         border-radius: 0;
     }
     .items {
@@ -275,12 +277,11 @@
     }
     .my_cur {
         font-family: 'yek';
+        top: 92px;
         color: #704ED4;
         font-size: 23px;
         position: relative;
-        left: 35%;
-        top: 63px;
-    
+        left: 35%;    
     }
     #user_inf .imgprof {
         width: 73px;
@@ -293,12 +294,13 @@
     }
     #user_name {
         background: none;
+        top: 37px;
     }
     .editprof {
         width: 15.71px;
         position: relative;
-        right: 190px;
-        top: -27px;
+        left: -34px;
+        top: -1px;
     }
     .items li {
         font-size: 20px;
@@ -308,9 +310,9 @@
     }
     #user_inf {
         width: 110px;
+        left: 40px;
         height: 228px;
         position: relative;
-        left: 38px;
         visibility: visible;
         top: -87px;
     }

@@ -15,6 +15,7 @@
     .shape2_holder {
         bottom: 1px;
         right: -97.7px;
+        
         width: 635px;
         height: 591px;
     }
@@ -81,7 +82,7 @@
         width: 260px;
         height: 431px;
         position: relative;
-        left: 20px;
+        left: 54px;
         top: 20px;
     }
     .leftprof_holder {
@@ -364,11 +365,12 @@
     #right{
         visibility: hidden;
     }
-    #panel_holder{
+    #panel_holder {
         width: 100%;
         left: 0;
         height: 890px;
         border-radius: 0;
+        top: 446px;
     }
     .inputs_holder input {
         width: 310px;
@@ -386,7 +388,7 @@
     }
     .item p {
         font-size: 25px;
-        margin: -3px 57px;
+        margin: 5px 57px;
         text-align: center;
     }
     .button_holder {
