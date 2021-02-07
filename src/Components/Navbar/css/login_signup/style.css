@@ -2,19 +2,18 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: url("../../../../Assets/images/Group 230.svg") no-repeat 50% 9%;
+    background: url("../../../../Assets/images/Group 230.svg") no-repeat 50% 8%;
     background-size: 112%;
-    
 }
 
 @font-face {
     font-family: 'yek';
-    src: url('../../../../Assets/fonts/yek.ttf') format('truetype');
+    src: url('../../../../Assets/fonts//yek.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'yekan_bakh';
-    src: url('../../../../Assets/fonts/YekanBakh_Bold.ttf') format('truetype');
+    src: url('../../../../Assets/fonts//YekanBakh_Bold.ttf') format('truetype');
 }
 
 
@@ -51,33 +50,29 @@ body {
 } */
 
 .shape1_holder {
-    /* border: 1px solid red; */
-    background: url("../../../../Assets/images/Group 229.svg")no-repeat 0% 0%;
-    background-size: 606px;
+    background: url("../../../../Assets/images/Path 62.svg")no-repeat 0% 0%;
     position: absolute;
     top: -20px;
     left: -20px;
-    width: 606px;
-    height: 678px;
+    width: 1008.1px;
+    height: 1110.1px;
 }
 
 .shape2_holder {
-    /* border: 1px solid red; */
-    background: url("../../../../Assets/images/Path 62.svg")no-repeat 0% 0%;
-    background-size: 400px;
+    background: url("../../../../Assets/images/197.svg")no-repeat 0% 0%;
+    background-size: 620px;
     position: absolute;
     bottom: 0px;
-    right: -20px;
-    width: 400px;
-    height: 448px;
-    transform: rotate(180deg);
+    right: -15.7px;
+    width: 636px;
+    height: 657px;
 }
 
 #form_holder {
     /* border: 1px solid red; */
     background: #ffffff;
     width: 465px;
-    height: auto;
+    height: 360px;
     border-radius: 28px;
     transform: translateX(50%) translateY(-50%);
     position: absolute;
@@ -105,8 +100,8 @@ body {
 
 .userNameInputHolder2 {
     border-radius: 15px;
-    background: url(../../../../Assets/images/Profilee.svg) 4% no-repeat #E9E9E9;
-    background-size: 15px;
+    background: url(../../../../Assets/images/Profile.svg) 4% no-repeat #E9E9E9;
+    background-size: 20px;
     width: 356px;
     direction: ltr;
     margin-right: 65px;
@@ -158,8 +153,8 @@ input::placeholder {
 
 .passWordInputHolder2 {
     border-radius: 15px;
-    background: url(../../../../Assets/images/lockk.svg) 3% no-repeat #E9E9E9;
-    background-size: 18px;
+    background: url(../../../../Assets/images/lock.svg) 2% no-repeat #E9E9E9;
+    background-size: 32px;
     width: 356px;
     direction: ltr;
     margin-right: 65px;
@@ -185,6 +180,10 @@ input::placeholder {
     direction: rtl;
 }
 
+.section1 {
+    /* border: 1px solid red; */
+}
+
 .section2 {
     /* border: 1px solid red; */
     position: relative;
@@ -204,10 +203,11 @@ input::placeholder {
 
 .menu-logo img {
     margin: 10px;
+    margin-right: 10px;
     margin-right: 19px;
     float: right;
-    width: 55px;
-    height: 55px;
+    width: 92px;
+    height: 84px;
 }
 
 ul {
@@ -216,24 +216,22 @@ ul {
 
 .menu-tab {
     border: 1px solid transparent;
-    width: 740px;
+    width: 773px;
     height: 110px;
     display: inline-block;
     margin-top: -20px;
+    font-size: 35px;
 }
 
 .menu-tab li {
     display: inline-block;
-    font-size: 24px;
-    margin-left: 45px;
+    margin-left: 75px;
     margin-top: 35px;
     color: #777;
 }
 
 .menu-tab li:nth-child(1) {
     display: inline-block;
-    font-size: 24px;
-    margin-left: 45px;
     margin-top: 35px;
     color: #444;
 }
@@ -244,7 +242,7 @@ ul {
     height: 8px;
     position: relative;
     bottom: 1px;
-    right: 6px;
+    right: 12px;
     background: linear-gradient(0deg, rgba(156, 90, 247, 1) 0%, rgba(70, 91, 234, 1) 100%);
 }
 
@@ -252,13 +250,13 @@ ul {
     width: 398px;
     height: 71px;
     border: 1px solid transparent;
+    padding-right: 20px;
     float: left;
     position: absolute;
-    left: 25px;
-    top: 10px;
-    font-family: 'yek';
+    left: 30px;
+    top: 21px;
+    font-family: 'yekan_bakh';
 }
-
 #search-box {
     background: url(../../../../Assets/images/Iconly-Light-Search.svg) no-repeat 9px 10px;
     background-color: #7D74E2;
@@ -272,10 +270,8 @@ ul {
     height: 50px;
     float: left;
     transition: .5s;
-    text-align: right;
-    padding-right: 21px;
-    padding-left: 21px;
     position: relative;
+    text-align: right;
     float: left;
     text-indent: 25px;
     margin-top: 5px;
@@ -286,6 +282,7 @@ ul {
     color: white;
     transition: .5s;
     width: 315px;
+    padding-right: 20px;
     cursor: text;
 }
 
@@ -307,9 +304,10 @@ ul {
     font-size: 25px;
     position: absolute;
     line-height: 10px;
-    top: 198px;
-    right: 272px;
+    top: 152px;
+    right: 249px;
     width: 242px;
+    font-weight: lighter;
 }
 
 .forgetPass {
@@ -331,9 +329,10 @@ ul {
     display: inline-block;
     width: 15px;
     height: 15px;
+    /* border: 1px solid red; */
     position: relative;
     top: 7px;
-    background: url("../../../../Assets/images/Info_Square.svg");
+    background: url(../../../../Assets/images/Info_Square.svg);
     background-size: 15px;
 }
 
@@ -382,134 +381,4 @@ ul {
     /* border: 1px solid red; */
     position: relative;
     left: 10px;
-}
-
-input:focus {
-    outline: none;
-}
-
-.checkbox {
-    display: inline-block;
-}
-
-.checkbox>input {
-    position: relative;
-    top: 4px;
-}
-
-.showPass1 {
-    /* border: 1px solid red; */
-    width: 36px;
-    height: 41px;
-    display: inline-block;
-    float: right;
-    background: url("../../../../Assets/images/Group 223.svg")no-repeat 50%;
-    background-size: 23px;
-}
-
-.hidepass {
-    background: url("../../../../Assets/images/Iconly-Bold-Show.svg")no-repeat 50%;
-    width: 36px;
-    height: 41px;
-    display: inline-block;
-    float: right;
-    background-size: 18px;
-}
-.header_text_holder{
-    text-align: center;
-    font-family: 'yek';
-    font-size: 30px;
-    color:#895AF4;
-    position: relative;
-    top: 70px;
-    display: none;
-}
-.top_header{
-    /* border:1px solid red; */
-    display: none;
-    width:100%;
-    height: 40px;
-    position: relative;
-    top: 30px;
-}
-.ith{
-    /* border: 1px solid red; */
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    
-}
-.purse{
-    float: left;
-    margin-left: 9px;
-    background: url("../../../../Assets/images/Group\ 68.svg") no-repeat;
-    background-size: 30px;
-}
-.bahr{
-   position: relative;
-   left: 560px;
-   width: 60px;
-   font-size: 30px;
-   color:#895AF4;
-   left: 563px;
-}
-.header_button{
-    
-    float: right;
-    margin-right: 14px;
-    background: url("../../../../Assets/images/Category.svg") no-repeat;
-    background-size: 30px;
-}
-.drop_down{
-    background: white;
-   font-family: 'yek';
-   font-size: 25px;
-    width:100%;
-    height: 55%;
-    position: absolute;
-    z-index: 5;
-    color: #777;
-    display: none;
-}
-.back{
-    background: url("../../../../Assets/images/Iconly-Bold-Arrow\ -\ Left\ Circle.svg") no-repeat;
-    background-size: 40px;
-    width: 40px;
-    height: 40px;
-    /* border: 1px solid red; */
-    position: relative;
-    top:40px;
-    left:40px;
-    cursor: pointer;
-}
-.dropItems{
-    text-align: center;
-    position: relative;
-    top: 50px;
-   
-}
-.sel{
-    color:#895AF4;
-}
-.dropItemss{
-    text-align: center;
-    position: relative;
-    top: 75px;
-}
-.dropItemss>img{
-   position: relative;
-   right:13px;
-   top:6px;
-   width: 20px;
-   height: 20px;
-}
-.lineForHome{
-    background: #895AF4; 
-    display: block;
-    width: 40px;
-    height: 4px;
-    border-radius: 10px;
-    position: relative;
-    left: 662px;
-    top: 45px;
 }

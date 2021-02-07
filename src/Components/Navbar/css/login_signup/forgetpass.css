@@ -2,19 +2,18 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: url("../../../../Assets/images/Group 230.svg") no-repeat 50% 9%;
+    background: url("../../img/Group 230.svg") no-repeat 50% 9%;
     background-size: 112%;
-    
 }
 
 @font-face {
     font-family: 'yek';
-    src: url('../../../../Assets/fonts/yek.ttf') format('truetype');
+    src: url('../../fonts/yek.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'yekan_bakh';
-    src: url('../../../../Assets/fonts/YekanBakh_Bold.ttf') format('truetype');
+    src: url('../../fonts/YekanBakh_Bold.ttf') format('truetype');
 }
 
 
@@ -52,7 +51,7 @@ body {
 
 .shape1_holder {
     /* border: 1px solid red; */
-    background: url("../../../../Assets/images/Group 229.svg")no-repeat 0% 0%;
+    background: url("../../img/Group 229.svg")no-repeat 0% 0%;
     background-size: 606px;
     position: absolute;
     top: -20px;
@@ -63,14 +62,13 @@ body {
 
 .shape2_holder {
     /* border: 1px solid red; */
-    background: url("../../../../Assets/images/Path 62.svg")no-repeat 0% 0%;
+    background: url("../../img/Path 62.svg")no-repeat 0% 0%;
     background-size: 400px;
     position: absolute;
     bottom: 0px;
     right: -20px;
     width: 400px;
-    height: 448px;
-    transform: rotate(180deg);
+    height: 400px;
 }
 
 #form_holder {
@@ -93,7 +91,7 @@ body {
     display: flex;
     justify-content: flex-start;
     font-family: 'yek';
-    padding-right: 70px;
+    padding-right: 73px;
     color: #707070;
 }
 
@@ -105,11 +103,11 @@ body {
 
 .userNameInputHolder2 {
     border-radius: 15px;
-    background: url(../../../../Assets/images/Profilee.svg) 4% no-repeat #E9E9E9;
-    background-size: 15px;
-    width: 356px;
+    background: url(../../img/Profilee.svg) 4% no-repeat #E9E9E9;
+    background-size: 20px;
+    width: 321px;
     direction: ltr;
-    margin-right: 65px;
+    margin-right: 66px;
 }
 
 .userNameInputHolder2>input {
@@ -158,8 +156,8 @@ input::placeholder {
 
 .passWordInputHolder2 {
     border-radius: 15px;
-    background: url(../../../../Assets/images/lockk.svg) 3% no-repeat #E9E9E9;
-    background-size: 18px;
+    background: url(../../img/lockk.svg) 3% no-repeat #E9E9E9;
+    background-size: 22px;
     width: 356px;
     direction: ltr;
     margin-right: 65px;
@@ -183,6 +181,12 @@ input::placeholder {
 
 .passWordInputHolder2>input::placeholder {
     direction: rtl;
+}
+
+.section1 {
+    /* border: 1px solid red; */
+    position: relative;
+    right: 0px;
 }
 
 .section2 {
@@ -260,27 +264,27 @@ ul {
 }
 
 #search-box {
-    background: url(../../../../Assets/images/Iconly-Light-Search.svg) no-repeat 9px 10px;
-    background-color: #7D74E2;
-    font-family: yek;
-    font-size: 20px;
-    color: transparent;
-    border: none;
-    outline: none;
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    float: left;
-    transition: .5s;
-    text-align: right;
-    padding-right: 21px;
-    padding-left: 21px;
-    position: relative;
-    float: left;
-    text-indent: 25px;
-    margin-top: 5px;
-    cursor: pointer;
-}
+    background: url(../../img/Iconly-Light-Search.svg) no-repeat 9px 10px;
+        background-color: #7D74E2;
+        font-family: yek;
+        font-size: 20px;
+        color: transparent;
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        float: left;
+        transition: .5s;
+        position: relative;
+        float: left;
+        text-indent: 25px;
+        margin-top: 5px;
+        cursor: pointer;
+        text-align: right;
+        padding-right: 21px;
+        padding-left: 21px;
+    }
 
 #search-box:focus {
     color: white;
@@ -290,7 +294,7 @@ ul {
 }
 
 #user {
-    background: url(../../../../Assets/images/Iconly-Light-Profile.svg) no-repeat 8px 8px;
+    background: url(../../img/Iconly-Light-Profile.svg) no-repeat 8px 8px;
     background-color: #7D74E2;
     width: 50px;
     height: 50px;
@@ -307,8 +311,8 @@ ul {
     font-size: 25px;
     position: absolute;
     line-height: 10px;
-    top: 198px;
-    right: 272px;
+    top: 150px;
+    right: 249px;
     width: 242px;
 }
 
@@ -333,7 +337,7 @@ ul {
     height: 15px;
     position: relative;
     top: 7px;
-    background: url("../../../../Assets/images/Info_Square.svg");
+    background: url("../../img/Info_Square.svg");
     background-size: 15px;
 }
 
@@ -351,14 +355,13 @@ ul {
     display: inline-block;
     color: #665AEE;
     font-weight: 900;
-    background: url(../../../../Assets/images/Iconly-Light-outline-Profile.svg) no-repeat 16% 50%;
     cursor: pointer;
 }
 
 .signin {
     /* border: 1px solid red; */
-    width: 70px;
-    height: 35px;
+    width: 135px;
+    height: 29px;
     border-radius: 10px;
     font-family: 'yek';
     font-size: 20px;
@@ -367,21 +370,24 @@ ul {
     display: inline-block;
     font-weight: 900;
     color: white;
-    background: linear-gradient(#5A5BED, #895AF4);
+    margin-top: 8px;
+    margin-bottom: 35px;
+    background: url("../../img/Iconly-Bold-Shield Done.svg") #5A5BED no-repeat 16% 56%;
+    background-size: 19px;
     cursor: pointer;
 }
 
 .buttons_holder {
     /* border: 1px solid red; */
     position: relative;
-    bottom: 18px;
-    padding-right: 141px;
+    bottom: 1px;
+    padding-right: 154px;
 }
 
 .formInnerHolder {
     /* border: 1px solid red; */
     position: relative;
-    left: 10px;
+    left: -5px;
 }
 
 input:focus {
@@ -395,25 +401,6 @@ input:focus {
 .checkbox>input {
     position: relative;
     top: 4px;
-}
-
-.showPass1 {
-    /* border: 1px solid red; */
-    width: 36px;
-    height: 41px;
-    display: inline-block;
-    float: right;
-    background: url("../../../../Assets/images/Group 223.svg")no-repeat 50%;
-    background-size: 23px;
-}
-
-.hidepass {
-    background: url("../../../../Assets/images/Iconly-Bold-Show.svg")no-repeat 50%;
-    width: 36px;
-    height: 41px;
-    display: inline-block;
-    float: right;
-    background-size: 18px;
 }
 .header_text_holder{
     text-align: center;
@@ -441,8 +428,8 @@ input:focus {
 }
 .purse{
     float: left;
-    margin-left: 9px;
-    background: url("../../../../Assets/images/Group\ 68.svg") no-repeat;
+    margin-left: 50px;
+    background: url("../../img/Group\ 68.svg") no-repeat;
     background-size: 30px;
 }
 .bahr{
@@ -454,10 +441,9 @@ input:focus {
    left: 563px;
 }
 .header_button{
-    
     float: right;
-    margin-right: 14px;
-    background: url("../../../../Assets/images/Category.svg") no-repeat;
+    margin-right: 50px;
+    background: url("../../img/Category.svg") no-repeat;
     background-size: 30px;
 }
 .drop_down{
@@ -472,7 +458,7 @@ input:focus {
     display: none;
 }
 .back{
-    background: url("../../../../Assets/images/Iconly-Bold-Arrow\ -\ Left\ Circle.svg") no-repeat;
+    background: url("../../img/Iconly-Bold-Arrow\ -\ Left\ Circle.svg") no-repeat;
     background-size: 40px;
     width: 40px;
     height: 40px;
