@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 
-//styles
-import '../UserCourses/css/Courses.css'
 class Rightside extends Component {
   render() {
     return (

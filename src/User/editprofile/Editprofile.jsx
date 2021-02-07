@@ -4,7 +4,7 @@ import "../../Assets/Styles/panel/Courses.css";
 import "../../Assets/Styles/panel/dash.css";
 import "../../Assets/Styles/panel/risponsive_courses.css";
 import "../../Assets/Styles/panel/risponsive_editprof.css";
-
+import "../../Assets/Styles/cssrest.css";
 //files
 import Rightside from "../rightSide/Rightside";
 import ProfileDetail from "../ProfileDetail/Profile";
