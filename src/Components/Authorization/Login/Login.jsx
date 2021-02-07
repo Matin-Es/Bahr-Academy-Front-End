@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import classes from "./css/login.module.css";
 import classes from "./css/login.module.css";
-import "./css/responsive_log.css";
+import resclasses from "./css/responsive_log.module.css";
 import {Link} from 'react-router-dom'
 
 
