@@ -1,16 +1,14 @@
 import React, { Component } from "react";
+
 //styles
-import "../../Assets/Styles/panel/Courses.css";
-import "../../Assets/Styles/panel/dash.css";
-import "../../Assets/Styles/panel/risponsive_courses.css";
-import "../../Assets/Styles/panel/risponsive_editprof.css";
-import "../../Assets/Styles/cssrest.css";
+import Classes from "../css/dash.module.css";
+import Clas from "../css/Courses.module.css";
 
 //files
 import Rightside from "../rightSide/Rightside";
 import ProfileDetail from "../ProfileDetail/Profile";
 import Shapes from "../../Components/Landing/shapes/shapes";
-import Header from '../../Components/Navbar/Header'
+import Header from "../../Components/Navbar/Header";
 
 //images
 import Imgsub from "../../Assets/images/Iconly-Light-Tick Square.svg";
@@ -19,39 +17,46 @@ class Editprofile extends Component {
   render() {
     return (
       <React.Fragment>
-        <Header/>
         <Shapes />
-        <div id="panel_holder">
+        <div id={Clas.panel_holder}>
           <Rightside />
           <ProfileDetail />
-          <div className="down">
-            <p className="title">ویرایش اطلاعات</p>
-            <div className="inputs_holder">
-              <div className="item a1">
+          <div className={Classes.down}>
+            <p className={Classes.title}>ویرایش اطلاعات</p>
+            <div className={Classes.inputs_holder}>
+              <div className={Classes.item}>
                 <p>نام</p>
-                <input className="fname" value="sara" type="text" />
+                <input className={Classes.fname} value="sara" type="text" />
               </div>
 
-              <div className="item a2">
+              <div className={Classes.item}>
                 <p>نام خانوادگی</p>
-                <input className="lname" value="بزرگوار" type="text" />
+                <input className={Classes.lname} value="بزرگوار" type="text" />
               </div>
 
-              <div className="item a1">
+              <div className={Classes.item}>
                 <p>ایمیل</p>
-                <input className="email" value="ایمیل" type="text" />
+                <input className={Classes.email} value="ایمیل" type="text" />
               </div>
 
-              <div className="item a1">
+              <div className={Classes.item}>
                 <p>تاریخ تولد</p>
-                <input className="birthdate" value="تاریخ تولد" type="text" />
+                <input
+                  className={Classes.birthdate}
+                  value="تاریخ تولد"
+                  type="text"
+                />
               </div>
             </div>
-            <div className="button_holder">
-              <input className="cansel" type="button" />
+            <div className={Classes.button_holder}>
+              <input className={Classes.cansel} type="button" />
               <div>
-                <input className="sub" value="ثبت تغییرات" type="submit" />
-                <img className="true" src={Imgsub} />
+                <input
+                  className={Classes.sub}
+                  value="ثبت تغییرات"
+                  type="submit"
+                />
+                <img className={Classes.true} src={Imgsub} />
               </div>
             </div>
           </div>
