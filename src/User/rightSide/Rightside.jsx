@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
-import Classes from '../../User/css/Courses.modules.css'
+import Classes from '../css/Courses.module.css'
+import '../css/dash.module.css'
 
 import editimg from '../../Assets/images/edit.svg'
 class Rightside extends Component {

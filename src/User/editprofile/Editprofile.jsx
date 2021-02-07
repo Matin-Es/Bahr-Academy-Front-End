@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 
 //styles
-import Classes from "../css/dash.modules.css";
+import Classes from "../css/dash.module.css";
+import Clas from "../css/Courses.module.css";
 
 //files
 import Rightside from "../rightSide/Rightside";
@@ -17,28 +18,28 @@ class Editprofile extends Component {
     return (
       <React.Fragment>
         <Shapes />
-        <div id={Classes.panel_holder}>
+        <div id={Clas.panel_holder}>
           <Rightside />
           <ProfileDetail />
           <div className={Classes.down}>
             <p className={Classes.title}>ویرایش اطلاعات</p>
             <div className={Classes.inputs_holder}>
-              <div className={`${Classes.item} ${Classes.a1}`}>
+              <div className={Classes.item}>
                 <p>نام</p>
                 <input className={Classes.fname} value="sara" type="text" />
               </div>
 
-              <div className={`${Classes.item} ${Classes.a1}`}>
+              <div className={Classes.item}>
                 <p>نام خانوادگی</p>
-                <input className="lname" value="بزرگوار" type="text" />
+                <input className={Classes.lname} value="بزرگوار" type="text" />
               </div>
 
-              <div className={`${Classes.item} ${Classes.a1}`}>
+              <div className={Classes.item}>
                 <p>ایمیل</p>
-                <input className="email" value="ایمیل" type="text" />
+                <input className={Classes.email} value="ایمیل" type="text" />
               </div>
 
-              <div className={`${Classes.item} ${Classes.a1}`}>
+              <div className={Classes.item}>
                 <p>تاریخ تولد</p>
                 <input
                   className={Classes.birthdate}
@@ -47,7 +48,7 @@ class Editprofile extends Component {
                 />
               </div>
             </div>
-            <div className={`${Classes.item} ${Classes.a1}`}>
+            <div className={Classes.button_holder}>
               <input className={Classes.cansel} type="button" />
               <div>
                 <input
