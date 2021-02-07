@@ -2,19 +2,19 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: url("../../../../Assets/images/Group 230.svg") no-repeat 50% 9%;
+    background: url("../../img/Group 230.svg") no-repeat 50% 9%;
     background-size: 112%;
     
 }
 
 @font-face {
     font-family: 'yek';
-    src: url('../../../../Assets/fonts/yek.ttf') format('truetype');
+    src: url('../../fonts/yek.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'yekan_bakh';
-    src: url('../../../../Assets/fonts/YekanBakh_Bold.ttf') format('truetype');
+    src: url('../../fonts/YekanBakh_Bold.ttf') format('truetype');
 }
 
 
@@ -52,7 +52,7 @@ body {
 
 .shape1_holder {
     /* border: 1px solid red; */
-    background: url("../../../../Assets/images/Group 229.svg")no-repeat 0% 0%;
+    background: url("../../img/Group 229.svg")no-repeat 0% 0%;
     background-size: 606px;
     position: absolute;
     top: -20px;
@@ -63,7 +63,7 @@ body {
 
 .shape2_holder {
     /* border: 1px solid red; */
-    background: url("../../../../Assets/images/Path 62.svg")no-repeat 0% 0%;
+    background: url("../../img/Path 62.svg")no-repeat 0% 0%;
     background-size: 400px;
     position: absolute;
     bottom: 0px;
@@ -105,7 +105,7 @@ body {
 
 .userNameInputHolder2 {
     border-radius: 15px;
-    background: url(../../../../Assets/images/Profilee.svg) 4% no-repeat #E9E9E9;
+    background: url(../../img/Profilee.svg) 4% no-repeat #E9E9E9;
     background-size: 15px;
     width: 356px;
     direction: ltr;
@@ -158,7 +158,7 @@ input::placeholder {
 
 .passWordInputHolder2 {
     border-radius: 15px;
-    background: url(../../../../Assets/images/lockk.svg) 3% no-repeat #E9E9E9;
+    background: url(../../img/lockk.svg) 3% no-repeat #E9E9E9;
     background-size: 18px;
     width: 356px;
     direction: ltr;
@@ -264,7 +264,7 @@ ul {
 }
 
 #search-box {
-    background: url(../../../../Assets/images/Iconly-Light-Search.svg) no-repeat 9px 10px;
+    background: url(../../img/Iconly-Light-Search.svg) no-repeat 9px 10px;
     background-color: #7D74E2;
     font-family: yek;
     font-size: 20px;
@@ -294,7 +294,7 @@ ul {
 }
 
 #user {
-    background: url(../../../../Assets/images/Iconly-Light-Profile.svg) no-repeat 8px 8px;
+    background: url(../../img/Iconly-Light-Profile.svg) no-repeat 8px 8px;
     background-color: #7D74E2;
     width: 50px;
     height: 50px;
@@ -337,7 +337,7 @@ ul {
     height: 15px;
     position: relative;
     top: 7px;
-    background: url("../../../../Assets/images/Info_Square.svg");
+    background: url("../../img/Info_Square.svg");
     background-size: 15px;
 }
 
@@ -355,7 +355,7 @@ ul {
     display: inline-block;
     color: #665AEE;
     font-weight: 900;
-    background: url(../../../../Assets/images/Iconly-Light-outline-Profile.svg) no-repeat 16% 50%;
+    background: url(../../img/Iconly-Light-outline-Profile.svg) no-repeat 16% 50%;
     cursor: pointer;
 }
 
@@ -407,12 +407,12 @@ input:focus {
     height: 41px;
     display: inline-block;
     float: right;
-    background: url("../../../../Assets/images/Group 223.svg")no-repeat 50%;
+    background: url("../../img/Group 223.svg")no-repeat 50%;
     background-size: 23px;
 }
 
 .hidepass {
-    background: url("../../../../Assets/images/Iconly-Bold-Show.svg")no-repeat 50%;
+    background: url("../../img/Iconly-Bold-Show.svg")no-repeat 50%;
     width: 36px;
     height: 41px;
     display: inline-block;
@@ -446,7 +446,7 @@ input:focus {
 .purse{
     float: left;
     margin-left: 9px;
-    background: url("../../../../Assets/images/Group\ 68.svg") no-repeat;
+    background: url("../../img/Group\ 68.svg") no-repeat;
     background-size: 30px;
 }
 .bahr{
@@ -461,7 +461,7 @@ input:focus {
     
     float: right;
     margin-right: 14px;
-    background: url("../../../../Assets/images/Category.svg") no-repeat;
+    background: url("../../img/Category.svg") no-repeat;
     background-size: 30px;
 }
 .drop_down{
@@ -476,7 +476,7 @@ input:focus {
     display: none;
 }
 .back{
-    background: url("../../../../Assets/images/Iconly-Bold-Arrow\ -\ Left\ Circle.svg") no-repeat;
+    background: url("../../img/Iconly-Bold-Arrow\ -\ Left\ Circle.svg") no-repeat;
     background-size: 40px;
     width: 40px;
     height: 40px;
