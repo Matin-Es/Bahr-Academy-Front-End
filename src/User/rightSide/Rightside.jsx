@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+import editimg from '../../Assets/images/edit.svg'
 class Rightside extends Component {
   render() {
     return (
@@ -11,7 +12,7 @@ class Rightside extends Component {
                     <p className="name">آرالما</p>
                     <p id="id">@aralema</p>
                 </div>
-                <img className="editprof" src="/img/edit.svg"/>
+                <img className="editprof" src={editimg}/>
             </div>
             <ul id="panel_menu">
                 <li className="menu my_cour">دوره های من</li>
