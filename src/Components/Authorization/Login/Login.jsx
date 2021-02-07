@@ -7,79 +7,79 @@ class Login extends Component {
   render() {
     return (
       <div>
-        <div class="shape1_holder"></div>
+        <div className="shape1_holder"></div>
 
-        <div class="shape2_holder"></div>
+        <div className="shape2_holder"></div>
 
         {/* <!-- header --> */}
 
         <div id="menu">
-          <div class="menu-logo">
+          <div className="menu-logo">
             <img src="img/hpgraph-1.svg" />
           </div>
-          <ul class="menu-tab">
-            <li class="below 1">
+          <ul className="menu-tab">
+            <li className="below 1">
               {" "}
               خانه
-              <div class="border-bottom"></div>
+              <div className="border-bottom"></div>
             </li>
-            <li class="below 1"> آموزش</li>
-            <li class="below 1"> خدمات</li>
-            <li class="below 1"> مالی</li>
-            <li class="below 1"> تماس با ما</li>
+            <li className="below 1"> آموزش</li>
+            <li className="below 1"> خدمات</li>
+            <li className="below 1"> مالی</li>
+            <li className="below 1"> تماس با ما</li>
           </ul>
         </div>
         <div id="search-holder">
           <input id="search-box" type="search" />
           <div id="user"></div>
-          <p class="little-des"> میان هزاران دوره ی آنلاین</p>
+          <p className="little-des"> میان هزاران دوره ی آنلاین</p>
         </div>
         {/* <!-- form --> */}
         {/* <!-- responsive header --> */}
-        <div class="drop_down">
-          <div class="back"></div>
-          <div class="dropItems sel">خانه</div>
-          <span class="lineForHome"></span>
-          <div class="dropItems">آموزش</div>
-          <div class="dropItems">خدمات</div>
-          <div class="dropItems">مالی</div>
-          <div class="dropItems">تماس با ما</div>
+        <div className="drop_down">
+          <div className="back"></div>
+          <div className="dropItems sel">خانه</div>
+          <span className="lineForHome"></span>
+          <div className="dropItems">آموزش</div>
+          <div className="dropItems">خدمات</div>
+          <div className="dropItems">مالی</div>
+          <div className="dropItems">تماس با ما</div>
 
-          <div class="dropItemss">
+          <div className="dropItemss">
             {" "}
-            <img src="img/Work.svg" alt="" class="nahyeKarbari" />
+            <img src="img/Work.svg" alt="" className="nahyeKarbari" />
             ناحیه کاربری
           </div>
         </div>
-        <div class="top_header">
-          <div class="purse ith"></div>
+        <div className="top_header">
+          <div className="purse ith"></div>
 
-          <div class="header_button ith"></div>
+          <div className="header_button ith"></div>
         </div>
-        <div class="header_text_holder">
-          <div class="header_text">ورود</div>
+        <div className="header_text_holder">
+          <div className="header_text">ورود</div>
         </div>
         {/* <!-- responsive header --> */}
         <div id="form_holder">
-          <div class="formInnerHolder">
-            <div class="section1">
-              <div class="userNameTextHolder">
-                <p class="usernametext">ایمیل یا نام کاربری</p>
+          <div className="formInnerHolder">
+            <div className="section1">
+              <div className="userNameTextHolder">
+                <p className="usernametext">ایمیل یا نام کاربری</p>
               </div>
-              <div class="userNameInputHolder1">
-                <div class="userNameInputHolder2">
+              <div className="userNameInputHolder1">
+                <div className="userNameInputHolder2">
                   <input type="text" placeholder="info@bahr.com" />
                 </div>
               </div>
             </div>
 
-            <div class="section2">
-              <div class="passWordTextHolder">
-                <p class="passwordtext">رمز عبور</p>
+            <div className="section2">
+              <div className="passWordTextHolder">
+                <p className="passwordtext">رمز عبور</p>
               </div>
-              <div class="passWordInputHolder1">
-                <div class="passWordInputHolder2">
-                  <div class="showPass1"></div>
+              <div className="passWordInputHolder1">
+                <div className="passWordInputHolder2">
+                  <div className="showPass1"></div>
                   <input
                     id="shp1"
                     type="password"
@@ -89,14 +89,14 @@ class Login extends Component {
               </div>
             </div>
 
-            <div class="forgetPass">
-              <div class="exclamation"></div>
+            <div className="forgetPass">
+              <div className="exclamation"></div>
               <a href="forgetpass.html">رمزم رو فراموش کردم!</a>
             </div>
-            <div class="buttons_holder">
-              <div class="signin">ورود</div>
+            <div className="buttons_holder">
+              <div className="signin">ورود</div>
               <a href="Register.html">
-                <div class="signup">ثبت نام</div>
+                <div className="signup">ثبت نام</div>
               </a>
             </div>
           </div>
