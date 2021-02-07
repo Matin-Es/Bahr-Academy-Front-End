@@ -5,10 +5,13 @@ import "../../Assets/Styles/panel/dash.css";
 import "../../Assets/Styles/panel/risponsive_courses.css";
 import "../../Assets/Styles/panel/risponsive_editprof.css";
 import "../../Assets/Styles/cssrest.css";
+
 //files
 import Rightside from "../rightSide/Rightside";
 import ProfileDetail from "../ProfileDetail/Profile";
 import Shapes from "../../Components/Landing/shapes/shapes";
+import Header from '../../Components/Navbar/Header'
+
 //images
 import Imgsub from "../../Assets/images/Iconly-Light-Tick Square.svg";
 class Editprofile extends Component {
@@ -16,6 +19,7 @@ class Editprofile extends Component {
   render() {
     return (
       <React.Fragment>
+        <Header/>
         <Shapes />
         <div id="panel_holder">
           <Rightside />
