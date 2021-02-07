@@ -52,7 +52,7 @@ body {
 
 .shape1_holder {
     /* border: 1px solid red; */
-    background: url("../../../../Assets/images/Group 229.svg")no-repeat 0% 0%;
+    background: url("../../../../Assets/images/Path 62.svg")no-repeat 0% 0%;
     background-size: 606px;
     position: absolute;
     top: -20px;
@@ -105,7 +105,7 @@ body {
 
 .userNameInputHolder2 {
     border-radius: 15px;
-    background: url(../../../../Assets/images/Profilee.svg) 4% no-repeat #E9E9E9;
+    background: url("../../../../Assets/images/Profilee.svg") 4% no-repeat #E9E9E9;
     background-size: 15px;
     width: 356px;
     direction: ltr;
@@ -158,7 +158,7 @@ input::placeholder {
 
 .passWordInputHolder2 {
     border-radius: 15px;
-    background: url(../../../../Assets/images/lockk.svg) 3% no-repeat #E9E9E9;
+    background: url("../../../../Assets/images/lockk.svg") 3% no-repeat #E9E9E9;
     background-size: 18px;
     width: 356px;
     direction: ltr;
@@ -260,7 +260,7 @@ ul {
 }
 
 #search-box {
-    background: url(../../../../Assets/images/Iconly-Light-Search.svg) no-repeat 9px 10px;
+    background: url("../../../../Assets/images/Iconly-Light-Search.svg") no-repeat 9px 10px;
     background-color: #7D74E2;
     font-family: yek;
     font-size: 20px;
@@ -290,7 +290,7 @@ ul {
 }
 
 #user {
-    background: url(../../../../Assets/images/Iconly-Light-Profile.svg) no-repeat 8px 8px;
+    background: url("../../../../Assets/images/Iconly-Light-Profile.svg") no-repeat 8px 8px;
     background-color: #7D74E2;
     width: 50px;
     height: 50px;
@@ -351,7 +351,7 @@ ul {
     display: inline-block;
     color: #665AEE;
     font-weight: 900;
-    background: url(../../../../Assets/images/Iconly-Light-outline-Profile.svg) no-repeat 16% 50%;
+    background: url("../../../../Assets/images/Iconly-Light-outline-Profile.svg") no-repeat 16% 50%;
     cursor: pointer;
 }
 
