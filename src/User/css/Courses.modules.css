@@ -15,7 +15,7 @@
     float: right;
     width:347px;
     height:100%;
-    background: url("../../images/Rectangle 35.svg");
+    background: url("../../Assets/images/Rectangle 35.svg");
 }
 body{
     overflow-y: visible !important; /* Hide vertical scrollbar */
@@ -44,12 +44,12 @@ body{
 }
 @font-face {
     font-family: 'yek';
-    src: url('../../fonts/yek.ttf') format('truetype');
+    src: url('../../Assets/fonts/yek.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'yekan_bakh';
-    src: url('../../fonts/YekanBakh_Bold.ttf') format('truetype');
+    src: url('../../Assets/fonts/YekanBakh_Bold.ttf') format('truetype');
 }
 .name {
     color: #704ED4;
@@ -95,28 +95,28 @@ body{
 }
 .my_cour{
     background: white;
-    background-image: url("../../images/Iconly-Bold-Play.svg");
+    background-image: url("../../Assets/images/Iconly-Bold-Play.svg");
     background-repeat:no-repeat ;
     background-position: 250px 30px;
     color: #704ED4 ;
 }
 .singup{
     background: white;
-    background-image: url("../../images/Iconly-Bold-Add User.svg");
+    background-image: url("../../Assets/images/Iconly-Bold-Add User.svg");
     background-repeat:no-repeat ;
     background-position: 250px 30px;
     color: #704ED4 ;
 }
 .edit{
     background: white;
-    background-image:  url("../../images/Iconly-Bold-Edit Square.svg");
+    background-image:  url("../../Assets/images/Iconly-Bold-Edit Square.svg");
     background-repeat:no-repeat ;
     background-position: 250px 30px;
     color: #704ED4 ;
 }
 .leave{
     background: white;
-    background-image: url("../../images/Iconly-Bold-Close Square.svg");
+    background-image: url("../../Assets/images/Iconly-Bold-Close Square.svg");
     background-repeat:no-repeat ;
     background-position: 250px 30px;
     color: #704ED4 ;
