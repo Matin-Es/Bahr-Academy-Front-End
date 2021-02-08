@@ -1,20 +1,11 @@
 #panel_holder {
-  width: 1478px;
   background-color: white;
-  height: 780px;
-  border-radius: 38px;
-  margin-right: -740px;
-  position: absolute;
-  top: 54%;
-  right: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  overflow: hidden;
+  position: relative;
+  border-radius:38px ;
 }
 #right {
-  float: right;
-  width: 347px;
-  height: 100%;
+  border-top-right-radius: 38px;
+  border-bottom-right-radius: 38px;
   background: url("../../Assets/images/Rectangle 35.svg");
 }
 body {
@@ -51,13 +42,11 @@ body {
   font-family: "yekan_bakh";
   src: url("../../Assets/fonts/YekanBakh_Bold.ttf") format("truetype");
 }
-.name {
+#name {
   color: #704ed4;
   font-size: 30px;
   font-family: "yek";
-  position: relative;
-  left: 55.7px;
-  top: 8px;
+
 }
 .editprof {
   top: -22px;
@@ -68,9 +57,7 @@ body {
   font-family: "yekan_bakh";
   font-size: 17px;
   color: #704ed4;
-  position: absolute;
-  top: 7px;
-  left: 9px;
+ 
 }
 #panel_menu {
   width: 260px;
@@ -79,7 +66,7 @@ body {
   left: 61px;
   top: 36px;
 }
-#panel_menu li {
+ .menu {
   width: 89%;
   height: 83px;
   border-radius: 14px;
@@ -498,6 +485,9 @@ body {
   }
 }
 @media only screen and (max-width: 375px) {
+  #user_inf{
+    visibility: hidden !important;
+  }
   #menu {
     visibility: hidden;
   }
@@ -582,17 +572,12 @@ body {
     visibility: visible;
     top: -87px;
   }
-  .name {
+  #name {
     font-size: 30px;
-    left: 18.7px;
-    bottom: 27px;
-    color: #989898;
   }
   #id {
     font-size: 17px;
-    top: -7px;
     color: #989898;
-    left: -9px;
   }
   #bell {
     visibility: hidden;

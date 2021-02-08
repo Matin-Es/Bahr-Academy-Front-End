@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "../UserCourses/css/Courses.css";
 
 //styles
 import classNamees from "../css/dash.module.css";
