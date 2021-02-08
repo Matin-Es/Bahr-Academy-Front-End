@@ -9,7 +9,7 @@ import { useLocation } from "react-router-dom";
 
 let CheckUrlHandler = () => {
   const location = useLocation();
-  if (location.pathname == "/My-account") {
+  if (location.pathname == "/my-account") {
     let Editprof = <Editprofile/>
     return Editprof;
   } else if (location.pathname == "/Mycourses") {

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+import './login.css'
 import '../../Authorization/Login/css/login.module.css'
 class Shapes extends Component {
   state = {};
