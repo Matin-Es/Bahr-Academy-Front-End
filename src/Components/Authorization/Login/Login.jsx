@@ -49,7 +49,7 @@ class Login extends Component {
 
           <div className={classes.dropItemss}>
             {" "}
-            <img src={require("../../../Assets/images/Work.svg").default} alt="" className="nahyeKarbari" />
+            <img src={require("../../../Assets/images/Work.svg").default} alt="" className={classes.nahyeKarbari} />
             ناحیه کاربری
           </div>
         </div>
