@@ -2,18 +2,18 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: url("../../img/Group 230.svg") no-repeat 50% 9%;
+    background: url("../../../../Assets/images/Group\ 230.svg") no-repeat 50% 9%;
     background-size: 112%;
 }
 
 @font-face {
     font-family: 'yek';
-    src: url('../../fonts/yek.ttf') format('truetype');
+    src: url('../../../../Assets/fonts/yek.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'yekan_bakh';
-    src: url('../../fonts/YekanBakh_Bold.ttf') format('truetype');
+    src: url('../../../../Assets/fonts/YekanBakh_Bold.ttf') format('truetype');
 }
 
 
@@ -51,7 +51,7 @@ body {
 
 .shape1_holder {
     /* border: 1px solid red; */
-    background: url("../../img/Group 229.svg")no-repeat 0% 0%;
+    background: url("../../../../Assets/images/Path 62.svg")no-repeat 0% 0%;
     background-size: 606px;
     position: absolute;
     top: -20px;
@@ -62,7 +62,7 @@ body {
 
 .shape2_holder {
     /* border: 1px solid red; */
-    background: url("../../img/Path 62.svg")no-repeat 0% 0%;
+    background: url("../../../../Assets/images/Path 62.svg")no-repeat 0% 0%;
     background-size: 400px;
     position: absolute;
     bottom: 0px;
@@ -104,7 +104,7 @@ body {
 
 .userNameInputHolder2 {
     border-radius: 15px;
-    background: url(../../img/Profilee.svg) 4% no-repeat #E9E9E9;
+    background: url("../../../../Assets/images/Profilee.svg") 4% no-repeat #E9E9E9;
     background-size: 15px;
     width: 356px;
     direction: ltr;
@@ -157,7 +157,7 @@ input::placeholder {
 
 .passWordInputHolder2 {
     border-radius: 15px;
-    background: url(../../img/Profilee.svg) 4% no-repeat #E9E9E9;
+    background: url("../../../../Assets/images/Profilee.svg") 4% no-repeat #E9E9E9;
     background-size: 15px;
     width: 356px;
     direction: ltr;
@@ -243,6 +243,9 @@ ul {
     height: 110px;
     display: inline-block;
     margin-top: -20px;
+    position: relative;
+    left: 472px;
+    top:10px;
 }
 
 .menu-tab li {
@@ -283,7 +286,7 @@ ul {
 }
 
 #search-box {
-    background: url(../../img/Iconly-Light-Search.svg) no-repeat 9px 10px;
+    background: url("../../../../Assets/images/Iconly-Light-Search.svg") no-repeat 9px 10px;
     background-color: #7D74E2;
     font-family: yek;
     font-size: 20px;
@@ -295,13 +298,13 @@ ul {
     height: 50px;
     float: left;
     transition: .5s;
+    text-align: right;
+    padding-right: 21px;
+    padding-left: 21px;
     position: relative;
     float: left;
     text-indent: 25px;
     margin-top: 5px;
-    text-align: right;
-    padding-right: 21px;
-    padding-left: 21px;
     cursor: pointer;
 }
 
@@ -313,7 +316,7 @@ ul {
 }
 
 #user {
-    background: url(../../img/Iconly-Light-Profile.svg) no-repeat 8px 8px;
+    background: url("../../../../Assets/images/Iconly-Light-Profile.svg") no-repeat 8px 8px;
     background-color: #7D74E2;
     width: 50px;
     height: 50px;
@@ -330,8 +333,8 @@ ul {
     font-size: 25px;
     position: absolute;
     line-height: 10px;
-    top: 150px;
-    right: 249px;
+    top: 198px;
+    right: 272px;
     width: 242px;
 }
 
@@ -366,7 +369,7 @@ ul {
     /* border: 1px solid red; */
     position: relative;
     top: 7px;
-    background: url("../../img/Iconly-Bold-Tick Square.svg");
+    background: url("../../../../Assets/images/Iconly-Bold-Tick Square.svg");
     background-size: 15px;
 }
 
@@ -417,7 +420,7 @@ ul {
 }
 
 .pwRegister {
-    background: url(../../img/lockk.svg) 3% no-repeat #E9E9E9;
+    background: url("../../../../Assets/images/lockk.svg") 3% no-repeat #E9E9E9;
     background-size: 18px;
 }
 
@@ -445,7 +448,7 @@ input:focus {
     height: 41px;
     display: inline-block;
     float: right;
-    background: url("../../img/Group 223.svg")no-repeat 50%;
+    background: url("../../../../Assets/images/Group 223.svg")no-repeat 50%;
     background-size: 23px;
 }
 
@@ -455,12 +458,12 @@ input:focus {
     height: 41px;
     display: inline-block;
     float: right;
-    background: url("../../img/Group 223.svg")no-repeat 50%;
+    background: url("../../../../Assets/images/Group 223.svg")no-repeat 50%;
     background-size: 23px;
 }
 
 .hidepass {
-    background: url("../../img/Iconly-Bold-Show.svg")no-repeat 50%;
+    background: url("../../../../Assets/images/Iconly-Bold-Show.svg")no-repeat 50%;
     width: 36px;
     height: 41px;
     display: inline-block;
@@ -469,7 +472,7 @@ input:focus {
 }
 
 .hidepass2 {
-    background: url("../../img/Iconly-Bold-Show.svg")no-repeat 50%;
+    background: url("../../../../Assets/images/Iconly-Bold-Show.svg")no-repeat 50%;
     width: 36px;
     height: 41px;
     display: inline-block;
@@ -503,7 +506,7 @@ input:focus {
 .purse{
     float: left;
     margin-left: 50px;
-    background: url("../../img/Group\ 68.svg") no-repeat;
+    background: url("../../../../Assets/images/Group\ 68.svg") no-repeat;
     background-size: 30px;
 }
 .bahr{
@@ -517,7 +520,7 @@ input:focus {
 .header_button{
     float: right;
     margin-right: 50px;
-    background: url("../../img/Category.svg") no-repeat;
+    background: url("../../../../Assets/images/Category.svg") no-repeat;
     background-size: 30px;
 }
 .drop_down{
@@ -532,7 +535,7 @@ input:focus {
     display: none;
 }
 .back{
-    background: url("../../img/Iconly-Bold-Arrow\ -\ Left\ Circle.svg") no-repeat;
+    background: url("../../../../Assets/images/Iconly-Bold-Arrow\ -\ Left\ Circle.svg") no-repeat;
     background-size: 40px;
     width: 40px;
     height: 40px;
