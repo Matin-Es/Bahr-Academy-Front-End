@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
 //styles
 import Classes from "../css/dash.module.css";
@@ -17,50 +18,33 @@ class Editprofile extends Component {
   render() {
     return (
       <React.Fragment>
-        <Shapes />
-        <div id={Clas.panel_holder}>
-          <Rightside />
-          <ProfileDetail />
-          <div className={Classes.down}>
-            <p className={Classes.title}>ویرایش اطلاعات</p>
-            <div className={Classes.inputs_holder}>
-              <div className={Classes.item}>
-                <p>نام</p>
-                <input className={Classes.fname} value="sara" type="text" />
-              </div>
-
-              <div className={Classes.item}>
-                <p>نام خانوادگی</p>
-                <input className={Classes.lname} value="بزرگوار" type="text" />
-              </div>
-
-              <div className={Classes.item}>
-                <p>ایمیل</p>
-                <input className={Classes.email} value="ایمیل" type="text" />
-              </div>
-
-              <div className={Classes.item}>
-                <p>تاریخ تولد</p>
-                <input
-                  className={Classes.birthdate}
-                  value="تاریخ تولد"
-                  type="text"
-                />
-              </div>
-            </div>
-            <div className={Classes.button_holder}>
-              <input className={Classes.cansel} type="button" />
-              <div>
-                <input
-                  className={Classes.sub}
-                  value="ثبت تغییرات"
-                  type="submit"
-                />
-                <img className={Classes.true} src={Imgsub} />
-              </div>
-            </div>
-          </div>
+        <div className="col-lg-6">
+          <MDBCol md="4">
+            <MDBView>
+              <img
+                src="https://mdbootstrap.com/img/Others/documentation/forest-sm-mini.jpg"
+                className="img-fluid"
+                alt=""
+              />
+              <MDBMask className="flex-center" overlay="teal-light">
+                <p className="white-text">light overlay</p>
+              </MDBMask>
+            </MDBView>
+          </MDBCol>
+          <MDBCol md="4">
+            <MDBView waves>
+              <img
+                src="https://mdbootstrap.com/img/Others/documentation/forest-sm-mini.jpg"
+                className="img-fluid"
+                alt=""
+              />
+              <MDBMask className="flex-center" overlay="teal-strong">
+                <p className="white-text">strong overlay</p>
+              </MDBMask>
+            </MDBView>
+          </MDBCol>
         </div>
+        <div className="col-lg-6"></div>
       </React.Fragment>
     );
   }
