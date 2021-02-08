@@ -76,7 +76,7 @@ body {
     /* border: 1px solid red; */
     background: #ffffff;
     width: 465px;
-    height: auto;
+    height: 560px;
     border-radius: 28px;
     transform: translateX(50%) translateY(-50%);
     position: absolute;
@@ -94,6 +94,8 @@ body {
     font-family: 'yek';
     padding-right: 70px;
     color: #707070;
+    position: relative;
+    top: -30px;
 }
 
 .userNameInputHolder1 {
@@ -147,6 +149,8 @@ input::placeholder {
     padding-right: 70px;
     color: #707070;
     display: block;
+    position: relative;
+    left: 170px;
 }
 
 .passWordInputHolder1 {
@@ -194,24 +198,27 @@ input::placeholder {
 
 .section1 {
     /* border: 1px solid red; */
+    position: relative;
+    bottom: -85px;
 }
+
 
 .section2 {
     /* border: 1px solid red; */
     position: relative;
-    bottom: 13px;
+    bottom: -90px;
 }
 
 .section3 {
     /* border: 1px solid red; */
     position: relative;
-    bottom: 13px;
+    bottom: -95px;
 }
 
 .section4 {
     /* border: 1px solid red; */
     position: relative;
-    bottom: 13px;
+    bottom: -100px;
 }
 
 #menu {
@@ -342,8 +349,21 @@ ul {
     /* border: 1px solid red; */
     padding-right: 65px;
     position: relative;
-    bottom: 26px;
+    
+    
+    
+    
 }
+.forgetPass>input {
+position: relative;
+bottom: -102px;
+    left: 225px;
+    
+    
+    
+}
+
+
 
 .forgetPass>p {
     /* border: 1px solid red; */
@@ -352,6 +372,11 @@ ul {
     font-family: 'yek';
     font-size: 18px;
     display: inline-block;
+    position: relative;
+    left: 200px;
+    bottom: -80px;
+    left: 130px;
+    bottom: -75px;
 }
 
 .forgetPass>a {
@@ -404,13 +429,15 @@ ul {
     font-weight: 900;
     color: #665AEE;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 .buttons_holder {
     /* border: 1px solid red; */
     position: relative;
-    bottom: 18px;
+    bottom: -100px;
     padding-right: 141px;
+    left: 67px;
 }
 
 .formInnerHolder {
