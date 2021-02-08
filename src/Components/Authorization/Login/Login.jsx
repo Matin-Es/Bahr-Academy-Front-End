@@ -93,7 +93,7 @@ class Login extends Component {
 
             <div className={classes.forgetPass}>
               <div className={classes.exclamation}></div>
-              <a href="forgetpass.html">رمزم رو فراموش کردم!</a>
+              <Link to="/Forgetpass">رمزم رو فراموش کردم!</Link>
             </div>
             <div className={classes["buttons_holder"]}>
               <div className={classes.signin}>ورود</div>
