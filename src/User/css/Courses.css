@@ -3,7 +3,8 @@
   border-radius: 38px;
 }
 #right {
-  background: url("../../Assets/images/Rectangle 35.svg");
+  background: rgb(0,212,255);
+  background: linear-gradient(0deg, rgba(0,212,255,1) 5%, rgba(107,88,219,1) 95%);
 }
 body {
   overflow-y: visible !important; /* Hide vertical scrollbar */

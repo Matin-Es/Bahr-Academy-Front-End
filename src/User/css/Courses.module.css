@@ -7,7 +7,8 @@
 #right {
   border-top-right-radius: 38px;
   border-bottom-right-radius: 38px;
-  background: url("../../Assets/images/Rectangle 35.svg");
+  background: rgb(107,88,219);
+  background: linear-gradient(196deg, rgba(107,88,219,0.29) 0%, rgba(23,151,236,0.29) 100%);
 }
 body {
   overflow-y: visible !important; /* Hide vertical scrollbar */
@@ -505,13 +506,10 @@ body {
     left: 20px;
     left: 0;
   }
-  #panel_holder {
-    width: 100%;
-    left: 0;
-    height: 100%;
-    top: 397px;
-    border-radius: 0;
+  .inputp{
+    margin-right: auto !important;
   }
+
   .items {
     width: 165px;
     height: 160px;

@@ -93,7 +93,7 @@ class Editprofile extends Component {
                     فیلد نام خانوادگی را پر کنید
                   </div>
                   <div className="invalid-feedback font">
-                    فیلد  نام خانوادگی تولد را پر کنید
+                    فیلد نام خانوادگی تولد را پر کنید
                   </div>{" "}
                 </MDBCol>
               </MDBRow>
@@ -143,18 +143,16 @@ class Editprofile extends Component {
                   <div className="valid-feedback"></div>
                 </MDBCol>
               </MDBRow>
-              <div className="row">
-                <div className="col-3">
-                  <button className="btn" type="submit">
-                    ثبت تغییرات
-                  </button>
-                </div>
-                <div className="col-3">
-                  <button className="btn" type="submit">
-                    لغو
-                    {/* <MDBIcon far icon="window-close" /> */}
-                  </button>
-                </div>
+              <div className="s">
+                <MDBBtn outline color="secondary" className="btn-md font bigg">
+                  لغو
+                  <MDBIcon far icon="window-close" className="pr-1"/>
+
+                </MDBBtn>
+                <MDBBtn gradient="purple" className="btn-md font bigg">
+                  ثبت تغییرات
+                  <MDBIcon far icon="check-square" className="pr-1" />
+                </MDBBtn>
               </div>
             </form>
           </div>
