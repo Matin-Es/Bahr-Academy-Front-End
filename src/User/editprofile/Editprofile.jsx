@@ -18,33 +18,9 @@ class Editprofile extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="col-lg-6">
-          <MDBCol md="4">
-            <MDBView>
-              <img
-                src="https://mdbootstrap.com/img/Others/documentation/forest-sm-mini.jpg"
-                className="img-fluid"
-                alt=""
-              />
-              <MDBMask className="flex-center" overlay="teal-light">
-                <p className="white-text">light overlay</p>
-              </MDBMask>
-            </MDBView>
-          </MDBCol>
-          <MDBCol md="4">
-            <MDBView waves>
-              <img
-                src="https://mdbootstrap.com/img/Others/documentation/forest-sm-mini.jpg"
-                className="img-fluid"
-                alt=""
-              />
-              <MDBMask className="flex-center" overlay="teal-strong">
-                <p className="white-text">strong overlay</p>
-              </MDBMask>
-            </MDBView>
-          </MDBCol>
-        </div>
-        <div className="col-lg-6"></div>
+        <div className="col-lg-12"></div>
+        
+        <div className="col-lg-12"></div>
       </React.Fragment>
     );
   }
