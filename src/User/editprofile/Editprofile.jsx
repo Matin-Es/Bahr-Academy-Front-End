@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { MDBRow, MDBCol, MDBBtn } from "mdbreact";
+import { MDBRow, MDBCol, MDBBtn , MDBIcon} from "mdbreact";
 
 //styles
 import "../css/Courses.css";
@@ -55,7 +55,7 @@ class Editprofile extends Component {
                 <MDBCol md="6" className="mb-3">
                   <label
                     htmlFor="defaultFormRegisterNameEx"
-                    className="grey-text"
+                    className="grey-text inputp"
                   >
                     نام
                   </label>
@@ -75,9 +75,9 @@ class Editprofile extends Component {
                 <MDBCol md="6" className="mb-3">
                   <label
                     htmlFor="defaultFormRegisterNameEx"
-                    className="grey-text"
+                    className="grey-text inputp"
                   >
-                    نام
+                    نام خانوادگی
                   </label>
                   <input
                     value=""
@@ -86,10 +86,10 @@ class Editprofile extends Component {
                     type="text"
                     id="defaultFormRegisterNameEx"
                     className="form-control changeinput"
-                    placeholder="نام"
+                    placeholder="نام خانوادگی"
                     required
                   />
-                  <div className="invalid-feedback"></div>
+                  <div className="invalid-feedback">فیلد نام خانوادگی را پر کنید</div>
                   <div className="valid-feedback"></div>
                 </MDBCol>
               </MDBRow>
@@ -97,7 +97,7 @@ class Editprofile extends Component {
                 <MDBCol md="6" className="mb-3">
                   <label
                     htmlFor="defaultFormRegisterPasswordEx4"
-                    className="grey-text"
+                    className="grey-text inputp"
                   >
                     ایمیل
                   </label>
@@ -117,9 +117,9 @@ class Editprofile extends Component {
                 <MDBCol md="6" className="mb-3 ">
                   <label
                     htmlFor="defaultFormRegisterPasswordEx4"
-                    className="grey-text"
+                    className="grey-text inputp"
                   >
-                    ایمیل
+                    تاریخ تولد
                   </label>
                   <input
                     value=""
@@ -128,22 +128,23 @@ class Editprofile extends Component {
                     id="defaultFormRegisterPasswordEx4"
                     className="form-control changeinput"
                     name="ایمیل"
-                    placeholder="ایمیل شما"
+                    placeholder="تاریخ تولد شما"
                     required
                   />
-                  <div className="invalid-feedback font">فیلد ایمیل را پر کنید</div>
+                  <div className="invalid-feedback font">فیلد تاریخ تولد را پر کنید</div>
                   <div className="valid-feedback"></div>
                 </MDBCol>
               </MDBRow>
               <div className="row">
                 <div className="col-3">
                   <button className="btn" type="submit">
-                    Submit Form
+                    ثبت تغییرات
                   </button>
                 </div>
                 <div className="col-3">
                   <button className="btn" type="submit">
-                    Submit Form
+                    لغو
+                    <MDBIcon far icon="window-close" />
                   </button>
                 </div>
               </div>
