@@ -1,28 +1,23 @@
 import React, { Component } from "react";
+import { MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem } from "mdbreact";
 
-import Classes from '../css/Courses.module.css'
-import '../css/dash.module.css'
+//css
+import Classes from "../css/Courses.module.css";
 
-import editimg from '../../Assets/images/edit.svg'
+import '../css/Courses.css'
+//
+import ProfileDetails from "../ProfileDetail/Profile";
+import editimg from "../../Assets/images/edit.svg";
 class Rightside extends Component {
   render() {
     return (
       <React.Fragment>
-         <div id={Classes.right}>
-            <div id={Classes.user_inf}>
-                <img className={Classes.imgprof}/>
-                <div id={Classes.user_name}>
-                    <p className={Classes.name}>آرالما</p>
-                    <p id={Classes.id}>@aralema</p>
-                </div>
-                <img className={Classes.editprof} src={editimg}/>
-            </div>
-            <ul id={Classes.panel_menu}>
-                <li className={`${Classes.menu} ${Classes.my_cour}`}>دوره های من</li>
-                <li className={`${Classes.menu} ${Classes.singup}`}>ثبت نام دوره ها</li>
-                <li className={`${Classes.menu} ${Classes.edit} `}>ویرایش پروفایل</li>
-                <li className={`${Classes.menu} ${Classes.leave}`}>خروج</li>
-            </ul>
+        <ProfileDetails />
+        <div className="btn-group-vertical btgg"  role="group" aria-label="Vertical button group">
+          <button type="button " className="btn btnmenus mb-4 my_cour">دوره های من</button>
+          <button type="button" className="btn btnmenus mb-4 singup">ثبت نام دوره ها</button>
+          <button type="button" className="btn btnmenus mb-4 edit">ویرایش پروفایل</button>
+          <button type="button" className="btn btnmenus mb-4 leave">خروج</button>
         </div>
       </React.Fragment>
     );
