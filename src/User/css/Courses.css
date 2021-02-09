@@ -3,8 +3,12 @@
   border-radius: 38px;
 }
 #right {
-  background: rgb(0,212,255);
-  background: linear-gradient(0deg, rgba(0,212,255,1) 5%, rgba(107,88,219,1) 95%);
+  background: rgb(0, 212, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 212, 255, 1) 5%,
+    rgba(107, 88, 219, 1) 95%
+  );
 }
 body {
   overflow-y: visible !important; /* Hide vertical scrollbar */
@@ -490,12 +494,40 @@ body {
     width: 35px;
   }
 }
+@media only screen and (max-width: 1398px) {
+  .btgg {
+    width: 15rem;
+  }
+  .my_cour {
+    background-position: 192px 24px !important;
+  }
+  .singup {
+    background-position: 192px 24px !important;
+  }
+  .edit {
+    background-position: 192px 24px !important;
+  }
+  .leave {
+    background-position: 192px 24px !important;
+  }
+  #name {
+    color: #704ed4;
+    font-size: 24px;
+    font-family: "yek";
+  }
+  #id {
+    font-size: 14px;
+  }
+}
 @media only screen and (max-width: 375px) {
   #user_inf {
     visibility: hidden !important;
   }
   #menu {
     visibility: hidden;
+  }
+  .imgheight {
+    height: 180px !important;
   }
   #search-holder {
     visibility: hidden;
@@ -632,7 +664,7 @@ body {
   border-radius: 15px !important;
   font-size: 26px !important;
   font-family: "yek" !important;
-  direction: rtl !important; 
+  direction: rtl !important;
   text-align: right !important;
   color: #b2b2b2 !important;
 }

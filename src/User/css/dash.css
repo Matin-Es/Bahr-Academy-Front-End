@@ -322,6 +322,11 @@ body {
   }
   .getimg {
     background-size: 128px;
+      background-size: 128px;
+      background-position: 38px 41px;
+  }
+  body{
+    background: none !important;
   }
   .editimg {
     left: 269px;

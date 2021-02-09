@@ -2,13 +2,17 @@
   background-color: white;
   position: relative;
   margin-top: 9rem !important;
-  border-radius:38px ;
+  border-radius: 38px;
 }
 #right {
   border-top-right-radius: 38px;
   border-bottom-right-radius: 38px;
-  background: rgb(107,88,219);
-  background: linear-gradient(196deg, rgba(107,88,219,0.29) 0%, rgba(23,151,236,0.29) 100%);
+  background: rgb(107, 88, 219);
+  background: linear-gradient(
+    196deg,
+    rgba(107, 88, 219, 0.29) 0%,
+    rgba(23, 151, 236, 0.29) 100%
+  );
 }
 body {
   overflow-y: visible !important; /* Hide vertical scrollbar */
@@ -48,7 +52,6 @@ body {
   color: #704ed4;
   font-size: 30px;
   font-family: "yek";
-
 }
 .editprof {
   top: -22px;
@@ -59,7 +62,6 @@ body {
   font-family: "yekan_bakh";
   font-size: 17px;
   color: #704ed4;
- 
 }
 #panel_menu {
   width: 260px;
@@ -68,7 +70,7 @@ body {
   left: 61px;
   top: 36px;
 }
- .menu {
+.menu {
   width: 89%;
   height: 83px;
   border-radius: 14px;
@@ -359,6 +361,9 @@ body {
     top: 18px;
     left: 20px;
   }
+  #right{
+    display: none;
+  }
   #next {
     position: relative;
     bottom: 57px;
@@ -487,8 +492,11 @@ body {
   }
 }
 @media only screen and (max-width: 375px) {
-  #user_inf{
+  #user_inf {
     visibility: hidden !important;
+  }
+  .bg-image {
+    height: 244px;
   }
   #menu {
     visibility: hidden;
@@ -496,8 +504,10 @@ body {
   #search-holder {
     visibility: hidden;
   }
+  
   #right {
     visibility: hidden;
+    display: none;
   }
   #courses_holder {
     width: 100%;
@@ -506,7 +516,7 @@ body {
     left: 20px;
     left: 0;
   }
-  .inputp{
+  .inputp {
     margin-right: auto !important;
   }
 
