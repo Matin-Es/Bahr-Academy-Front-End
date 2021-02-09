@@ -8,12 +8,14 @@ import Clas from "../css/Courses.module.css";
 import Rightside from "../rightSide/Rightside";
 import ProfileDetail from "../ProfileDetail/Profile";
 import Shapes from "../../Components/Landing/shapes/shapes";
+import Header from "../../Components/Header/Header";
 
 class UserCourses extends Component {
   render() {
     return (
       <React.Fragment>
         <Shapes />
+        <Header/>
         <div id={Clas.panel_holder}>
           <Rightside />
           <div className="all-courses-holder">

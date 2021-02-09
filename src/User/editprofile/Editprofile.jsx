@@ -18,9 +18,11 @@ class Editprofile extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="col-lg-12"></div>
-        
-        <div className="col-lg-12"></div>
+        <div className="row">
+          <div className="col-lg-12"></div>
+
+          <div className="col-lg-12"></div>
+        </div>
       </React.Fragment>
     );
   }
