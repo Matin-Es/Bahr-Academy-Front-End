@@ -1,6 +1,7 @@
 #panel_holder {
   background-color: white;
   position: relative;
+  margin-top: 9rem !important;
   border-radius:38px ;
 }
 #right {

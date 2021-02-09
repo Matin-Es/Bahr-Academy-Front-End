@@ -1,9 +1,8 @@
 #panel_holder {
   background-color: white;
-  border-radius:38px ;
+  border-radius: 38px;
 }
 #right {
-
   background: url("../../Assets/images/Rectangle 35.svg");
 }
 body {
@@ -45,7 +44,6 @@ body {
   font-size: 30px;
   font-family: "yek";
   position: relative;
-  
 }
 .editprof {
   top: -22px;
@@ -64,7 +62,7 @@ body {
   left: 61px;
   top: 36px;
 }
- .menu {
+.menu {
   width: 89%;
   height: 83px;
   border-radius: 14px;
@@ -78,26 +76,23 @@ body {
   position: relative;
   margin-bottom: 25px;
 }
-.btnmenus{
+.btnmenus {
   background-color: #ffffff !important;
   height: 4.3125rem;
   border-radius: 14px !important;
   font-size: 25px !important;
   font-family: "yek";
 }
-.btgg{
+.btgg {
   background: none !important;
   width: 18.25rem;
   box-shadow: none !important;
-
-  
 }
 .my_cour {
   background: white;
   background-image: url("../../Assets/images/Iconly-Bold-Play.svg");
   background-repeat: no-repeat;
   background-position: 250px 25px;
-
 }
 .singup {
   background: white;
@@ -495,7 +490,7 @@ body {
   }
 }
 @media only screen and (max-width: 375px) {
-  #user_inf{
+  #user_inf {
     visibility: hidden !important;
   }
   #menu {
@@ -623,7 +618,20 @@ body {
     bottom: 380px;
   }
 }
-.profholder{
+.profholder {
   height: 2.4375rem !important;
   border-radius: 14px !important;
+}
+.blackbge {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  border-top-left-radius: 36px;
+}
+.changeinput {
+  background: #e9e9e9 !important;
+  border-radius: 15px !important;
+  font-size: 26px !important;
+  font-family: "yek" !important;
+  direction: rtl !important; 
+  text-align: right !important;
+  color: #b2b2b2 !important;
 }

@@ -4,14 +4,17 @@ import Rightside from "../rightSide/Rightside";
 import Leftside from "../Leftside/leftside";
 import "../css/dash.module.css";
 import Classes from "../css/Courses.module.css";
-import Shape from "../../Components/Landing/shapes/shapes";
 import Header from "../../Components/Header/Header";
+
+import classes from "../../Components/Authorization/Login/css/login.module.css";
 class Panel extends Component {
   render() {
     return (
       <React.Fragment>
-        <Shape />
-        <Header/>
+        <div className={classes.shape1_holder}></div>
+
+        <div className={classes.shape2_holder}></div>
+        <Header />
         <div className="container mt-5 bg-white" id={Classes.panel_holder}>
           <div className="row">
             <div className="col-lg-9">

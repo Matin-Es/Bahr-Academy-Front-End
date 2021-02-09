@@ -1,27 +1,154 @@
 import React, { Component } from "react";
-import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import { MDBRow, MDBCol, MDBBtn } from "mdbreact";
 
 //styles
-import Classes from "../css/dash.module.css";
-import Clas from "../css/Courses.module.css";
-
-//files
-import Rightside from "../rightSide/Rightside";
-import ProfileDetail from "../ProfileDetail/Profile";
-import Shapes from "../../Components/Landing/shapes/shapes";
-import Header from "../../Components/Navbar/Header";
-
+import "../css/Courses.css";
+import "../css/dash.css";
 //images
-import Imgsub from "../../Assets/images/Iconly-Light-Tick Square.svg";
 class Editprofile extends Component {
-  state = {};
+  state = {
+    fname: "",
+    lname: "",
+    email: "",
+    city: "",
+    state: "",
+    zip: "",
+  };
+  submitHandler = (event) => {
+    event.preventDefault();
+    event.target.className += " was-validated";
+  };
+
+  changeHandler = (event) => {
+    this.setState({ [event.target.name]: event.target.value });
+  };
   render() {
     return (
       <React.Fragment>
         <div className="row">
-          <div className="col-lg-12"></div>
+          <div className="col-lg-12 px-0">
+            <div className="bg-image">
+              <img
+                src={
+                  require("../../Assets/images/woman-holding-her-head-3280131@2x.png")
+                    .default
+                }
+                className="img-fluid"
+                alt="Sample"
+              />
+              <div className="mask blackbge">
+                <div className="d-flex justify-content-center align-items-center h-100">
+                  <input id="chngeimg" type="file" />
+                  <label className="getimg" htmlFor="chngeimg"></label>
+                </div>
+              </div>
+            </div>
+          </div>
 
-          <div className="col-lg-12"></div>
+          <div className="col-lg-12 mt-4 w-75 mx-auto rtl">
+            <form
+              className="needs-validation"
+              onSubmit={this.submitHandler}
+              noValidate
+            >
+              <MDBRow>
+                <MDBCol md="6" className="mb-3">
+                  <label
+                    htmlFor="defaultFormRegisterNameEx"
+                    className="grey-text"
+                  >
+                    نام
+                  </label>
+                  <input
+                    value=""
+                    name="fname"
+                    onChange={this.changeHandler}
+                    type="text"
+                    id="defaultFormRegisterNameEx"
+                    className="form-control changeinput"
+                    placeholder="نام"
+                    required
+                  />
+                  <div className="invalid-feedback"></div>
+                  <div className="valid-feedback"></div>
+                </MDBCol>
+                <MDBCol md="6" className="mb-3">
+                  <label
+                    htmlFor="defaultFormRegisterNameEx"
+                    className="grey-text"
+                  >
+                    نام
+                  </label>
+                  <input
+                    value=""
+                    name="fname"
+                    onChange={this.changeHandler}
+                    type="text"
+                    id="defaultFormRegisterNameEx"
+                    className="form-control changeinput"
+                    placeholder="نام"
+                    required
+                  />
+                  <div className="invalid-feedback"></div>
+                  <div className="valid-feedback"></div>
+                </MDBCol>
+              </MDBRow>
+              <MDBRow>
+                <MDBCol md="6" className="mb-3">
+                  <label
+                    htmlFor="defaultFormRegisterPasswordEx4"
+                    className="grey-text"
+                  >
+                    ایمیل
+                  </label>
+                  <input
+                    value=""
+                    onChange={this.changeHandler}
+                    type="text"
+                    id="defaultFormRegisterPasswordEx4"
+                    className="form-control changeinput"
+                    name="city"
+                    placeholder="ایمیل شما"
+                    required
+                  />
+                  <div className="invalid-feedback"></div>
+                  <div className="valid-feedback"></div>
+                </MDBCol>
+                <MDBCol md="6" className="mb-3 ">
+                  <label
+                    htmlFor="defaultFormRegisterPasswordEx4"
+                    className="grey-text"
+                  >
+                    ایمیل
+                  </label>
+                  <input
+                    value=""
+                    onChange={this.changeHandler}
+                    type="text"
+                    id="defaultFormRegisterPasswordEx4"
+                    className="form-control changeinput"
+                    name="ایمیل"
+                    placeholder="ایمیل شما"
+                    required
+                  />
+                  <div className="invalid-feedback font">فیلد ایمیل را پر کنید</div>
+                  <div className="valid-feedback"></div>
+                </MDBCol>
+              </MDBRow>
+              <div className="row">
+                <div className="col-3">
+                  <button className="btn" type="submit">
+                    Submit Form
+                  </button>
+                </div>
+                <div className="col-3">
+                  <button className="btn" type="submit">
+                    Submit Form
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </React.Fragment>
     );

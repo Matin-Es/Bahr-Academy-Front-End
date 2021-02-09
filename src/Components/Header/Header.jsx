@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import classes from "../Authorization/Login/css/login.module.css";
 class Header extends Component {
   state = {};
   render() {
@@ -9,7 +10,7 @@ class Header extends Component {
         <div id={classes.menu}>
           <div className={classes["menu-logo"]}>
             <img
-              src={require("../../../Assets/images/hpgraph-1.svg").default}
+              src={require("../../Assets/images/hpgraph-1.svg").default}
             />
           </div>
           <ul className={classes["menu-tab"]}>
@@ -43,7 +44,7 @@ class Header extends Component {
           <div className={classes.dropItemss}>
             {" "}
             <img
-              src={require("../../../Assets/images/Work.svg").default}
+              src={require("../../Assets/images/Work.svg").default}
               alt=""
               className="nahyeKarbari"
             />
