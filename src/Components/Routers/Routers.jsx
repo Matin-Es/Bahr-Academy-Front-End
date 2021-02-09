@@ -17,7 +17,6 @@ import ForgetpassPage from "../Authorization/ForgetPass/Forget";
 //User Zone
 import MyAccount from "../../User/PanelHolder/Panel";
 import MyCourses from "../../User/UserCourses/UserCourses";
-import Panel from '../../User/PanelHolder/Panel'
 //
 import AdminDash from "../../Admin-Area/MainPage/Admindashboard";
 import AdminAllCourses from "../../Admin-Area/CourseAdmin/AllCourses/AllCourses";

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { MDBRow, MDBCol, MDBBtn , MDBIcon} from "mdbreact";
+import { MDBRow, MDBCol, MDBBtn, MDBIcon } from "mdbreact";
 
 //styles
 import "../css/Courses.css";
@@ -89,8 +89,12 @@ class Editprofile extends Component {
                     placeholder="نام خانوادگی"
                     required
                   />
-                  <div className="invalid-feedback">فیلد نام خانوادگی را پر کنید</div>
-                  <div className="valid-feedback"></div>
+                  <div className="invalid-feedback">
+                    فیلد نام خانوادگی را پر کنید
+                  </div>
+                  <div className="invalid-feedback font">
+                    فیلد  نام خانوادگی تولد را پر کنید
+                  </div>{" "}
                 </MDBCol>
               </MDBRow>
               <MDBRow>
@@ -111,7 +115,9 @@ class Editprofile extends Component {
                     placeholder="ایمیل شما"
                     required
                   />
-                  <div className="invalid-feedback"></div>
+                  <div className="invalid-feedback font">
+                    فیلد ایمیل تولد را پر کنید
+                  </div>{" "}
                   <div className="valid-feedback"></div>
                 </MDBCol>
                 <MDBCol md="6" className="mb-3 ">
@@ -131,7 +137,9 @@ class Editprofile extends Component {
                     placeholder="تاریخ تولد شما"
                     required
                   />
-                  <div className="invalid-feedback font">فیلد تاریخ تولد را پر کنید</div>
+                  <div className="invalid-feedback font">
+                    فیلد تاریخ تولد را پر کنید
+                  </div>
                   <div className="valid-feedback"></div>
                 </MDBCol>
               </MDBRow>
@@ -144,7 +152,7 @@ class Editprofile extends Component {
                 <div className="col-3">
                   <button className="btn" type="submit">
                     لغو
-                    <MDBIcon far icon="window-close" />
+                    {/* <MDBIcon far icon="window-close" /> */}
                   </button>
                 </div>
               </div>
