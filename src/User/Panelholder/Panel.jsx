@@ -1,13 +1,7 @@
 import React, { Component } from "react";
 
 import Rightside from "../rightSide/Rightside";
-<<<<<<< HEAD
 import Leftside from "../Leftside/Leftside";
-=======
-import Leftside from "../Leftside/leftside";
-import Header from "../../Components/Header/Header";
-//styles
->>>>>>> fd79528679cae052ed7c14c40b25dee0345948d5
 import "../css/dash.module.css";
 import Classes from "../css/Courses.module.css";
 
@@ -22,7 +16,7 @@ class Panel extends Component {
         <div className={classes.shape1_holder}></div>
 
         <div className={classes.shape2_holder}></div>
-        <Header />
+        
         <div className="container mt-5 bg-white " id={Classes.panel_holder}>
           <div className="row">
             <div className="col-lg-9">
