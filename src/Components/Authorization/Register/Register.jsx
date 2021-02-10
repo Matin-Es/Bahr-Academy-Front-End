@@ -39,7 +39,7 @@ class Register extends Component {
                       id="defaultFormCardNameEx"
                       className="form-control w-75 ml-5 usernameinput px-5"
                     />
-                   
+
                     <p className="h4 text-right usernametext ">ایمیل </p>
 
                     <input
@@ -48,7 +48,7 @@ class Register extends Component {
                       id="defaultFormCardNameEx"
                       className="form-control w-75 ml-5 usernameinput px-5"
                     />
-                   
+
                     <p className="h4 text-right usernametext">رمزعبور</p>
                     <input
                       placeholder="حداقل 8 کاراکتر"
@@ -56,13 +56,13 @@ class Register extends Component {
                       id="defaultFormCardEmailEx"
                       className="form-control w-75 ml-5 passwordinput px-5"
                     />
-                  
+
                     <p className="h4 text-right usernametext">تکرار رمز عبور</p>
                     <input
                       placeholder="حداقل 8 کاراکتر"
                       type="password"
                       id="defaultFormCardEmailEx"
-                      className="form-control w-75 ml-5 passwordinput px-5"
+                      className="form-control w-75 ml-5 mb-4 passwordinput px-5"
                     />
                     <div className="forgetPassR mt-2" dir="rtl">
                       {" "}

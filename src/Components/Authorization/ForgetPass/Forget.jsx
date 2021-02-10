@@ -21,16 +21,14 @@ class ForgetPass extends Component {
 
         <div className={classes.shape2_holder}></div>
 
-      <Header/>
-      <div className="container">
+        <Header />
+        <div className="container">
           <MDBRow>
-            <MDBCol md="6 mx-auto md6">
+            <MDBCol md="6 mx-auto md6F">
               <MDBCard className="roundedform card">
                 <MDBCardBody>
                   <form className="ml-1">
-                    <p className="h4 text-right usernametext ">
-                   ایمیل 
-                    </p>
+                    <p className="h4 text-right usernametext ">ایمیل</p>
 
                     <input
                       placeholder="info@bahr.com"
@@ -38,13 +36,11 @@ class ForgetPass extends Component {
                       id="defaultFormCardNameEx"
                       className="form-control w-75 ml-5 usernameinput px-5 my-3"
                     />
-                   
-                  
+
                     <div className="text-center py-1 mt-1">
                       <MDBBtn rounded outline color=" signUp pl-4">
                         بازیابی رمز
                       </MDBBtn>
-                   
                     </div>
                   </form>
                 </MDBCardBody>

@@ -50,7 +50,7 @@ input::placeholder {
 .signUpR {
   font-size: 20px !important;
   color: white !important;
-  
+
   font-weight: 900 !important;
   width: 7.5rem !important;
   height: 2.7rem !important;
@@ -59,7 +59,6 @@ input::placeholder {
   cursor: pointer !important;
   background: linear-gradient(#5a5bed, #895af4);
   line-height: 8px !important;
-
 }
 .signInR {
   font-size: 20px !important;
@@ -71,7 +70,6 @@ input::placeholder {
   border-radius: 10px !important;
   /* border: 2px solid #665AEE !important; */
   cursor: pointer !important;
-  
 }
 .exclamationR {
   display: inline-block;
@@ -92,8 +90,14 @@ a {
 }
 
 .forgetPassR {
-  position: relative;
-  left: 95px;
+  position: absolute;
+  left: 267px;
+  top: 374px;
   color: #3078f5;
 }
 
+@media only screen and (max-width: 1366px) {
+  .md6R {
+    margin-top: 1rem !important;
+  }
+}
