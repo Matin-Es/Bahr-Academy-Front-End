@@ -27,7 +27,7 @@ class Login extends Component {
         <Header />
         <div className="container">
           <MDBRow>
-            <MDBCol className="mx-auto md6L" md="6">
+            <MDBCol className="md6L" md="6">
               <MDBCard className="roundedform h-100 card">
                 <MDBCardBody>
                   <form className="ml-1">
