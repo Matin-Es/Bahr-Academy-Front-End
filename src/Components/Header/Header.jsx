@@ -56,9 +56,6 @@ class Header extends Component {
 
           <div className={`${classes["header_button"]} ${classes.ith}`}></div>
         </div>
-        <div className={classes["header_text_holder"]}>
-          <div className={classes["header_text"]}>ورود</div>
-        </div>
         {/* <!-- responsive header --> */}
       </React.Fragment>
     );

@@ -4,6 +4,7 @@ import { MDBRow, MDBCol, MDBBtn, MDBIcon } from "mdbreact";
 //styles
 import "../css/Courses.css";
 import "../css/dash.css";
+import "../css/Courses.css";
 //images
 class Editprofile extends Component {
   state = {
@@ -33,7 +34,7 @@ class Editprofile extends Component {
                   require("../../Assets/images/woman-holding-her-head-3280131@2x.png")
                     .default
                 }
-                className="img-fluid"
+                className="img-fluid imgheight"
                 alt="Sample"
               />
               <div className="mask blackbge">
@@ -69,7 +70,9 @@ class Editprofile extends Component {
                     placeholder="نام"
                     required
                   />
-                  <div className="invalid-feedback"></div>
+                  <div className="invalid-feedback font">
+                    فیلد نام را پر کنید
+                  </div>{" "}
                   <div className="valid-feedback"></div>
                 </MDBCol>
                 <MDBCol md="6" className="mb-3">
@@ -92,9 +95,6 @@ class Editprofile extends Component {
                   <div className="invalid-feedback">
                     فیلد نام خانوادگی را پر کنید
                   </div>
-                  <div className="invalid-feedback font">
-                    فیلد  نام خانوادگی تولد را پر کنید
-                  </div>{" "}
                 </MDBCol>
               </MDBRow>
               <MDBRow>
@@ -143,18 +143,19 @@ class Editprofile extends Component {
                   <div className="valid-feedback"></div>
                 </MDBCol>
               </MDBRow>
-              <div className="row">
-                <div className="col-3">
-                  <button className="btn" type="submit">
-                    ثبت تغییرات
-                  </button>
-                </div>
-                <div className="col-3">
-                  <button className="btn" type="submit">
-                    لغو
-                    {/* <MDBIcon far icon="window-close" /> */}
-                  </button>
-                </div>
+              <div className="s">
+                <MDBBtn outline color="secondary" className="btn-md font bigg">
+                  لغو
+                  <MDBIcon far icon="window-close" className="pr-1" />
+                </MDBBtn>
+                <MDBBtn
+                  gradient="purple"
+                  className="btn-md font bigg"
+                  type="submit"
+                >
+                  ثبت تغییرات
+                  <MDBIcon far icon="check-square" className="pr-1" />
+                </MDBBtn>
               </div>
             </form>
           </div>
