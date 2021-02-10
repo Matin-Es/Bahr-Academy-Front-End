@@ -5,7 +5,7 @@ import resclasses from "./css/responsive_log.module.css";
 import { Link } from "react-router-dom";
 import Header from "../../Header/Header";
 import "./css/mdb_log.css";
-import "./css/mdb_res.css"
+import "./css/mdb_res.css";
 import {
   MDBContainer,
   MDBRow,
@@ -25,10 +25,11 @@ class Login extends Component {
         <div className={classes.shape2_holder}></div>
 
         <Header />
+
         <div className="container">
           <MDBRow>
             <MDBCol className="mx-auto md6L" md="6">
-              <MDBCard className="roundedform h-100 card">
+              <MDBCard className="roundedformL h-100 card">
                 <MDBCardBody>
                   <form className="ml-1">
                     <p className="h4 text-right usernametext ">
@@ -41,7 +42,7 @@ class Login extends Component {
                       id="defaultFormCardNameEx"
                       className="form-control w-75 ml-5 usernameinput px-5"
                     />
-                   
+
                     <p className="h4 text-right usernametext">رمزعبور</p>
                     <input
                       placeholder="حداقل 8 کاراکتر"
@@ -53,13 +54,12 @@ class Login extends Component {
                       {" "}
                       <div className="exclamation"></div>
                       <Link to="/Forgetpass">رمزم رو فراموش کردم!</Link>
-                      
                     </div>
                     <div className="text-center py-4 mt-1">
-                    <Link to="/Register">
-                      <MDBBtn rounded outline color=" signUpL pl-4">
-                       ثبت نام
-                      </MDBBtn>
+                      <Link to="/Register">
+                        <MDBBtn rounded outline color=" signUpL pl-4">
+                          ثبت نام
+                        </MDBBtn>
                       </Link>
                       <MDBBtn rounded outline color=" signInL">
                         ورود

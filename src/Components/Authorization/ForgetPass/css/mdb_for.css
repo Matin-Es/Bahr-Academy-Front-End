@@ -8,7 +8,7 @@
   src: url("../../../../Assets/fonts/YekanBakh_Bold.ttf") format("truetype");
 }
 
-.md6 {
+.md6F {
   width: 29.0625rem !important;
   margin-top: 16rem !important;
   font-family: "yek";
@@ -100,4 +100,10 @@ a {
   position: absolute;
   left: 238px;
   top: 190px;
+}
+
+@media only screen and (max-width: 1366px) {
+  .md6F {
+    margin-top: 8rem !important;
+  }
 }
