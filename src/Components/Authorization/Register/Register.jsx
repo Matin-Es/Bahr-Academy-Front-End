@@ -64,7 +64,7 @@ class Register extends Component {
                       id="defaultFormCardEmailEx"
                       className="form-control w-75 ml-5 passwordinput px-5"
                     />
-                    <div className="forgetPass mt-2" dir="rtl">
+                    <div className="forgetPassR mt-2" dir="rtl">
                       {" "}
                       <div className="exclamationR">
                         {" "}

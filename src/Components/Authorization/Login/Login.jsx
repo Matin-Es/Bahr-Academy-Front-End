@@ -48,7 +48,7 @@ class Login extends Component {
                       id="defaultFormCardEmailEx"
                       className="form-control w-75 ml-5 passwordinput px-5"
                     />
-                    <div className="forgetPass mt-2" dir="rtl">
+                    <div className="forgetPassL mt-2" dir="rtl">
                       {" "}
                       <div className="exclamation"></div>
                       <Link to="/Forgetpass">رمزم رو فراموش کردم!</Link>

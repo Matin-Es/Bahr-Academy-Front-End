@@ -97,9 +97,10 @@ a{
     font-size: 18px;
 }
 
-.forgetPass{
+.forgetPassL{
+  
     position: relative;
-    left: 90px;
+    left: 85px;
     top: 10px;
     
 }
