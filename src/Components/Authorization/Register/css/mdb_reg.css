@@ -92,8 +92,10 @@ a {
 }
 
 .forgetPassR {
-  position: relative;
-  left: 95px;
-  color: #3078f5;
+  position: absolute;
+    left: 267px;
+    top: 374px;
+    color:#3078f5
+
 }
 

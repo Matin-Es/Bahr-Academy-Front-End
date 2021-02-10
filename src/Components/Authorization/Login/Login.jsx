@@ -47,7 +47,7 @@ class Login extends Component {
                       placeholder="حداقل 8 کاراکتر"
                       type="password"
                       id="defaultFormCardEmailEx"
-                      className="form-control w-75 ml-5 passwordinput px-5"
+                      className="form-control w-75 ml-5 mb-4 passwordinput px-5"
                     />
                     <div className="forgetPassL mt-2" dir="rtl">
                       {" "}
