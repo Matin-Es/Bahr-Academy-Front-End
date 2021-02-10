@@ -269,34 +269,36 @@ ul {
 }
 
 #search-box {
-  background: url("../../../../Assets/images/Iconly-Light-Search.svg") no-repeat
-    9px 10px;
-  background-color: #7d74e2;
-  font-family: yek;
-  font-size: 20px;
-  color: transparent;
-  border: none;
-  outline: none;
-  border-radius: 50px;
-  width: 50px;
-  height: 50px;
-  float: left;
-  transition: 0.5s;
-  text-align: right;
-  padding-right: 21px;
-  padding-left: 21px;
-  position: relative;
-  float: left;
-  text-indent: 25px;
-  margin-top: 5px;
-  cursor: pointer;
+    background: url("../../../../Assets/images/Iconly-Light-Search.svg") no-repeat 9px 10px;
+    background-color: #7D74E2;
+    font-family: yek;
+    font-size: 20px;
+    color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    transition: .5s;
+    text-align: right;
+    padding-right: 21px;
+    padding-left: 21px;
+    position: relative;
+    float: left;
+    text-indent: 25px;
+    margin-top: 5px;
+    cursor: pointer;
+   
 }
 
+
 #search-box:focus {
-  color: white;
-  transition: 0.5s;
-  width: 315px;
-  cursor: text;
+    color: white;
+    transition: .5s;
+    width: 315px;
+    cursor: text;
+    padding:0 50px 0 50px;
 }
 
 #user {
