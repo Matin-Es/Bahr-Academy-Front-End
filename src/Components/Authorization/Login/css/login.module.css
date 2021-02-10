@@ -291,13 +291,16 @@ ul {
     text-indent: 25px;
     margin-top: 5px;
     cursor: pointer;
+   
 }
+
 
 #search-box:focus {
     color: white;
     transition: .5s;
     width: 315px;
     cursor: text;
+    padding:0 50px 0 50px;
 }
 
 #user {

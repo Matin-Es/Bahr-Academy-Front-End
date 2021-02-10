@@ -2,6 +2,16 @@ import React, { Component } from "react";
 import classes from "./css/register.module.css";
 import { Link } from "react-router-dom";
 import Header from "../../Header/Header";
+import "./css/mdb_reg.css";
+import {
+  MDBContainer,
+  MDBRow,
+  MDBCol,
+  MDBBtn,
+  MDBCard,
+  MDBCardBody,
+  MDBIcon,
+} from "mdbreact";
 
 class Register extends Component {
   render() {
@@ -11,78 +21,73 @@ class Register extends Component {
 
         <div className={classes.shape2_holder}></div>
 
-       <Header/>
+        <Header />
 
-        <div id={classes["form_holder"]}>
-          <div className={classes.formInnerHolder}></div>
-          <div className={classes.section1}>
-            <div className={classes.userNameTextHolder}>
-              <p className={classes.usernametext}>نام و نام خانوادگی</p>
-            </div>
-            <div className={classes.userNameInputHolder1}>
-              <div className={classes.userNameInputHolder2}>
-                <input type="text" placeholder="متین اسماعیلی" />
-              </div>
-            </div>
-          </div>
+        <div className="container">
+          <MDBRow>
+            <MDBCol md="6 mx-auto md6R">
+              <MDBCard className="roundedform h-100 card">
+                <MDBCardBody>
+                  <form className="ml-1">
+                    <p className="h4 text-right usernametext ">
+                      نام و نام خانوادگی{" "}
+                    </p>
 
-          <div className={classes.section2}>
-            <div className={classes.passWordTextHolder}>
-              <p className={classes.passwordtext}>ایمیل</p>
-            </div>
-            <div className={classes.passWordInputHolder1}>
-              <div className={classes.passWordInputHolder2}>
-                <input
-                  className={classes.emailInputInReg}
-                  type="text"
-                  placeholder="info@bahr.com"
-                />
-              </div>
-            </div>
-          </div>
-          <div className={classes.section3}>
-            <div className={classes.passWordTextHolder}>
-              <p className={classes.passwordtext}>رمز عبور</p>
-            </div>
-            <div className={classes.passWordInputHolder1}>
-              <div className={`${classes["passWordInputHolder2"]} ${classes.pwRegister}`}>
-                <div className={classes.showPass1}></div>
-                <input
-                  id={classes.shp1}
-                  type="password"
-                  placeholder="حداقل 8 کاراکتر"
-                />
-              </div>
-            </div>
-          </div>
-          <div className={classes.section4}>
-            <div className={`${classes["passWordTextHolder"]} ${classes.passrepeat}`}>
-              <p className={classes.passwordtext}>تکرار رمز عبور</p>
-            </div>
-            <div className={classes.passWordInputHolder1}>
-              <div className={`${classes["passWordInputHolder2"]} ${classes.pwRegister}`}>                     
-                <div className={classes.showPass2}></div>
-                <input
-                  id={classes.shp2}
-                  type="password"
-                  placeholder="حداقل 8 کاراکتر"
-                />
-              </div>
-            </div>
-          </div>
+                    <input
+                      placeholder="info@bahr.com"
+                      type="text"
+                      id="defaultFormCardNameEx"
+                      className="form-control w-75 ml-5 usernameinput px-5"
+                    />
+                   
+                    <p className="h4 text-right usernametext ">ایمیل </p>
 
-          <div className={classes.forgetPass}>
-            <div className={classes.forgetPass}>
-              <input type="checkbox" />
-            </div>
-            <p>مرا به خاطر بسپار</p>
-          </div>
-          <div className={classes.buttons_holder}>
-            <Link to="/Login">
-              <div className={classes.signin}>ورود</div>
-            </Link>
-            <div className={classes.signup}>ثبت نام</div>
-          </div>
+                    <input
+                      placeholder="info@bahr.com"
+                      type="text"
+                      id="defaultFormCardNameEx"
+                      className="form-control w-75 ml-5 usernameinput px-5"
+                    />
+                   
+                    <p className="h4 text-right usernametext">رمزعبور</p>
+                    <input
+                      placeholder="حداقل 8 کاراکتر"
+                      type="password"
+                      id="defaultFormCardEmailEx"
+                      className="form-control w-75 ml-5 passwordinput px-5"
+                    />
+                  
+                    <p className="h4 text-right usernametext">تکرار رمز عبور</p>
+                    <input
+                      placeholder="حداقل 8 کاراکتر"
+                      type="password"
+                      id="defaultFormCardEmailEx"
+                      className="form-control w-75 ml-5 passwordinput px-5"
+                    />
+                    <div className="forgetPass mt-2" dir="rtl">
+                      {" "}
+                      <div className="exclamationR">
+                        {" "}
+                        <input type="checkbox" />
+                      </div>
+                      مرا به خاطر بسپار
+                    </div>
+                    <div className="text-center py-4 mt-1">
+                      <MDBBtn rounded outline color=" signUpR pl-4">
+                        ثبت نام
+                      </MDBBtn>
+                      <Link className="link" to="/Login">
+                        {" "}
+                        <MDBBtn rounded outline color=" signInR">
+                          ورود
+                        </MDBBtn>
+                      </Link>
+                    </div>
+                  </form>
+                </MDBCardBody>
+              </MDBCard>
+            </MDBCol>
+          </MDBRow>
         </div>
       </div>
     );

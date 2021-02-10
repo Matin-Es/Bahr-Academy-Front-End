@@ -15,7 +15,7 @@ import RegisterPage from "../Authorization/Register/Register";
 import ForgetpassPage from "../Authorization/ForgetPass/Forget";
 
 //User Zone
-import MyAccount from "../../User/PanelHolder/Panel";
+import MyAccount from "../../User/Panelholder/Panel";
 import MyCourses from "../../User/UserCourses/UserCourses";
 //
 import AdminDash from "../../Admin-Area/MainPage/Admindashboard";
