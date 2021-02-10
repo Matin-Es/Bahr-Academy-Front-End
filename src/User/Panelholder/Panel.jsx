@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import Rightside from "../rightSide/Rightside";
-import Leftside from "../Leftside/leftside";
+import Leftside from "../Leftside/Leftside";
 import "../css/dash.module.css";
 import Classes from "../css/Courses.module.css";
 

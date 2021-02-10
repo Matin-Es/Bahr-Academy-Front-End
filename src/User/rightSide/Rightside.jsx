@@ -13,7 +13,7 @@ class Rightside extends Component {
           <button type="button " className="btn btnmenus mb-4 my_cour"><Link to="/Dashboard/Mycourses">دوره های من</Link></button>
           <button type="button" className="btn btnmenus mb-4 singup"><Link to="/Courses">ثبت نام دوره ها</Link></button>
           <button type="button" className="btn btnmenus mb-4 edit"><Link to="/dashboard">ویرایش پروفایل</Link></button>
-          <button type="button" className="btn btnmenus mb-4 leave">خروج</button>
+          <button type="button" className="btn btnmenus mb-4 leave"><Link to="/Leave">خروج</Link></button>
         </div>
       </React.Fragment>
     );

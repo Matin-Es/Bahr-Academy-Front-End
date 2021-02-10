@@ -578,6 +578,7 @@ input:focus {
     position: relative;
     left: 40px;
   }
+
 }
 /* @media only screen and (max-width: 600px) {
        #menu,#search-holder{display: none;}
@@ -613,6 +614,7 @@ input:focus {
     top: 150px;
     left: 250px;
   }
+
   .header_text_holder {
     display: block;
   }

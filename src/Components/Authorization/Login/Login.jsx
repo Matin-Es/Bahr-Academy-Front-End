@@ -5,6 +5,7 @@ import resclasses from "./css/responsive_log.module.css";
 import { Link } from "react-router-dom";
 import Header from "../../Header/Header";
 import "./css/mdb_log.css";
+import "./css/mdb_res.css"
 import {
   MDBContainer,
   MDBRow,
@@ -26,7 +27,7 @@ class Login extends Component {
         <Header />
         <div className="container">
           <MDBRow>
-            <MDBCol md="6 mx-auto md6L">
+            <MDBCol className="mx-auto md6L" md="6">
               <MDBCard className="roundedform h-100 card">
                 <MDBCardBody>
                   <form className="ml-1">
