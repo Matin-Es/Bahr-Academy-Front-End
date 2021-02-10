@@ -119,10 +119,11 @@ body {
   background-position: 250px 25px;
 }
 #bell {
-  float: right;
-  position: relative;
-  top: 12px;
+  float: left;
+  position: absolute;
+  top: 17px;
   right: 22px;
+  width: 53px;
 }
 .my_cur {
   font-family: "yek";
@@ -137,6 +138,7 @@ body {
   position: absolute;
   top: 17px;
   left: 22px;
+  width: 53px;
 }
 .courses_inf li {
   list-style: none;
@@ -162,28 +164,6 @@ body {
 .sec_cur {
   width: 100%;
   height: 540px;
-}
-.items {
-  border-radius: 17px;
-  height: 55px;
-  padding: 0;
-  margin: 0 auto;
-  list-style: none;
-  margin-bottom: 14px;
-  background: rgb(107, 88, 219);
-  background: linear-gradient(
-    169deg,
-    rgba(107, 88, 219, 0.3457864482751053) 0%,
-    rgba(23, 151, 236, 0.1800561111964537) 100%
-  );
-  direction: rtl;
-}
-.items li {
-  font-size: 20px;
-  color: #868788;
-  text-align: center;
-  display: inline-block;
-  font-family: "yek";
 }
 #cur_img {
   width: 37.37px;
@@ -260,11 +240,6 @@ body {
   .sec_cur {
     width: 100%;
     height: 100%;
-  }
-  .items {
-    width: 100%;
-    height: 46px;
-    font-size: 16px;
   }
   #courses_holder {
     width: 828px;
@@ -406,10 +381,6 @@ body {
     width: 100%;
     height: 100%;
   }
-  .items {
-    margin-bottom: 10px;
-    height: 33px;
-  }
   #cur_img {
     width: 22.19px;
     height: 19px;
@@ -487,11 +458,7 @@ body {
     font-size: 11px;
   }
   #bell {
-    float: right;
-    position: relative;
-    top: 20px;
-    right: 22px;
-    width: 35px;
+      width: 53px;
   }
 }
 @media only screen and (max-width: 1398px) {
@@ -549,13 +516,7 @@ body {
     top: 397px;
     border-radius: 0;
   }
-  .items {
-    width: 165px;
-    height: 160px;
-    float: right;
-    margin-left: 8px;
-    margin-right: 13px;
-  }
+ 
   #cur_img {
     width: 59.24px;
     height: 52px;
@@ -601,6 +562,7 @@ body {
   }
   #cart {
     visibility: hidden;
+    display: none;
   }
   #user_inf {
     width: 110px;
@@ -624,27 +586,36 @@ body {
   }
   #bell {
     visibility: hidden;
+    display: none;
   }
   .kargah {
+    display: none;
     visibility: hidden;
   }
   .cash {
+    display: none;
     visibility: hidden;
   }
   .tar {
+    display: none;
     visibility: hidden;
+    
   }
   .vaz {
     visibility: hidden;
+    display: none;
   }
   .courses_inf {
     visibility: hidden;
+    display: none;
   }
   .shape1_holder {
     visibility: hidden;
+    display: none;
   }
   .shape2_holder {
     visibility: hidden;
+    display: none;
   }
   .sec_cur ul {
     position: relative;

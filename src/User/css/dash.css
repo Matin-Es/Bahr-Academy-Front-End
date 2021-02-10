@@ -1,5 +1,4 @@
-#panel_holder{
- 
+#panel_holder {
 }
 .leftprof_holder {
   width: 1131px;
@@ -56,19 +55,19 @@ body {
   margin-right: 5px;
   margin-left: 25px;
 }
-.font{
-  font-family: 'yek';
+.font {
+  font-family: "yek";
 }
-.rtl{
+.rtl {
   direction: rtl;
 }
-.bigg{
+.bigg {
   font-size: 17px !important;
 }
-.inputp{
+.inputp {
   display: block;
   color: #707070;
-  font-family: 'yek';
+  font-family: "yek";
   font-size: 26px;
   text-align: right;
 }
@@ -135,7 +134,6 @@ body {
 }
 
 @media only screen and (max-width: 1600px) {
-  
   .shape1_holder {
     width: 724.1px;
     height: 1110.1px;
@@ -322,10 +320,10 @@ body {
   }
   .getimg {
     background-size: 128px;
-      background-size: 128px;
-      background-position: 38px 41px;
+    background-size: 128px;
+    background-position: 38px 41px;
   }
-  body{
+  body {
     background: none !important;
   }
   .editimg {
@@ -404,7 +402,8 @@ body {
     font-size: 15px;
   }
   #search-box {
-    background: url(../../Assets/images//Iconly-Light-Search.svg) no-repeat 9px 10px;
+    background: url(../../Assets/images//Iconly-Light-Search.svg) no-repeat 9px
+      10px;
     background-color: rgba(0, 0, 0, 0);
     background-size: auto;
     background-color: #7d74e2;
@@ -484,7 +483,6 @@ body {
   }
   #id {
     font-size: 9px;
-    top: 6px;
   }
 }
 @media only screen and (max-width: 375px) {
@@ -566,4 +564,52 @@ body {
     left: 115px;
     top: 113px;
   }
+  .ft {
+    font-size: 30px;
+    visibility: visible !important;
+  }
+  .fs {
+    visibility: visible !important;
+    font-size: 17px;
+  }
+  .pen {
+    visibility: visible !important;
+    color: #6b58db;
+  }
+  .mr5 {
+    visibility: visible !important;
+    margin-right: 93px;
+  }
+  .profinfor {
+    display: block !important;
+  }
+}
+.profinfor {
+  display: none;
+}
+.ft {
+  font-size: 30px;
+  visibility: hidden;
+}
+.fs {
+  visibility: hidden;
+  font-size: 17px;
+}
+.pen {
+  visibility: hidden;
+  color: #6b58db;
+}
+.mr5 {
+  visibility: hidden;
+  margin-right: 93px;
+}
+.hg{
+  height: 160px;
+  border-radius:17px;
+  font-size: 20px;
+  color: #777777;
+  width: 155px !important;
+}
+.sizess{
+  width: 70px;
 }
