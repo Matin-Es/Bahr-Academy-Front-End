@@ -15,8 +15,10 @@ import RegisterPage from "../Authorization/Register/Register";
 import ForgetpassPage from "../Authorization/ForgetPass/Forget";
 
 //User Zone
-import MyAccount from "../../User/PanelHolder/Panel";
+import Dashboard from "../../User/PanelHolder/Panel";
+import Editprofile from "../../User/editprofile/Editprofile";
 import MyCourses from "../../User/UserCourses/UserCourses";
+
 //
 import AdminDash from "../../Admin-Area/MainPage/Admindashboard";
 import AdminAllCourses from "../../Admin-Area/CourseAdmin/AllCourses/AllCourses";
@@ -34,15 +36,18 @@ class Routers extends Component {
           <Route exact path="/Blogs" component={Blogs} />
           <Route exact path="/Blog:id" component={Blog} />
           <Route exact path="/not-found" component={Notfound} />
+
           {/* user Autthorization */}
           <Route exact path="/Login" component={LoginPage} />
           <Route exact path="/Register" component={RegisterPage} />
           <Route exact path="/Forgetpass" component={ForgetpassPage} />
           {/* end user Autthorization */}
+
           {/*User Zone*/}
-          <Route exact path="/My-Account" component={MyAccount} />
-          <Route exact path="/MyCourses" component={MyCourses} />
+          <Route exact path="/Dashboard" component={Dashboard} />
+          <Route exact path="/dashboard/myCourses" component={Dashboard} />
           {/*End User Zone*/}
+
           {/*Admin Zone*/}
           <Route exact path="/AdminDashboard" component={AdminDash} />
           <Route exact path="/Admin/AllCourses" component={AdminAllCourses} />

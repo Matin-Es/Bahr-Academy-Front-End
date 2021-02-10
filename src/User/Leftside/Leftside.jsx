@@ -9,10 +9,10 @@ import { useLocation } from "react-router-dom";
 
 let CheckUrlHandler = () => {
   const location = useLocation();
-  if (location.pathname.toLowerCase() == "/my-account") {
-    let Editprof = <Editprofile/>
+  if (location.pathname.toLowerCase() == "/dashboard") {
+    let Editprof = <Editprofile />;
     return Editprof;
-  } else if (location.pathname.toLowerCase() == "/mycourses") {
+  } else if (location.pathname.toLowerCase() == "/dashboard/mycourses") {
     let Mycourses = <UserCourses />;
     return Mycourses;
   }
