@@ -17,7 +17,6 @@ import EditprofForm from "./form/EditprofileForm copy";
 import EditprofForms from "./form/EditprofileForm";
 
 import * as yup from "yup";
-import { Form, Formik } from "formik";
 //images
 class Editprofile extends Component {
   state = {
