@@ -1,6 +1,6 @@
 #footer {
     border: 1px solid transparent;
-    width: 99.8%;
+    width: 100%;
     height: 480px;
 }
 
@@ -44,7 +44,7 @@
 .social>img {
     width: 60px;
     transform: rotate(-45deg);
-    margin-right: -3px;
+    margin-right: -8px;
     margin-top: -2px;
 }
 

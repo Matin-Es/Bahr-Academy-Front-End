@@ -21,8 +21,6 @@
     transform: rotate(180deg);
   }
 
-
-
 #panel_holder {
     width: 1478px;
     background-color: white;
@@ -276,104 +274,80 @@ body{
     text-align: center;
     line-height: 49px;
 }
-/* det */
-.shape1_holder {
-    /* border: 1px solid red; */
-    background: url("../../../../Assets/images/Path 62.svg") no-repeat 0% 0%;
-    background-size: 606px;
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    width: 606px;
-    height: 678px;
-}
 
-.shape2_holder {
-    /* border: 1px solid red; */
-    background: url("../../../../Assets/images/Path 62.svg") no-repeat 0% 0%;
-    background-size: 400px;
-    position: absolute;
-    bottom: 0px;
-    right: -20px;
-    width: 400px;
-    height: 450px;
-    transform: rotate(180deg);
-}
 
-li.path {
+/*   2nd   */
+li.path{
     margin-left: 5px;
 }
 
-.leftdet {
+
+.leftdet{
     display: inline-block;
     width: 460px;
     height: 100%;
     position: relative;
 }
-
-.leftdet>.holderdet {
+.leftdet > .holderdet{
     width: 90%;
     height: 90%;
-    margin: 0;
+    margin:0;
     position: absolute;
     top: 50%;
     right: 50%;
     -webkit-transform: translateY(-50%) translateX(50%);
-    transform: translateY(-50%) translateX(50%);
+          transform: translateY(-50%) translateX(50%);
 }
 
-.holderdet>.bookmark {
+.holderdet > .bookmark{
     height: 50px;
     width: 400px;
+    text-align: left;
 }
-
-.bookmark>.bookmarkicon {
+.bookmark > .bookmarkicon{
     border: none;
     outline: none;
     height: 50px;
     width: 50px;
     background: url("../../../../Assets/images/bookmark.svg") no-repeat 50% 50%;
 }
-
-.rightdet {
+.rightdet{
     width: 1013px;
     display: inline-block;
 }
-
-.rightdet>img {
+.rightdet > img{
+    margin-top: -780px;
     width: 100%;
     height: 100%;
 }
 
-.priceholder {
+.priceholder{
     margin-top: 30px;
     background-color: #eeeeee;
-    border-radius: 15px;
-    font-family: yek;
+    border-radius :15px;
+    font-family: yek ;
     font-size: 30px;
     direction: rtl;
     padding: 10px 10px;
     color: #676666;
 }
-
-.priceholder>.itholder {
+.priceholder > .itholder{
     overflow: hidden;
 }
-
-.priceholder>.itholder>.it1 {
+.priceholder > .itholder > .it1{
     float: right;
 }
-
-.priceholder>.itholder>.it2 {
+.priceholder > .itholder > .it2{
     float: left;
 }
-
-.itholder.det {
+.itholder.det{
     font-size: 20px;
     line-height: 82px;
 }
 
-.signdet {
+
+
+.signdet{
     text-align: center;
     margin: 25px auto 0;
     height: 60px;
@@ -384,13 +358,13 @@ li.path {
     border-radius: 15px;
     text-indent: -15px;
 }
+    body{
+        overflow: visible;
+        background: url("../../../../Assets/images/bg.jpg") no-repeat 0% 0%;
+    }
 
-body {
-    overflow: visible;
-    background: url("../../../../Assets/images/bg.jpg") no-repeat 0% 0%;
-}
 
-/*   courses css   */
+/*   courses css   */ 
 
 .courses_holder {
     width: 850px;
@@ -399,7 +373,7 @@ body {
     font-family: yek;
 }
 
-.courses_holder>.courses_header {
+.courses_holder > .courses_header{
     width: 30%;
     height: auto;
     padding: 10px 5px;
@@ -413,12 +387,11 @@ body {
     color: #6964E3;
 }
 
-.courses_holder>.itemeholder {
+.courses_holder > .itemeholder{
     width: 100%;
     height: auto;
 }
-
-.courses_holder>.itemeholder>.items {
+.courses_holder > .itemeholder > .items{
     width: 99%;
     height: auto;
     overflow: hidden;
@@ -429,9 +402,9 @@ body {
     margin-top: 15px;
 }
 
-.picholder {
+.picholder{
     margin-top: 12px;
-    margin-left: 15px;
+    margin-left:15px ;
     width: 230px;
     margin-right: 10px;
     border-radius: 15px;
@@ -439,40 +412,39 @@ body {
     background: url("../../../../Assets/images/gr.png") 50% 50% no-repeat;
     float: right;
 }
-
-.sign-btn {
+.sign-btn{
     margin-top: 12px;
     float: left;
     width: 130px;
     height: 230px;
 }
-
-.sign-btn>button {
+.sign-btn > button{
     outline: none;
     border: none;
     display: block;
     margin: 190px auto 0;
     width: 130px;
-    border-radius: 10px;
+    border-radius:10px;
     height: 40px;
     background: url("../../../../Assets/images/sign2.svg") no-repeat 20% 50% #34E386;
     background-size: 20px;
-    color: #eee;
+    color:#eee;
     text-indent: -20px;
     font-family: yek;
     font-size: 20px;
     line-height: 40px;
+
 }
 
-.description {
-    text-align: right;
+.description{
+    float: right;
     height: 230px;
-    width: 600px;
+    width: 450px;
     background: #fff;
     margin-top: 12px;
 }
 
-.description>h2 {
+.description > h2{
     margin: 0;
     padding: 0;
     margin-top: 20px;
@@ -480,29 +452,25 @@ body {
     font-weight: 500;
     color: #777777;
 }
-
-.description>p {
+.description > p{
     margin-top: 15px;
     line-height: 30px;
     color: #6B6A6A;
 }
-
-.description>span.mentor {
+.description > span.mentor{
     margin-top: 15px;
     line-height: 30px;
     color: #9A9A9A;
 }
-
-.description>span {
+.description > span{
     color: #9A9A9A;
 }
-
-.description>span.price {
+.description > span.price{
     color: #1BC48A;
     font-size: 23px;
 }
 
-span.rate {
+span.rate{
     text-align: right;
     display: inline-block;
     width: 60px;
@@ -511,14 +479,17 @@ span.rate {
     background-size: 15px;
 }
 
-ul#next {
+
+
+ul#next{
     margin: 20px auto;
     width: 200px;
     height: 70px;
     text-align: center;
 }
 
-#next>li {
+
+#next > li{
     display: inline-block;
     border-radius: 50%;
     background: red;
@@ -526,16 +497,20 @@ ul#next {
     height: 30px;
 }
 
-li.right {
+li.right{
     border-radius: 50%;
     background: red;
     width: 30px;
     height: 30px;
 }
+/* hfshfh  */
 
 /*   courses css   */
 
 @media Screen and (max-width:1000px) {
+    .shape1_holder {
+        display: none;
+    }
     .courses_holder {
         width: 90%;
     }
@@ -552,6 +527,9 @@ li.right {
 }
 
 @media Screen and (max-width:414px) {
+    .rightdet > img{
+        margin: 0;
+    }
     .courses_holder>.courses_header {
         font-size: 20px;
         background-size: 25px;
