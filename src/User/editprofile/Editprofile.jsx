@@ -30,8 +30,10 @@ class Editprofile extends Component {
     event.preventDefault();
 
     event.target.className += " was-validated";
-    toast.error("Error message", {
-      closeButton: false,
+
+    toast.error("یک فیلد خالی است لطفا آن را پر کنید", {
+      autoClose: 5000,
+      rtl: true,
     });
   };
 
@@ -167,6 +169,12 @@ class Editprofile extends Component {
                   <MDBIcon far icon="check-square" className="pr-1" />
                 </MDBBtn>
               </div>
+              <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                newestOnTop
+                rtl
+              ></ToastContainer>
             </form>
           </div>
         </div>

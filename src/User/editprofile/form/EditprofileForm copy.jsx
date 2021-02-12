@@ -36,11 +36,7 @@ class EditprofileForm extends Component {
        لطفا فیلد {placeholder} را پر کنید
         </div>
 
-        <ToastContainer
-          hideProgressBar={true}
-          newestOnTop={true}
-          autoClose={5000}
-        />
+    
       </React.Fragment>
     );
   }
