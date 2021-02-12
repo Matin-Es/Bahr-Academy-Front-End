@@ -9,7 +9,7 @@ class Footer extends Component {
       <React.Fragment>
         <div id={footers["footer"]}>
           <div className={footers["top-foot"]}>
-            <p>: ما را در شبکه اجتماعی پیدا کنید </p>
+            <p> ما را در شبکه اجتماعی پیدا کنید :</p>
             <div className={footers["social-media"]}>
               <div className={`${footers.social} ${footers.youtube}`}>
                 <img src={require("../../Assets/images/youtube-1.svg").default} />
@@ -35,11 +35,11 @@ class Footer extends Component {
               <p>سوالات متداول</p>
             </div>
             <div className={footers["phone-num"]}>
-             : شماره تماس <p>989031471874+</p>
+              شماره تماس :<p>989031471874+</p>
               <p>989031471874+</p>
             </div>
             <div className={footers["address"]}>
-             : آدرس <p>ساری، خیابان 18 دی، روبروی خیام،</p>
+              آدرس :<p>ساری، خیابان 18 دی، روبروی خیام،</p>
               <p> ساختمان مازیار واحد 15</p>
             </div>
             <div className={`${footers.pic} ${footers.namad1}`}></div>
