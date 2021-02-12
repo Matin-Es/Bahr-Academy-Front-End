@@ -48,6 +48,9 @@ class Footer extends Component {
           </div>
           <div className={footers["bottom-foot"]}>
             <p>تمامی حقوق مادی و معنوی این سایت تیم یانگ ایگلز میباشد</p>
+            <span className={footers["hp-graph"]}>
+              <img src={require("../../Assets/images/hpgraph-6.svg").default}/>
+            </span>
           </div>
         </div>
       </React.Fragment>

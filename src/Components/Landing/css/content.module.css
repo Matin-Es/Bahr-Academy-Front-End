@@ -163,9 +163,10 @@
   margin-top: 20px;
 }
 
-.develop > h3 {
+.develop h3 {
   font-size: 25px;
-  font-family: 'yek', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 18px;
+  font-family: "yek", Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
 
@@ -173,7 +174,7 @@
   font-size: 20px;
   color: #999999;
   float: right;
-  margin-top: -20px;
+  margin-top: 13px;
   margin-right: 30px;
 }
 
@@ -514,4 +515,1060 @@
   text-align: right;
   text-indent: 18px;
   cursor: pointer;
+}
+
+/* Responsive */
+
+@media Screen and (max-width: 1450px) {
+  /* Content */
+
+  #content {
+    width: 1348px;
+    border: 1px solid transparent;
+    margin: 0 auto;
+    height: 3580px;
+  }
+
+  .grouping {
+    border: 1px solid transparent;
+    font-size: 60px;
+  }
+
+  .grouping > p,
+  .developing > p {
+    margin: 20px auto;
+    margin-bottom: 0;
+  }
+
+  .developing {
+    border: 1px solid transparent;
+    width: 1346px;
+    height: 740px;
+    margin: 40px auto;
+    font-size: 60px;
+  }
+
+  .right-developing > img {
+    width: 580px;
+  }
+
+  .left-developing {
+    margin-left: 80px;
+  }
+
+  .go-ahead {
+    border: 1px solid transparent;
+    width: 1346px;
+    height: 680px;
+    margin: 0 auto;
+    font-size: 60px;
+  }
+
+  .go-ahead > p {
+    margin: 30px auto;
+  }
+
+  .left-ahead > img {
+    width: 560px;
+  }
+
+  .input-circle {
+    top: 161px;
+    right: 60px;
+  }
+
+  .right-side,
+  .left-side {
+    margin-right: 25px;
+  }
+
+  .top-professors {
+    border: 1px solid transparent;
+    font-size: 60px;
+    margin: 10px auto;
+  }
+
+  .suggestions-complaints {
+    border: 1px solid transparent;
+    font-size: 60px;
+  }
+
+  .right-complaint > img {
+    width: 635px;
+    margin-right: 20px;
+  }
+
+  #message-text {
+    position: relative;
+    top: -10px;
+  }
+
+  .left-complaint > p {
+    margin-top: -15px;
+  }
+
+  #emaill-2 {
+    position: relative;
+    top: -10px;
+  }
+
+  .send {
+    position: relative;
+    top: -14px;
+  }
+}
+
+@media Screen and (max-width: 1350px) {
+  /* Content */
+
+  #content {
+    width: 1348px;
+    border: 1px solid transparent;
+    height: 3470px;
+  }
+
+  .grouping {
+    border: 1px solid transparent;
+    font-size: 60px;
+  }
+
+  .grouping > p,
+  .developing > p {
+    margin: 20px auto;
+    margin-bottom: 0;
+  }
+
+  .developing {
+    border: 1px solid transparent;
+    width: 1275px;
+    height: 740px;
+    margin: 40px auto;
+    font-size: 60px;
+  }
+
+  .right-developing > img {
+    width: 550px;
+  }
+
+  .left-developing {
+    border: 1px solid transparent;
+    width: 550px;
+    height: 510px;
+    margin-top: 45px;
+    margin-left: 80px;
+  }
+
+  .develop {
+    width: 225px;
+    height: 230px;
+    border-radius: 15px;
+    margin-left: 20px;
+    font-size: 25px;
+  }
+
+  .back-img {
+    height: 110px;
+  }
+
+  .react > img {
+    width: 80px;
+    margin-top: 19px;
+  }
+
+  .html > img,
+  .css > img {
+    width: 60px;
+    margin-top: 19px;
+  }
+
+  .angular > img {
+    width: 65px;
+    margin-top: 19px;
+  }
+
+  .develop > h3 {
+    margin-top: 15px;
+    font-size: 23px;
+  }
+
+  .develop > p {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-right: 18px;
+  }
+
+  .develop > span {
+    bottom: 16px;
+    left: 10px;
+    font-size: 20px;
+  }
+
+  .go-ahead {
+    border: 1px solid transparent;
+    width: 1275px;
+    height: 680px;
+    margin: 0 auto;
+    font-size: 60px;
+  }
+
+  .go-ahead > p {
+    margin: 30px auto;
+  }
+
+  .left-ahead > img {
+    width: 540px;
+  }
+
+  .top-professors {
+    border: 1px solid transparent;
+    width: 1300px;
+    height: 740px;
+    font-size: 60px;
+    margin: 10px auto;
+  }
+
+  .right-side,
+  .left-side {
+    margin-right: 30px;
+  }
+
+  .suggestions-complaints {
+    border: 1px solid transparent;
+    font-size: 60px;
+    margin: 20px auto;
+    height: 620px;
+  }
+
+  .suggestions-complaints > p {
+    margin: 30px auto;
+  }
+
+  .right-complaint > img {
+    width: 595px;
+    margin-right: 20px;
+  }
+
+  .left-complaint {
+    margin-top: 80px;
+    margin-left: 30px;
+  }
+}
+
+@media Screen and (max-width: 1250px) {
+  /* Content */
+
+  #content {
+    width: 1248px;
+    border: 1px solid transparent;
+    height: 3200px;
+  }
+
+  .grouping {
+    border: 1px solid transparent;
+    font-size: 50px;
+    height: 490px;
+    margin: 10px auto;
+  }
+
+  .grouping > input {
+    border-radius: 13px;
+    width: 140px;
+    height: 55px;
+    bottom: 10px;
+  }
+
+  .developing {
+    border: 1px solid transparent;
+    width: 1175px;
+    height: 700px;
+    font-size: 50px;
+    margin: 20px auto;
+  }
+
+  .right-developing > img {
+    width: 520px;
+    margin-top: 50px;
+  }
+
+  .go-ahead {
+    border: 1px solid transparent;
+    width: 1175px;
+    height: 650px;
+    font-size: 50px;
+  }
+
+  .left-ahead > img {
+    width: 500px;
+  }
+
+  .right-ahead {
+    width: 440px;
+  }
+
+  .input-circle {
+    right: 45px;
+  }
+
+  .top-professors {
+    border: 1px solid transparent;
+    width: 1200px;
+    height: 630px;
+    font-size: 50px;
+  }
+
+  .top-professors > p {
+    margin: 10px auto;
+  }
+
+  .right-side,
+  .left-side {
+    margin-right: 0;
+  }
+
+  .suggestions-complaints {
+    border: 1px solid transparent;
+    font-size: 50px;
+    width: 1200px;
+    height: 600px;
+  }
+
+  #message-text {
+    position: relative;
+    top: 0px;
+  }
+
+  .left-complaint > p {
+    margin-top: 0px;
+  }
+
+  #emaill-2 {
+    position: relative;
+    top: -10px;
+  }
+
+  .send {
+    position: relative;
+    top: 0px;
+  }
+
+  .right-complaint > img {
+    width: 585px;
+    margin-right: 30px;
+  }
+}
+
+@media Screen and (max-width: 1150px) {
+  /* Content */
+
+  #content {
+    width: 1148px;
+    border: 1px solid transparent;
+    height: 3010px;
+  }
+
+  .grouping {
+    border: 1px solid transparent;
+    font-size: 50px;
+    width: 1048px;
+    height: 490px;
+    margin: 5px auto;
+  }
+
+  .grouping > input {
+    border-radius: 11px;
+    width: 130px;
+    height: 50px;
+    right: 456px;
+  }
+
+  .developing {
+    border: 1px solid transparent;
+    width: 1075px;
+    height: 700px;
+    font-size: 50px;
+    margin: 5px auto;
+  }
+
+  .right-developing > img {
+    width: 500px;
+    margin-top: 50px;
+  }
+
+  .left-developing {
+    border: 1px solid transparent;
+    width: 520px;
+    height: 510px;
+    margin-top: 50px;
+    margin-left: 10px;
+  }
+
+  .go-ahead {
+    border: 1px solid transparent;
+    width: 1075px;
+    height: 550px;
+    font-size: 50px;
+  }
+
+  .left-ahead > img {
+    width: 450px;
+  }
+
+  .right-ahead {
+    width: 400px;
+    height: 250px;
+  }
+
+  .input-circle {
+    top: 151px;
+    right: 25px;
+  }
+
+  .top-professors {
+    border: 1px solid transparent;
+    width: 1100px;
+    height: 660px;
+    font-size: 50px;
+    margin: 10px auto;
+  }
+
+  .right-side,
+  .left-side {
+    position: relative;
+    border: 1px solid transparent;
+    float: right;
+    width: 535px;
+    height: 489px;
+    margin-right: 10px;
+    margin-top: 40px;
+  }
+
+  .professor {
+    width: 250px;
+    height: 160px;
+    margin-left: 12px;
+    margin-top: 70px;
+  }
+
+  .armin > img {
+    width: 105px;
+    top: 20px;
+  }
+
+  .armin1 > img {
+    width: 105px;
+    bottom: 136px;
+  }
+
+  .nazari > img {
+    width: 105px;
+    top: 20px;
+    right: 86px;
+  }
+
+  .nazari1 > img {
+    width: 105px;
+    bottom: 136px;
+    right: 86px;
+  }
+
+  .professor > h3 {
+    margin-top: 65px;
+  }
+
+  .big-professor {
+    width: 525px;
+    height: 390px;
+    margin-right: 5px;
+    margin-top: 70px;
+  }
+
+  .big-professor > img {
+    width: 175px;
+    bottom: 335px;
+    right: 185px;
+  }
+
+  .big-professor > h3 {
+    font-size: 35px;
+  }
+
+  .big-professor > h4 {
+    font-size: 28px;
+  }
+
+  .big-professor > p {
+    font-size: 26px;
+  }
+
+  .suggestions-complaints {
+    border: 1px solid transparent;
+    font-size: 50px;
+    width: 1100px;
+    height: 560px;
+    margin: 0 auto;
+  }
+
+  .right-complaint > img {
+    width: 545px;
+  }
+
+  .send {
+    position: relative;
+    top: -10px;
+    margin-right: 275px;
+    width: 110px;
+  }
+
+  .left-complaint {
+    width: 420px;
+    height: 310px;
+    margin-top: 50px;
+  }
+}
+
+@media Screen and (max-width: 1000px) {
+  /* Content */
+
+  #content {
+    border: 1px solid transparent;
+    width: 998px;
+    height: 2610px;
+  }
+
+  .grouping {
+    border: 1px solid transparent;
+    font-size: 40px;
+    width: 948px;
+    height: 420px;
+    margin: 5px auto;
+  }
+
+  .group {
+    width: 190px;
+    height: 210px;
+    font-size: 30px;
+    line-height: 330px;
+    border-radius: 20px;
+  }
+
+  .group:nth-child(2) {
+    margin-right: 0;
+  }
+
+  .grouping > input {
+    border-radius: 10px;
+    width: 110px;
+    height: 40px;
+    right: 416px;
+    font-size: 25px;
+  }
+
+  .developing {
+    border: 1px solid transparent;
+    width: 975px;
+    height: 600px;
+    font-size: 40px;
+    margin: 5px auto;
+  }
+
+  .right-developing > img {
+    width: 450px;
+    margin-top: 50px;
+  }
+
+  .left-developing {
+    border: 1px solid transparent;
+    width: 460px;
+    height: 460px;
+    margin-top: 50px;
+    margin-left: 10px;
+  }
+
+  .develop {
+    width: 200px;
+    height: 210px;
+    margin-left: 20px;
+    font-size: 23px;
+  }
+
+  .back-img {
+    height: 100px;
+  }
+
+  .react > img {
+    width: 70px;
+  }
+
+  .html > img,
+  .css > img {
+    width: 55px;
+    margin-top: 19px;
+  }
+
+  .angular > img {
+    width: 60px;
+    margin-top: 19px;
+  }
+
+  .develop > h3 {
+    font-size: 21px;
+  }
+
+  .develop > p {
+    font-size: 17px;
+    margin-right: 14px;
+  }
+
+  .develop > span {
+    bottom: 11px;
+    left: 5px;
+  }
+
+  .go-ahead {
+    border: 1px solid transparent;
+    width: 975px;
+    height: 500px;
+    font-size: 40px;
+  }
+
+  .left-ahead > img {
+    width: 400px;
+  }
+
+  .right-ahead {
+    width: 350px;
+    height: 200px;
+  }
+
+  .right-ahead > h2,
+  .right-ahead > p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 30px;
+  }
+
+  .right-ahead > p {
+    font-size: 25px;
+  }
+
+  #emaill {
+    font-size: 17px;
+    width: 260px;
+    height: 45px;
+    margin-top: 15px;
+  }
+
+  .input-circle {
+    background-size: 17px;
+    top: 112px;
+    right: 45px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+  }
+
+  .top-professors {
+    border: 1px solid transparent;
+    width: 975px;
+    height: 600px;
+    font-size: 40px;
+    margin: 10px auto;
+  }
+
+  .right-side,
+  .left-side {
+    border: 1px solid transparent;
+    float: right;
+    width: 470px;
+    height: 479px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+
+  .professor {
+    width: 217px;
+    height: 160px;
+    margin-left: 12px;
+    margin-top: 70px;
+  }
+
+  .armin > img {
+    width: 95px;
+    top: 25px;
+    left: 75px;
+  }
+
+  .armin1 > img {
+    width: 95px;
+    bottom: 131px;
+    left: 75px;
+  }
+
+  .nazari > img {
+    width: 95px;
+    top: 25px;
+    right: 76px;
+  }
+
+  .nazari1 > img {
+    width: 95px;
+    bottom: 131px;
+    right: 76px;
+  }
+
+  .professor > h3 {
+    margin-top: 57px;
+  }
+
+  .big-professor {
+    width: 460px;
+    height: 390px;
+    margin-right: 5px;
+    margin-top: 70px;
+  }
+
+  .big-professor > img {
+    width: 165px;
+    bottom: 325px;
+    right: 160px;
+  }
+
+  .big-professor > h3 {
+    font-size: 30px;
+  }
+
+  .big-professor > h4 {
+    font-size: 25px;
+    text-indent: 81px;
+  }
+
+  .big-professor > p {
+    width: 300px;
+    font-size: 23px;
+    margin-right: 81px;
+  }
+
+  .suggestions-complaints {
+    border: 1px solid transparent;
+    font-size: 40px;
+    width: 900px;
+    height: 440px;
+    margin: 0 auto;
+  }
+
+  .right-complaint > img {
+    width: 405px;
+    margin-top: 20px;
+  }
+
+  .left-complaint {
+    width: 350px;
+    height: 250px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .left-complaint > h2 {
+    font-size: 23px;
+  }
+
+  #message-text {
+    font-size: 17px;
+    width: 250px;
+    height: 45px;
+  }
+
+  .left-complaint > p {
+    font-size: 23px;
+  }
+
+  #emaill-2 {
+    font-size: 17px;
+    width: 250px;
+    height: 45px;
+  }
+
+  .send {
+    background-size: 14px;
+    margin-right: 210px;
+    margin-top: 5px;
+    width: 90px;
+    height: 30px;
+    font-size: 20px;
+  }
+}
+
+@media Screen and (max-width: 375px) {
+  /* Content */
+
+  #content {
+    border: 1px solid transparent;
+    width: 373px;
+    height: 2289px;
+  }
+
+  .right-developing > img,
+  .left-ahead > img,
+  .right-complaint > img {
+    display: none;
+  }
+
+  .grouping {
+    border: 1px solid transparent;
+    font-size: 25px;
+    width: 352px;
+    height: 225px;
+    margin: 0 auto;
+  }
+
+  .group {
+    width: 70px;
+    height: 80px;
+    font-size: 17px;
+    line-height: 128px;
+    border-radius: 13px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+
+  .group:nth-child(2) {
+    margin-right: 0;
+  }
+
+  .grouping > input {
+    border-radius: 50px;
+    width: 70px;
+    height: 30px;
+    right: 141px;
+    font-size: 15px;
+  }
+
+  .math {
+    background-size: 30px;
+    margin-right: 0;
+  }
+
+  .technology {
+    background-size: 40px;
+  }
+
+  .chemistry {
+    background-size: 25px;
+  }
+
+  .physics {
+    background-size: 30px;
+  }
+
+  .developing {
+    border: 1px solid transparent;
+    width: 352px;
+    height: 450px;
+    font-size: 25px;
+    margin: 5px auto;
+  }
+
+  .left-developing {
+    border: 1px solid transparent;
+    width: 350px;
+    height: 360px;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .develop {
+    width: 143px;
+    height: 160px;
+    margin-left: 20px;
+  }
+
+  .back-img {
+    height: 80px;
+  }
+
+  .react > img {
+    width: 60px;
+    margin-top: 13px;
+  }
+
+  .html > img,
+  .css > img {
+    width: 48px;
+    margin-top: 13px;
+  }
+
+  .angular > img {
+    width: 53px;
+    margin-top: 10px;
+  }
+
+  .develop > h3 {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .develop > p {
+    font-size: 12px;
+    margin-right: 14px;
+  }
+
+  .develop > span {
+    background-size: 13px;
+    width: 40px;
+    font-size: 15px;
+    bottom: 4px;
+    left: 4px;
+  }
+
+  .go-ahead {
+    border: 1px solid transparent;
+    width: 352px;
+    height: 300px;
+    font-size: 25px;
+  }
+
+  .go-ahead > p {
+    margin: 20px;
+  }
+
+  .right-ahead {
+    width: 320px;
+    height: 185px;
+    margin: 15px;
+  }
+
+  .right-ahead > h2,
+  .right-ahead > p {
+    font-size: 25px;
+  }
+
+  #emaill {
+    font-size: 15px;
+  }
+
+  .input-circle {
+    top: 105px;
+    right: 30px;
+  }
+
+  .top-professors {
+    border: 1px solid transparent;
+    width: 352px;
+    height: 900px;
+    font-size: 25px;
+    margin: 5px auto;
+  }
+
+  .right-side,
+  .left-side {
+    border: 1px solid transparent;
+    float: right;
+    width: 350px;
+    height: 409px;
+    margin: 0 auto;
+  }
+
+  .professor {
+    width: 157px;
+    height: 120px;
+    margin-left: 12px;
+    margin-top: 70px;
+  }
+
+  .armin > img {
+    width: 75px;
+    top: 32px;
+    left: 56px;
+  }
+
+  .armin1 > img {
+    width: 75px;
+    bottom: 111px;
+    left: 56px;
+  }
+
+  .nazari > img {
+    width: 75px;
+    top: 32px;
+    right: 53px;
+  }
+
+  .nazari1 > img {
+    width: 75px;
+    bottom: 111px;
+    right: 53px;
+  }
+
+  .professor > h3 {
+    margin-top: 43px;
+    font-size: 24px;
+  }
+
+  .professor > p {
+    margin-top: 5px;
+    font-size: 20px;
+  }
+
+  .big-professor {
+    width: 325px;
+    height: 320px;
+    margin: 70px auto;
+    margin-bottom: 0;
+  }
+
+  .big-professor > img {
+    width: 125px;
+    bottom: 280px;
+    right: 115px;
+  }
+
+  .big-professor > h3 {
+    font-size: 26px;
+  }
+
+  .big-professor > h4 {
+    font-size: 22px;
+    text-indent: 34px;
+  }
+
+  .big-professor > p {
+    width: 254px;
+    font-size: 20px;
+    margin-right: 34px;
+  }
+
+  .suggestions-complaints {
+    border: 1px solid transparent;
+    font-size: 25px;
+    width: 352px;
+    height: 380px;
+    margin: 0 auto;
+  }
+
+  .left-complaint {
+    width: 320px;
+    height: 250px;
+    margin: 5px 16px;
+    margin-bottom: 0;
+  }
+
+  #message-text {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  .left-complaint > p {
+    margin-top: 6px;
+  }
+
+  #emaill-2 {
+    font-size: 15px;
+    margin-top: 14px;
+  }
+
+  .send {
+    margin-top: 10px;
+    width: 75px;
+    text-indent: 10px;
+  }
 }

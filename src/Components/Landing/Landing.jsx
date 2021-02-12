@@ -22,14 +22,14 @@ class Landing extends Component {
               <div className={header["menu-bag"]}></div>
               <ul className={header["menu-tab"]}>
                 <div className={header["bahr"]}></div>
-                <li className={`${header.below} ${header[1]}`}>
+                <li className={`${header.below} ${header["1"]}`}>
                   خانه
                   <div className={header["border-bottom"]}></div>
                 </li>
-                <li className={`${header.below} ${header[1]}`}> آموزش</li>
-                <li className={`${header.below} ${header[1]}`}> خدمات</li>
-                <li className={`${header.below} ${header[1]}`}> مالی</li>
-                <li className={`${header.below} ${header[1]}`}> تماس با ما</li>
+                <li className={`${header.below} ${header["1"]}`}> آموزش</li>
+                <li className={`${header.below} ${header["1"]}`}> خدمات</li>
+                <li className={`${header.below} ${header["1"]}`}> مالی</li>
+                <li className={`${header.below} ${header["1"]}`}> تماس با ما</li>
               </ul>
               <div id={header["search-holder"]}>
                 <input id={header["search-box"]} type="search" />
@@ -76,7 +76,7 @@ class Landing extends Component {
               </div>
               <div className={content["left-developing"]}>
                 <div className={content["develop"]}>
-                  <div className={`${content.back} ${content['-img']} ${content.react}`}>
+                  <div className={`${content['back-img']} ${content.react}`}>
                     <img src={require("../../Assets/images/React.svg").default} />
                   </div>
                   <h3>ریکت مقدماتی تا پیشرفته </h3>
@@ -84,8 +84,8 @@ class Landing extends Component {
                   <span className={content["rate-develop"]}>4.6</span>
                 </div>
                 <div className={content["develop"]}>
-                  <div className={`${content.back} ${content['-img']} ${content.html}`}>
-                    <div className={`${content.back} ${content['-img']} ${content.html}`}>
+                  <div className={`${content["back-img"]} ${content.html}`}>
+                    <div className={`${content["back-img"]} ${content.html}`}>
                       <img src={require("../../Assets/images/HTML.svg").default} />
                     </div>
                   </div>
@@ -94,8 +94,8 @@ class Landing extends Component {
                   <span className={content["rate-develop"]}>4.6</span>
                 </div>
                 <div className={`${content.develop} ${content.move}`}>
-                  <div className={`${content.back} ${content['-img']} ${content.angular}`}>
-                    <div className={`${content.back} ${content['-img']} ${content.angular}`}>
+                  <div className={`${content["back-img"]} ${content.angular}`}>
+                    <div className={`${content["back-img"]} ${content.angular}`}>
                       <img src={require("../../Assets/images/Angularfull.svg").default} />
                     </div>
                   </div>
@@ -104,8 +104,8 @@ class Landing extends Component {
                   <span className={content["rate-develop"]}>4.6</span>
                 </div>
                 <div className={`${content.develop} ${content.move}`}>
-                  <div className={`${content.back} ${content['-img']} ${content.css}`}>
-                    <div className={`${content.back} ${content['-img']} ${content.css}`}>
+                  <div className={`${content["back-img"]} ${content.css}`}>
+                    <div className={`${content["back-img"]} ${content.css}`}>
                       <img src={require("../../Assets/images/css.svg").default} />
                     </div>
                   </div>

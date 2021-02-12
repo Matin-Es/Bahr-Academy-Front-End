@@ -12,12 +12,9 @@ import "../css/Courses.css";
 import "../css/dash.css";
 import "../css/Courses.css";
 import EditprofForm from "./form/EditprofileForm copy";
-<<<<<<< HEAD
 import EditprofForms from "./form/EditprofileForm";
 
 import * as yup from "yup";
-=======
->>>>>>> f381aa9f91d817b907474d630d8a4c2907296c67
 //images
 class Editprofile extends Component {
   state = {

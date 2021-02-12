@@ -15,6 +15,51 @@ body {
     margin: 0 auto;
 }
 
+/* Responsive */
+
+@media Screen and (max-width:1450px) {
+    #center-holder {
+        width: 1450px;
+        height: 4447px;
+    }
+}
+
+@media Screen and (max-width:1350px) {
+    #center-holder {
+        width: 1350px;
+        height: 4237px;
+    }
+}
+
+@media Screen and (max-width:1250px) {
+    #center-holder {
+        width: 1250px;
+        height: 3920px;
+    }
+}
+
+@media Screen and (max-width:1150px) {
+    #center-holder {
+        width: 1150px;
+        height: 3648px;
+    }
+}
+
+@media Screen and (max-width:1000px) {
+    #center-holder {
+        width: 1000px;
+        height: 3178px;
+    }
+}
+
+@media Screen and (max-width:375px) {
+    #center-holder {
+        width: 375px;
+        height: 2627px;
+        background: #f9f9f9;
+    }
+}
+
 @font-face {
     font-family: 'yek';
     src: url('../../../Assets/fonts/Yekan\ Bakh\ Vip\ Version.ttf') format('truetype');
