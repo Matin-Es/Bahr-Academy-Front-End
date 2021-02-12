@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    direction: rtl;
+    font-family: 'yek';
+    list-style: none;
+    /* background: url('../../../Assets/images/back-set.png') no-repeat 0% -16px;
+    background-size: 100%; */
+}
+
+/* Holder  */
+
+#center-holder {
+    width: 1583px;
+    height: 4730px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'yek';
+    src: url('../../../Assets/fonts/Yekan\ Bakh\ Vip\ Version.ttf') format('truetype');
+}

@@ -1,12 +1,10 @@
 import React, { Component } from "react";
 import {
-  MDBRow,
-  MDBCol,
+
   MDBIcon,
   MDBBtn,
   toast,
   ToastContainer,
-  MDBNotification,
 } from "mdbreact";
 
 //styles
@@ -14,9 +12,12 @@ import "../css/Courses.css";
 import "../css/dash.css";
 import "../css/Courses.css";
 import EditprofForm from "./form/EditprofileForm copy";
+<<<<<<< HEAD
 import EditprofForms from "./form/EditprofileForm";
 
 import * as yup from "yup";
+=======
+>>>>>>> f381aa9f91d817b907474d630d8a4c2907296c67
 //images
 class Editprofile extends Component {
   state = {
@@ -29,8 +30,10 @@ class Editprofile extends Component {
     event.preventDefault();
 
     event.target.className += " was-validated";
-    toast.error("Error message", {
-      closeButton: false,
+
+    toast.error("یک فیلد خالی وجود دارد لطفا آن را پر کنید", {
+      rtl: true,
+      closeButton: true
     });
   };
 
@@ -96,7 +99,7 @@ class Editprofile extends Component {
               noValidate
             >
               <div className="row">
-                <div className="col-6 mb-3">
+                <div className="col-md-6 mb-3">
                   <EditprofForm
                     name="fname"
                     type="text"
@@ -109,7 +112,7 @@ class Editprofile extends Component {
                     onChange={this.changeHandler}
                   />
                 </div>
-                <div className="col-6 mb-3">
+                <div className="col-md-6 mb-3">
                   <EditprofForm
                     name="lname"
                     type="text"
@@ -124,7 +127,7 @@ class Editprofile extends Component {
                 </div>
               </div>
               <div className="row">
-                <div className="col-6 mb-3">
+                <div className="col-md-6 mb-3">
                   <EditprofForm
                     name="email"
                     type="email"
@@ -137,7 +140,7 @@ class Editprofile extends Component {
                     required="required"
                   />
                 </div>
-                <div className="col-6 mb-3">
+                <div className="col-md-6 mb-3">
                   <EditprofForm
                     name="date"
                     type="text"
@@ -155,7 +158,7 @@ class Editprofile extends Component {
               <div className="s">
                 <MDBBtn outline color="secondary" className="btn-md font bigg">
                   لغو
-                  <MDBIcon far icon="window-close" className="pr-1" />
+                  <MDBIcon far icon="window-close" brand className="pr-1" />
                 </MDBBtn>
                 <MDBBtn
                   gradient="purple"
@@ -163,9 +166,15 @@ class Editprofile extends Component {
                   type="submit"
                 >
                   ثبت تغییرات
-                  <MDBIcon far icon="check-square" className="pr-1" />
+                  <MDBIcon far icon="check-square"brand  className="pr-1" />
                 </MDBBtn>
               </div>
+              <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                newestOnTop={true}
+                rtl={true}
+              ></ToastContainer>
             </form>
           </div>
         </div>
