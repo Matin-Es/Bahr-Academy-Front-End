@@ -5,7 +5,7 @@ import App from './Container/App';
 import reportWebVitals from './reportWebVitals';
 import './Assets/Styles/cssrest.css'
 //mdb
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css"
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 import 'mdbreact/dist/css/mdb.rtl.min.css'
