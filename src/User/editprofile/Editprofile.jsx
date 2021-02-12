@@ -1,29 +1,73 @@
 import React, { Component } from "react";
-import { MDBRow, MDBCol, MDBBtn, MDBIcon } from "mdbreact";
+import {
+  MDBRow,
+  MDBCol,
+  MDBIcon,
+  MDBBtn,
+  toast,
+  ToastContainer,
+  MDBNotification,
+} from "mdbreact";
 
 //styles
 import "../css/Courses.css";
 import "../css/dash.css";
 import "../css/Courses.css";
+import EditprofForm from "./form/EditprofileForm copy";
+import EditprofForms from "./form/EditprofileForm";
+
+import * as yup from "yup";
+import { Form, Formik } from "formik";
 //images
 class Editprofile extends Component {
   state = {
     fname: "",
     lname: "",
     email: "",
-    city: "",
-    state: "",
-    zip: "",
+    date: "",
   };
   submitHandler = (event) => {
     event.preventDefault();
+
     event.target.className += " was-validated";
+    toast.error("Error message", {
+      closeButton: false,
+    });
   };
 
   changeHandler = (event) => {
     this.setState({ [event.target.name]: event.target.value });
   };
+  classNameHandler = () => {
+    let classes = "form-control";
+    return classes;
+  };
+
   render() {
+    // const Validate = yup.object().shape({
+    //   fname: yup.string().required("لطفا فیلد نام را پر کنید").length(3),
+    //   lname: yup.string().required("لطفا فیلد نام خانوادگی را پر کنید"),
+    //   city: yup.string().required("لطفا فیلد شهر را پر کنید"),
+    //   email: yup.string().email().required("لطفا فیلد ایمیل را پر کنید"),
+    // });
+    // let validatechecker = () => {};
+    // onsubmit = (data) => {
+    //   console.log(data);
+    // };
+    // alert = (value) => {
+    //   Validate.validate(value)
+    //     .then((val) => {})
+    //     .catch((val) => {
+    //       toast.error(
+    //         <MDBIcon icon="exclamation-triangle" />,
+    //         "فیلد خالی وجود دارد.لطفا آن را پر کنید ",
+    //         {
+    //           autoClose: true,
+    //         }
+    //       );
+    //     });
+    // };
+    const { fname, lname, email, date, classNameHandler, required } = this;
     return (
       <React.Fragment>
         <div className="row">
@@ -52,97 +96,63 @@ class Editprofile extends Component {
               onSubmit={this.submitHandler}
               noValidate
             >
-              <MDBRow>
-                <MDBCol md="6" className="mb-3">
-                  <label
-                    htmlFor="defaultFormRegisterNameEx"
-                    className="grey-text inputp"
-                  >
-                    نام
-                  </label>
-                  <input
-                    value=""
+              <div className="row">
+                <div className="col-6 mb-3">
+                  <EditprofForm
                     name="fname"
-                    onChange={this.changeHandler}
                     type="text"
                     id="defaultFormRegisterNameEx"
-                    className="form-control changeinput"
+                    classnames={classNameHandler() + " changeinput"}
+                    value={fname}
+                    label="نام"
                     placeholder="نام"
-                    required
-                  />
-                  <div className="invalid-feedback font">
-                    فیلد نام را پر کنید
-                  </div>{" "}
-                  <div className="valid-feedback"></div>
-                </MDBCol>
-                <MDBCol md="6" className="mb-3">
-                  <label
-                    htmlFor="defaultFormRegisterNameEx"
-                    className="grey-text inputp"
-                  >
-                    نام خانوادگی
-                  </label>
-                  <input
-                    value=""
-                    name="fname"
+                    required="required"
                     onChange={this.changeHandler}
-                    type="text"
-                    id="defaultFormRegisterNameEx"
-                    className="form-control changeinput"
-                    placeholder="نام خانوادگی"
-                    required
                   />
-                  <div className="invalid-feedback">
-                    فیلد نام خانوادگی را پر کنید
-                  </div>
-                </MDBCol>
-              </MDBRow>
-              <MDBRow>
-                <MDBCol md="6" className="mb-3">
-                  <label
-                    htmlFor="defaultFormRegisterPasswordEx4"
-                    className="grey-text inputp"
-                  >
-                    ایمیل
-                  </label>
-                  <input
-                    value=""
+                </div>
+                <div className="col-6 mb-3">
+                  <EditprofForm
+                    name="lname"
+                    type="text"
+                    id="defaultFormRegisterLNameEx"
+                    classnames={classNameHandler() + " changeinput"}
+                    value={lname}
+                    placeholder=" نام خانوادگی"
+                    label=" نام خانوادگی"
                     onChange={this.changeHandler}
-                    type="text"
-                    id="defaultFormRegisterPasswordEx4"
-                    className="form-control changeinput"
-                    name="city"
-                    placeholder="ایمیل شما"
-                    required
+                    required="required"
                   />
-                  <div className="invalid-feedback font">
-                    فیلد ایمیل تولد را پر کنید
-                  </div>{" "}
-                  <div className="valid-feedback"></div>
-                </MDBCol>
-                <MDBCol md="6" className="mb-3 ">
-                  <label
-                    htmlFor="defaultFormRegisterPasswordEx4"
-                    className="grey-text inputp"
-                  >
-                    تاریخ تولد
-                  </label>
-                  <input
-                    value=""
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-6 mb-3">
+                  <EditprofForm
+                    name="email"
+                    type="email"
+                    id="defaultFormRegisterEmailEx"
+                    classnames={classNameHandler() + " changeinput"}
+                    value={email}
+                    placeholder="ایمیل"
+                    label="ایمیل"
                     onChange={this.changeHandler}
-                    type="text"
-                    id="defaultFormRegisterPasswordEx4"
-                    className="form-control changeinput"
-                    name="ایمیل"
-                    placeholder="تاریخ تولد شما"
-                    required
+                    required="required"
                   />
-                  <div className="invalid-feedback font">
-                    فیلد تاریخ تولد را پر کنید
-                  </div>
-                  <div className="valid-feedback"></div>
-                </MDBCol>
-              </MDBRow>
+                </div>
+                <div className="col-6 mb-3">
+                  <EditprofForm
+                    name="date"
+                    type="text"
+                    id="defaultFormRegisterdateEx"
+                    classnames={classNameHandler() + " changeinput"}
+                    value={date}
+                    label="تاریخ تولد"
+                    placeholder="تاریخ تولد"
+                    onChange={this.changeHandler}
+                    required="required"
+                  />
+                </div>
+              </div>
+
               <div className="s">
                 <MDBBtn outline color="secondary" className="btn-md font bigg">
                   لغو

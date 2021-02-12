@@ -505,6 +505,7 @@ body {
     border-radius: 0;
     top: 446px;
   }
+
   .inputs_holder input {
     width: 310px;
     height: 55px;
@@ -616,4 +617,13 @@ body {
 }
 .sizess{
   width: 70px;
+}
+
+.displayb{
+  display: none !important;
+  color: red;
+}
+.redError{
+  color: red;
+  float: right;
 }
