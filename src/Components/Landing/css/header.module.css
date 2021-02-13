@@ -34,10 +34,10 @@ ul {
 
 .menu-tab {
   border: 1px solid transparent;
-  width: 600px;
+  width: 590px;
   height: 80px;
-  float: right;
-  margin-right: 10px;
+  float: right !important;
+  margin-right: 5px;
 }
 
 .menu-tab li {

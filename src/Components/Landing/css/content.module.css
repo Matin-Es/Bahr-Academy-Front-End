@@ -163,10 +163,10 @@
   margin-top: 20px;
 }
 
-.develop h3 {
+.develop > h3 {
   font-size: 25px;
   margin-top: 18px;
-  font-family: "yek", Arial, Helvetica, sans-serif;
+  font-family: yek, Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
 

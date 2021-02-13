@@ -5,7 +5,6 @@ import Footer from "../Footer/Footer";
 import base from './css/base.module.css';
 import content from './css/content.module.css';
 import header from './css/header.module.css';
-import responsive from './css/responsive.module.css';
 
 
 class Landing extends Component {
