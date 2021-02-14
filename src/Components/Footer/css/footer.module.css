@@ -134,8 +134,8 @@
 @media Screen and (max-width: 1450px) {
   /* Footer */
   .pic {
-    width: 150px;
-    height: 150px;
+    width: 137px;
+    height: 137px;
     margin-top: 40px;
     margin-left: 18px;
   }
@@ -145,7 +145,7 @@
   /* Footer */
   .pic {
     width: 120px;
-    height: 150px;
+    height: 120px;
     margin-top: 40px;
     margin-left: 18px;
   }
@@ -299,8 +299,7 @@
   }
 
   .bottom-foot > p {
-    text-align: right;
-    text-indent: 20px;
+    text-align: center;
     font-size: 15px;
   }
 }

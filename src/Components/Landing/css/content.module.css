@@ -1,7 +1,102 @@
 #content {
   border: 1px solid transparent;
   width: 1581px;
-  height: 3800px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* Skill */
+
+.skill {
+  border: 1px solid transparent;
+  position: relative;
+  width: 1479px;
+  height: 720px;
+  margin: 100px auto;
+}
+
+#res-skill {
+  display: none;
+}
+
+/* Right-Skill */
+
+#right-skill {
+  float: right;
+  width: 575px;
+  height: 520px;
+  margin-top: 80px;
+  color: #707070;
+  position: relative;
+  right: 20px;
+}
+
+.title-skill {
+  font-size: 55px;
+  text-align: center;
+  line-height: 4px;
+}
+
+.title-skill > strong {
+  color: #744fd6;
+  font-weight: lighter;
+}
+
+.border-bottom-skill {
+  border-radius: 30px;
+  width: 575px;
+  height: 10px;
+  background: linear-gradient(
+    0deg,
+    rgba(156, 90, 247, 1) 0%,
+    rgba(70, 91, 234, 1) 100%
+  );
+  margin-top: 30px;
+  margin-right: 0px;
+}
+
+.des-skill {
+  width: 575px;
+  font-size: 34px;
+  text-align: right;
+  line-height: 43px;
+  margin-top: 25px;
+  margin-right: 3px;
+}
+
+.see-curses {
+  position: relative;
+  float: right;
+  width: 300px;
+  height: 80px;
+  background: linear-gradient(
+    90deg,
+    rgba(70, 91, 234, 1) 0%,
+    rgba(164, 90, 248, 1) 100%
+  );
+  border-radius: 15px;
+  line-height: 82px;
+  margin-right: 4px;
+  font-size: 33px;
+  color: white;
+  text-align: right;
+  text-indent: 35px;
+  cursor: default;
+}
+
+.see-curses > img {
+  position: absolute;
+  width: 35px;
+  margin-right: 20px;
+  margin-top: 22px;
+}
+
+/* Header > Skill > Left */
+
+.laptop-vector-skill {
+  width: 800px;
+  float: left;
+  margin-left: 30px;
 }
 
 /* Grouping */
@@ -524,9 +619,63 @@
 
   #content {
     width: 1348px;
+    overflow: hidden;
     border: 1px solid transparent;
     margin: 0 auto;
-    height: 3580px;
+  }
+
+  .skill {
+    border: 1px solid transparent;
+    position: relative;
+    width: 1346px;
+    height: 620px;
+    margin: 70px auto;
+  }
+
+  #right-skill {
+    border: 1px solid transparent;
+    width: 473px;
+    height: 450px;
+    margin-top: 70px;
+    right: 40px;
+  }
+
+  .title-skill {
+    font-size: 45px;
+  }
+
+  .border-bottom-skill {
+    width: 473px;
+    margin-right: 0;
+  }
+
+  .des-skill {
+    width: 473px;
+    font-size: 29px;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+
+  .see-curses {
+    width: 220px;
+    height: 60px;
+    border-radius: 10px;
+    line-height: 62px;
+    margin-right: 2px;
+    font-size: 25px;
+    text-indent: 18px;
+  }
+
+  .see-curses > img {
+    width: 30px;
+    margin-right: 17px;
+    margin-top: 15px;
+  }
+
+  .laptop-vector-skill {
+    width: 700px;
+    margin-left: 70px;
+    margin-top: 35px;
   }
 
   .grouping {
@@ -623,8 +772,62 @@
 
   #content {
     width: 1348px;
+    overflow: hidden;
     border: 1px solid transparent;
-    height: 3470px;
+  }
+
+  .skill {
+    border: 1px solid transparent;
+    position: relative;
+    width: 1259px;
+    height: 600px;
+    margin: 70px auto;
+  }
+
+  #right-skill {
+    border: 1px solid transparent;
+    width: 473px;
+    height: 450px;
+    margin-top: 70px;
+    right: 35px;
+  }
+
+  .title-skill {
+    font-size: 45px;
+  }
+
+  .border-bottom-skill {
+    width: 473px;
+    margin-right: 0;
+  }
+
+  .des-skill {
+    width: 473px;
+    font-size: 29px;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+
+  .see-curses {
+    width: 220px;
+    height: 60px;
+    border-radius: 10px;
+    line-height: 62px;
+    margin-right: 2px;
+    font-size: 25px;
+    text-indent: 18px;
+  }
+
+  .see-curses > img {
+    width: 30px;
+    margin-right: 17px;
+    margin-top: 15px;
+  }
+
+  .laptop-vector-skill {
+    width: 650px;
+    margin-left: 50px;
+    margin-top: 35px;
   }
 
   .grouping {
@@ -759,8 +962,22 @@
 
   #content {
     width: 1248px;
+    overflow: hidden;
     border: 1px solid transparent;
-    height: 3200px;
+  }
+
+  .skill {
+    border: 1px solid transparent;
+    position: relative;
+    width: 1159px;
+    height: 520px;
+    margin: 70px auto;
+  }
+
+  .laptop-vector-skill {
+    width: 600px;
+    margin-left: 60px;
+    margin-top: 45px;
   }
 
   .grouping {
@@ -862,8 +1079,59 @@
 
   #content {
     width: 1148px;
+    overflow: hidden;
     border: 1px solid transparent;
-    height: 3010px;
+  }
+
+  .skill {
+    border: 1px solid transparent;
+    position: relative;
+    width: 1059px;
+    height: 520px;
+    margin: 70px auto;
+  }
+
+  #right-skill {
+    border: 1px solid transparent;
+    width: 423px;
+    height: 430px;
+    margin-top: 60px;
+    right: 35px;
+  }
+
+  .title-skill {
+    font-size: 40px;
+  }
+
+  .border-bottom-skill {
+    width: 423px;
+    height: 7px;
+  }
+
+  .des-skill {
+    width: 423px;
+    font-size: 26px;
+    margin-top: 9px;
+  }
+
+  .see-curses {
+    width: 200px;
+    height: 55px;
+    border-radius: 8px;
+    line-height: 58px;
+    font-size: 24px;
+  }
+
+  .see-curses > img {
+    width: 25px;
+    margin-right: 12px;
+    margin-top: 15px;
+  }
+
+  .laptop-vector-skill {
+    width: 550px;
+    margin-left: 50px;
+    margin-top: 50px;
   }
 
   .grouping {
@@ -1032,7 +1300,61 @@
   #content {
     border: 1px solid transparent;
     width: 998px;
-    height: 2610px;
+    overflow: hidden;
+  }
+
+  .skill {
+    border: 1px solid transparent;
+    position: relative;
+    width: 900px;
+    height: 450px;
+    margin: 70px auto;
+  }
+
+  #right-skill {
+    border: 1px solid transparent;
+    width: 320px;
+    height: 360px;
+    margin-top: 60px;
+    right: 30px;
+  }
+
+  .title-skill {
+    font-size: 30px;
+  }
+
+  .border-bottom-skill {
+    width: 320px;
+    height: 6px;
+  }
+
+  .des-skill {
+    width: 320px;
+    font-size: 22px;
+    line-height: 35px;
+    margin-bottom: 10px;
+    margin-top: 7px;
+  }
+
+  .see-curses {
+    width: 150px;
+    height: 40px;
+    border-radius: 7px;
+    line-height: 43px;
+    font-size: 18px;
+    text-indent: 13px;
+  }
+
+  .see-curses > img {
+    width: 20px;
+    margin-right: 9px;
+    margin-top: 10px;
+  }
+
+  .laptop-vector-skill {
+    width: 450px;
+    margin-left: 50px;
+    margin-top: 55px;
   }
 
   .grouping {
@@ -1304,7 +1626,52 @@
   #content {
     border: 1px solid transparent;
     width: 373px;
-    height: 2289px;
+    overflow: hidden;
+  }
+
+  .skill {
+    display: none;
+  }
+
+  #res-skill {
+    display: block;
+    background: url("../../../Assets/images/Group 306.jpg") no-repeat 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .h2-title {
+    position: relative;
+    top: 50px;
+    right: 105px;
+    color: #ffffff;
+    width: 150px;
+    height: 20px;
+    font-size: 27px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .see-curses {
+    border: 3px solid #ffffff;
+    background: transparent;
+    width: 150px;
+    height: 40px;
+    margin-top: 130px;
+    margin-right: 105px;
+    border-radius: 7px;
+    line-height: 40px;
+    font-size: 18px;
+    text-indent: 10px;
+  }
+
+  .see-curses > img {
+    width: 20px;
+    margin-right: 7px;
+    margin-top: 7px;
   }
 
   .right-developing > img,
