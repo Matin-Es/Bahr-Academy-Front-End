@@ -11,8 +11,46 @@ body {
 
 #center-holder {
     width: 1583px;
-    height: 4730px;
     margin: 0 auto;
+}
+
+/* Responsive */
+
+@media Screen and (max-width:1450px) {
+    #center-holder {
+        width: 1450px;
+    }
+}
+
+@media Screen and (max-width:1350px) {
+    #center-holder {
+        width: 1350px;
+    }
+}
+
+@media Screen and (max-width:1250px) {
+    #center-holder {
+        width: 1250px;
+    }
+}
+
+@media Screen and (max-width:1150px) {
+    #center-holder {
+        width: 1150px;
+    }
+}
+
+@media Screen and (max-width:1000px) {
+    #center-holder {
+        width: 1000px;
+    }
+}
+
+@media Screen and (max-width:375px) {
+    #center-holder {
+        width: 375px;
+        background: #f9f9f9;
+    }
 }
 
 @font-face {
