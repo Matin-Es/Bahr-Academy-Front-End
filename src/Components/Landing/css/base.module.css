@@ -41,9 +41,22 @@ body {
   }
 }
 
-@media Screen and (max-width: 1000px) {
+@media Screen and (max-width: 1024px) {
   #center-holder {
-    width: 1000px;
+    width: 1024px;
+  }
+}
+
+@media Screen and (max-width: 768px) {
+  #center-holder {
+    width: 768px;
+  }
+}
+
+@media Screen and (max-width: 414px) {
+  #center-holder {
+    width: 414px;
+    background: #f9f9f9;
   }
 }
 
@@ -53,6 +66,14 @@ body {
     background: #f9f9f9;
   }
 }
+
+@media Screen and (max-width: 360px) {
+  #center-holder {
+    width: 360px;
+    background: #f9f9f9;
+  }
+}
+
 
 @font-face {
   font-family: "yek";
