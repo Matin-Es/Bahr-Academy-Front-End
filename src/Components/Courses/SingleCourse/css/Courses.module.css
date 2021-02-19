@@ -7,6 +7,7 @@
     left: -20px;
     width: 606px;
     height: 678px;
+    animation: anim6 1s normal forwards ease-in-out;
   }
   
   .shape2_holder {
@@ -19,6 +20,7 @@
     width: 400px;
     height: 450px;
     transform: rotate(180deg);
+    animation: anim6 1s normal forwards ease-in-out;
   }
 
 #panel_holder {
@@ -33,6 +35,7 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     overflow: hidden;
+    animation: panel 1s normal forwards ease-in-out;
 }
 #right{
     float: right;
@@ -611,5 +614,25 @@ li.right{
     }
     #panel_holder>.leftdet {
         bottom: 15px;
+    }
+}
+
+@keyframes anim6{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+@keyframes panel{
+    0%{
+        opacity: 0;
+        margin-top: 50px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0;
     }
 }

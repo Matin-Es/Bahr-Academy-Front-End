@@ -7,6 +7,8 @@
     left: -20px;
     width: 606px;
     height: 678px;
+    z-index: -20;
+    animation: anim6 1s normal forwards ease-in-out;
 }
 
 .shape2_holder {
@@ -19,6 +21,8 @@
     width: 400px;
     height: 450px;
     transform: rotate(180deg);
+    z-index: -20px;
+    animation: anim6 1s normal forwards ease-in-out;
 }
 
 li.path {
@@ -114,10 +118,12 @@ body {
 /*   courses css   */
 
 .courses_holder {
+    animation: up 1s normal forwards ease-in-out;
     width: 850px;
     height: auto;
     margin: 150px auto;
     font-family: yek;
+    transition: 0.5s;
 }
 
 .courses_holder>.courses_header {
@@ -162,10 +168,11 @@ body {
 }
 
 .sign-btn {
-    margin-top: 12px;
+    margin-top: 14px;
     float: left;
     width: 130px;
     height: 230px;
+    margin-left: 2px;
 }
 
 .sign-btn>button {
@@ -183,8 +190,13 @@ body {
     font-family: yek;
     font-size: 20px;
     line-height: 40px;
+    transition: 0.5s;
 }
 
+.sign-btn> button:hover {
+    background-color:#24c46f;
+    transform: scale(1.1);
+}
 .description {
     text-align: right;
     height: 230px;
@@ -364,5 +376,35 @@ li.right {
     }
     #panel_holder>.leftdet {
         bottom: 15px;
+    }
+}
+
+
+
+@keyframes up{
+    0%{
+        margin-top: 200px;
+    }
+    100%{
+        margin-top: 150px;
+    }
+}
+@keyframes anim6{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+@keyframes panel{
+    0%{
+        opacity: 0;
+        margin-top: 10px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0;
     }
 }

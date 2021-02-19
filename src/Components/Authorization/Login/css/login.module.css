@@ -55,6 +55,7 @@ body {
   left: -20px;
   width: 606px;
   height: 678px;
+  animation: up 1s normal forwards ease-in-out;
 }
 
 .shape2_holder {
@@ -67,6 +68,7 @@ body {
   width: 400px;
   height: 448px;
   transform: rotate(180deg);
+  animation: up 1s normal forwards ease-in-out;
 }
 
 #form_holder {
@@ -202,6 +204,7 @@ input::placeholder {
   height: 120px;
   direction: rtl;
   font-family: "yek";
+  animation: up 1s normal forwards ease-in-out;
 }
 
 .menu-logo img {
@@ -727,5 +730,14 @@ input:focus {
     position: relative;
     top: -68px;
     right: 102px;
+  }
+}
+
+@keyframes up{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }
