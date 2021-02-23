@@ -1,0 +1,21 @@
+// ================================================================================================
+//  File Name: include.scss
+//  Description: Common components file to include all theme specific custom components.
+//  ----------------------------------------------------------------------------------------------
+//  Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+//  Author: PIXINVENT
+//  Author URL: http://www.themeforest.net/user/pixinvent
+// ================================================================================================
+
+// Variables
+// ------------------------------
+
+// Functions
+ // Bootstrap core function
+@import 'functions'; // Bootstrap extended function
+
+// Variables
+@import 'variables'; // Bootstrap extended variable override
+
+// Mixins
+@import 'mixins'; // Bootstrap extended mixins

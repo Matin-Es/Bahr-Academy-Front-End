@@ -19,9 +19,6 @@ import Dashboard from "../../User/Panelholder/Panel";
 import Editprofile from "../../User/editprofile/Editprofile";
 import MyCourses from "../../User/UserCourses/UserCourses";
 
-//
-import AdminDash from "../../Admin-Area/MainPage/Admindashboard";
-import AdminAllCourses from "../../Admin-Area/CourseAdmin/AllCourses/AllCourses";
 
 class Routers extends Component {
   state = {};
@@ -47,23 +44,6 @@ class Routers extends Component {
           <Route exact path="/Dashboard" component={Dashboard} />
           <Route exact path="/dashboard/myCourses" component={Dashboard} />
           {/*End User Zone*/}
-
-          {/*Admin Zone*/}
-          <Route exact path="/AdminDashboard" component={AdminDash} />
-          <Route exact path="/Admin/AllCourses" component={AdminAllCourses} />
-          {/* <Route exact path="/Admin/Blogs" component={} />
-            <Route exact path="/Admin/Masters" component={} />
-
-            <Route exact path="/AddCourse" component={} />
-            <Route exact path="/AddUser" component={} />
-            <Route exact path="/AddBlog" component={} />
-            <Route exact path="/AddMaster" component={} />
-
-            <Route exact path="/EditCourse:id" component={} />
-            <Route exact path="/EditUser:Id" component={} />
-            <Route exact path="/EditBlog:id" component={} />
-            <Route exact path="/EditMaster:id" component={} /> */}
-          {/*Admin Zone*/}
           <Redirect to="/not-found" />
           </Switch>
         </Router>
