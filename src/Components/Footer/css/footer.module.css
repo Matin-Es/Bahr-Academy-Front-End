@@ -40,13 +40,20 @@
   float: left;
   margin: 15px;
   cursor: pointer;
+  transition: 0.2s;
+  text-align: center;
 }
-
+.social:hover{
+  transform: rotate(0deg);
+}
+.social:hover > img{
+  transform: scale(1.02) rotate(0deg);
+}
 .social > img {
-  width: 60px;
+  display: inline-block;
+  width: 105%;
   transform: rotate(-45deg);
-  margin-right: -8px;
-  margin-top: -2px;
+  transition: 0.2s;
 }
 
 .blog,
