@@ -50,7 +50,7 @@ body {
 .shape1_holder {
   /* border: 1px solid red; */
   background: url("../../../../Assets/images/Path 62.svg") no-repeat 0% 0%;
-  background-size: 606px;
+  background-size: 606px !important;
   position: absolute;
   top: -20px;
   left: -20px;
@@ -61,7 +61,7 @@ body {
 .shape2_holder {
   /* border: 1px solid red; */
   background: url("../../../../Assets/images/Path 62.svg") no-repeat 0% 0%;
-  background-size: 400px;
+  background-size: 400px !important;
   position: absolute;
   bottom: 0px;
   right: -20px;

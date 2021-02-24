@@ -29,7 +29,7 @@ class Login extends Component {
         <div className="container">
           <MDBRow>
             <MDBCol className="md6L" md="6">
-              <MDBCard className="roundedform h-100 card">
+              <MDBCard className="roundedformL h-100 card">
                 <MDBCardBody>
                   <form className="ml-1">
                     <p className="h4 text-right usernametext ">

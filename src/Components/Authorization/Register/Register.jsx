@@ -68,7 +68,7 @@ class Register extends Component {
                       {" "}
                       <div className="exclamationR">
                         {" "}
-                        <input type="checkbox" />
+                        <input className="checkbosinput" type="checkbox"/>
                       </div>
                       مرا به خاطر بسپار
                     </div>
