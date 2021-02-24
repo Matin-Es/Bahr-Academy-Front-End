@@ -44,7 +44,7 @@
   text-align: center;
 }
 .social:hover{
-  transform: scale(1.02);
+  transform: rotate(0deg);
 }
 .social:hover > img{
   transform: scale(1.02) rotate(0deg);
