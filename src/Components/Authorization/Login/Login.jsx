@@ -13,10 +13,34 @@ import {
   MDBBtn,
   MDBCard,
   MDBCardBody,
+  toast,
+  ToastContainer,
   MDBIcon,
 } from "mdbreact";
 
 class Login extends Component {
+  state = {
+    email: "",
+    password: "",
+    emailtext: "ایمیل",
+    passwordtext: "پسورد",
+  };
+
+  submitHandler = (event) => {
+    event.preventDefault();
+
+    event.target.className += " was-validated";
+
+    toast.error("یک فیلد خالی وجود دارد لطفا آن را پر کنید", {
+      rtl: true,
+      closeButton: true,
+    });
+  };
+
+  changeHandler = (event) => {
+    this.setState({ [event.target.name]: event.target.value });
+  };
+
   render() {
     return (
       <React.Fragment>
@@ -31,25 +55,44 @@ class Login extends Component {
             <MDBCol className="md6L" md="6">
               <MDBCard className="roundedformL h-100 card">
                 <MDBCardBody>
-                  <form className="ml-1">
+                  <form
+                    className="needs-validation ml-1"
+                    onSubmit={this.submitHandler}
+                    noValidate
+                  >
                     <p className="h4 text-right usernametext ">
                       ایمیل یا نام کاربری
                     </p>
 
                     <input
-                      placeholder="info@bahr.com"
-                      type="text"
-                      id="defaultFormCardNameEx"
-                      className="form-control w-75 ml-5 usernameinput px-5"
+                      value={this.state.email}
+                      onChange={this.changeHandler}
+                      type="email"
+                      id="defaultFormRegisterConfirmEx"
+                      className="form-control w-75 ml-5 mb-4 usernameinput px-5"
+                      name="email"
+                      placeholder="ایمیل خود را وارد کنید"
+                      required
                     />
+                    <div className="invalid-feedback invalidfeedbackemail">
+                      لطفا فیلد{this.state.emailtext} را پر کنید
+                    </div>
 
                     <p className="h4 text-right usernametext">رمزعبور</p>
+
                     <input
-                      placeholder="حداقل 8 کاراکتر"
+                      value={this.state.password}
+                      onChange={this.changeHandler}
                       type="password"
-                      id="defaultFormCardEmailEx"
-                      className="form-control w-75 ml-5 mb-4 passwordinput px-5"
+                      id="defaultFormRegisterConfirmEx2"
+                      className="form-control w-75 ml-5 mb-5 passwordinput px-5"
+                      name="password"
+                      placeholder="حداقل 8 کاراکتر"
+                      required
                     />
+                    <div className="invalid-feedback invalidfeedbackpass">
+                      لطفا فیلد{this.state.passwordtext} را پر کنید
+                    </div>
                     <div className="forgetPassL mt-2" dir="rtl">
                       {" "}
                       <div className="exclamation"></div>
@@ -61,10 +104,16 @@ class Login extends Component {
                           ثبت نام
                         </MDBBtn>
                       </Link>
-                      <MDBBtn rounded outline color=" signInL">
+                      <MDBBtn type="submit" rounded outline color=" signInL">
                         ورود
                       </MDBBtn>
                     </div>
+                    <ToastContainer
+                      position="top-right"
+                      autoClose={5000}
+                      newestOnTop={true}
+                      rtl={true}
+                    ></ToastContainer>
                   </form>
                 </MDBCardBody>
               </MDBCard>
