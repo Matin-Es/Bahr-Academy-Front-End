@@ -96,14 +96,14 @@ a {
   color: #3078f5;
 }
 
-.longinvalidtext{
+.longinvalidtext {
   margin-right: 70px;
   font-size: 9px !important;
 }
-.invalidfeedbackemail{
-  margin-top: -18px !important;
+.invalidfeedbackemail {
+  margin-top: -15px !important;
 }
-.invalidfeedbackpass{
+.invalidfeedbackpass {
   margin-top: -15px !important;
   margin-left: 235px;
 }
@@ -113,7 +113,11 @@ a {
     margin-top: 1rem !important;
   }
 }
-.checkbosinput{
+.checkbosinput {
   pointer-events: painted !important;
   opacity: 1 !important;
+}
+.invalidfeedbackpass2 {
+  margin-left: 255px ;
+  margin-top:-23px !important;
 }

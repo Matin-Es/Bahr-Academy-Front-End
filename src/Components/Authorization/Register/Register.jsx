@@ -17,13 +17,14 @@ import {
 
 class Register extends Component {
   state = {
-    fname: "",
+    
     email: "",
     password: "",
     confirm_password: "",
     fname: "نام و نام خانوادگی",
     emailtext: "ایمیل",
     passwordtext: "پسورد",
+    confirm_passwordtext:"مغایرت دارد"
   };
 
   submitHandler = (event) => {
@@ -126,8 +127,8 @@ class Register extends Component {
                       placeholder="حداقل 8 کاراکتر"
                       required
                     />
-                    <div className="invalid-feedback invalidfeedbackpass">
-                      لطفا فیلد{this.state.passwordtext} را پر کنید
+                    <div className="invalid-feedback invalidfeedbackpass invalidfeedbackpass2">
+                    رمز عبور مغایرت دارد
                     </div>
                     <div className="forgetPassR mt-2" dir="rtl">
                       {" "}
