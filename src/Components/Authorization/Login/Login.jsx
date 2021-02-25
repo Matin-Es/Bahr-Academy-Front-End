@@ -90,7 +90,7 @@ class Login extends Component {
                       placeholder="حداقل 8 کاراکتر"
                       required
                     />
-                    <div className="invalid-feedback invalidfeedbackpass">
+                    <div className="invalid-feedback invalidfeedbackpassL">
                       لطفا فیلد{this.state.passwordtext} را پر کنید
                     </div>
                     <div className="forgetPassL mt-2" dir="rtl">
