@@ -155,6 +155,8 @@
 }
 .grouping>input:hover {
   transform: scale(1.1);
+  background-color: #744fd6;
+  color: #fff;
 }
 .math {
   background: url("../../../Assets/images/math.svg") no-repeat 50% 20% white;
