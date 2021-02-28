@@ -1,22 +1,18 @@
 import React, { Component } from "react";
-// import classes from "./css/login.module.css";
 import classes from "./css/login.module.css";
-import resclasses from "./css/responsive_log.module.css";
 import { Link } from "react-router-dom";
 import Header from "../../Header/Header";
 import "./css/mdb_log.css";
 import "./css/mdb_res.css";
 import {
-  MDBContainer,
   MDBRow,
   MDBCol,
   MDBBtn,
   MDBCard,
   MDBCardBody,
-  toast,
   ToastContainer,
-  MDBIcon,
 } from "mdbreact";
+import { LogInUser } from "../../services/api/Auth/login.api";
 
 class Login extends Component {
   state = {
@@ -26,15 +22,18 @@ class Login extends Component {
     passwordtext: "پسورد",
   };
 
+  loginUser = async () => {
+    const user = {
+      email: "example@example.com",
+      password: "12345678",
+    };
+    const Logindata = await LogInUser(user);
+    console.log(Logindata);
+  };
   submitHandler = (event) => {
     event.preventDefault();
 
     event.target.className += " was-validated";
-
-    toast.error("یک فیلد خالی وجود دارد لطفا آن را پر کنید", {
-      rtl: true,
-      closeButton: true,
-    });
   };
 
   changeHandler = (event) => {
@@ -42,6 +41,7 @@ class Login extends Component {
   };
 
   render() {
+    const { loginUser } = this;
     return (
       <React.Fragment>
         <div className={classes.shape1_holder}></div>
@@ -104,7 +104,13 @@ class Login extends Component {
                           ثبت نام
                         </MDBBtn>
                       </Link>
-                      <MDBBtn type="submit" rounded outline color=" signInL">
+                      <MDBBtn
+                        onClick={loginUser}
+                        type="submit"
+                        rounded
+                        outline
+                        color=" signInL"
+                      >
                         ورود
                       </MDBBtn>
                     </div>

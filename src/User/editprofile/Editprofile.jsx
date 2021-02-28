@@ -3,7 +3,6 @@ import {
 
   MDBIcon,
   MDBBtn,
-  toast,
   ToastContainer,
 } from "mdbreact";
 
@@ -12,9 +11,7 @@ import "../css/Courses.css";
 import "../css/dash.css";
 import "../css/Courses.css";
 import EditprofForm from "./form/EditprofileForm copy";
-import EditprofForms from "./form/EditprofileForm";
 
-import * as yup from "yup";
 //images
 class Editprofile extends Component {
   state = {
@@ -25,13 +22,7 @@ class Editprofile extends Component {
   };
   submitHandler = (event) => {
     event.preventDefault();
-
     event.target.className += " was-validated";
-
-    toast.error("یک فیلد خالی وجود دارد لطفا آن را پر کنید", {
-      rtl: true,
-      closeButton: true
-    });
   };
 
   changeHandler = (event) => {
