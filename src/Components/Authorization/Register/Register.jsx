@@ -21,7 +21,7 @@ class Register extends Component {
     email: "",
     nationalId: "",
     password: "",
-    isRegister:false
+    isRegister: false,
   };
 
   submitHandler = (event) => {
@@ -34,18 +34,18 @@ class Register extends Component {
     this.setState({ [event.target.name]: event.target.value });
   };
 
-  registerUser = async()=>{
+  registerUser = async () => {
     const userRegister = {
       fullName: this.state.fullName,
       phoneNumber: this.state.PhoneNumber,
       birthDate: this.state.birthday,
-      email:this.state.email,
+      email: this.state.email,
       nationalId: this.state.nationalId,
-      password: this.state.password
+      password: this.state.password,
     };
     const RegisterData = await RegisterUser(userRegister);
-    this.setState({RegisterData, isRegister:true});
-  }
+    this.setState({ RegisterData, isRegister: true });
+  };
   render() {
     return (
       <div>
@@ -68,7 +68,6 @@ class Register extends Component {
                     <p className="h4 text-right usernametext ">
                       نام و نام خانوادگی{" "}
                     </p>
-
                     <input
                       value={this.state.fullName}
                       onChange={this.changeHandler}
@@ -79,11 +78,9 @@ class Register extends Component {
                       required
                     />
                     <div className="invalid-feedback  invalidfeedbackemail longinvalidtext">
-                      لطفا فیلد{this.state.fullName} را پر کنید
+                      لطفا فیلد نام و نام خانوادگی را پر کنید{" "}
                     </div>
-
                     <p className="h4 text-right usernametext ">ایمیل </p>
-
                     <input
                       value={this.state.email}
                       onChange={this.changeHandler}
@@ -95,7 +92,7 @@ class Register extends Component {
                       required
                     />
                     <div className="invalid-feedback invalidfeedbackemail">
-                      لطفا فیلد{this.state.email} را پر کنید
+                      لطفا فیلد ایمیل را پر کنید
                     </div>
                     <p className="h4 text-right usernametext">رمزعبور</p>
                     <input
@@ -107,7 +104,10 @@ class Register extends Component {
                       name="password"
                       placeholder="حداقل 8 کاراکتر"
                       required
-                    />
+                    />{" "}
+                    <div className="invalid-feedback invalidfeedbackpass">
+                      لطفا فیلد رمزعبور را پر کنید
+                    </div>
                     <p className="h4 text-right usernametext">شماره موبایل</p>
                     <input
                       value={this.state.phoneNumber}
@@ -119,6 +119,9 @@ class Register extends Component {
                       placeholder="حداقل 8 کاراکتر"
                       required
                     />
+                    <div className="invalid-feedback invalidfeedbackemail longinvalidtext">
+                      لطفا فیلد شماره موبایل را پر کنید
+                    </div>
                     <p className="h4 text-right usernametext">کد ملی</p>
                     <input
                       value={this.state.nationalId}
@@ -130,7 +133,9 @@ class Register extends Component {
                       placeholder="کد ملی"
                       required
                     />
-
+                    <div className="invalid-feedback  invalidfeedbackpass ">
+                      شماره کد ملی را پر کنید
+                    </div>
                     <p className="h4 text-right usernametext">سال تولد</p>
                     <input
                       value={this.state.birthday}
@@ -141,16 +146,19 @@ class Register extends Component {
                       name="birthday"
                       placeholder="حداقل 8 کاراکتر"
                       required
-                    />
-                    <div className="forgetPassR mt-2" dir="rtl">
-                      {" "}
-                      <div className="exclamationR">
-                        {" "}
-                        <input className="checkbosinput" type="checkbox" />
-                      </div>
-                      مرا به خاطر بسپار
+                    />{" "}
+                    <div className="invalid-feedback  invalidfeedbackemail ">
+                      شماره سال تولد را پر کنید
                     </div>
                     <div className="text-center py-4 mt-1">
+                      <div className="forgetPassR mt-2" dir="rtl">
+                        {" "}
+                        <div className="exclamationR">
+                          {" "}
+                          <input className="checkbosinput" type="checkbox" />
+                        </div>
+                        مرا به خاطر بسپار
+                      </div>
                       <MDBBtn
                         type="submit"
                         rounded

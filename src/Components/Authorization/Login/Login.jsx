@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import classes from "./css/login.module.css";
-import { Link } from "react-router-dom";
+import { Link ,Redirect} from "react-router-dom";
 import Header from "../../Header/Header";
 import "./css/mdb_log.css";
 import "./css/mdb_res.css";
@@ -51,11 +51,6 @@ class Login extends Component {
         <Header />
 
         <div className="container">
-          <h1>
-            {this.state.igLoggedin && getItem("token")
-              ? "log in"
-              : "please log in"}
-          </h1>
           <MDBRow>
             <MDBCol className="md6L" md="6">
               <MDBCard className="roundedformL h-100 card">
@@ -80,7 +75,7 @@ class Login extends Component {
                       required
                     />
                     <div className="invalid-feedback invalidfeedbackemail">
-                      لطفا فیلد{this.state.emailtext} را پر کنید
+                      لطفا فیلد ایمیل را پر کنید{" "}
                     </div>
 
                     <p className="h4 text-right usernametext">رمزعبور</p>
@@ -96,7 +91,7 @@ class Login extends Component {
                       required
                     />
                     <div className="invalid-feedback invalidfeedbackpassL">
-                      لطفا فیلد{this.state.passwordtext} را پر کنید
+                      لطفا فیلد رمز عبور را پر کنید{" "}
                     </div>
                     <div className="forgetPassL mt-2" dir="rtl">
                       {" "}
