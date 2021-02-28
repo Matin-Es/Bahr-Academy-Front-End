@@ -1,46 +1,51 @@
 import React, { Component } from "react";
 import classes from "./css/register.module.css";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import Header from "../../Header/Header";
 import "./css/mdb_reg.css";
 import {
-  MDBContainer,
   MDBRow,
   MDBCol,
   MDBBtn,
   MDBCard,
   MDBCardBody,
-  toast,
   ToastContainer,
-  MDBIcon,
 } from "mdbreact";
+import { RegisterUser } from "../../services/api/Auth/Register.api";
 
 class Register extends Component {
   state = {
-    
+    fullName: "",
+    PhoneNumber: "",
+    birthday: "",
     email: "",
+    nationalId: "",
     password: "",
-    confirm_password: "",
-    fname: "نام و نام خانوادگی",
-    emailtext: "ایمیل",
-    passwordtext: "پسورد",
-    confirm_passwordtext:"مغایرت دارد"
+    isRegister:false
   };
 
   submitHandler = (event) => {
     event.preventDefault();
 
     event.target.className += " was-validated";
-
-    toast.error("یک فیلد خالی وجود دارد لطفا آن را پر کنید", {
-      rtl: true,
-      closeButton: true,
-    });
   };
 
   changeHandler = (event) => {
     this.setState({ [event.target.name]: event.target.value });
   };
+
+  registerUser = async()=>{
+    const userRegister = {
+      fullName: this.state.fullName,
+      PhoneNumber: this.state.phoneNymber,
+      birthday: this.state.birthday,
+      email:this.state.email,
+      nationalId: this.state.password,
+      password: this.state.password
+    };
+    const RegisterData = await RegisterUser(userRegister);
+    this.setState({RegisterData, isRegister:true});
+  }
   render() {
     return (
       <div>
@@ -65,30 +70,21 @@ class Register extends Component {
                     </p>
 
                     <input
-                      // placeholder="info@bahr.com"
-                      // type="text"
-                      // id="defaultFormCardNameEx"
-                      // className="form-control w-75 ml-5 usernameinput px-5"
-                      value={this.state.name}
+                      value={this.state.fullName}
                       onChange={this.changeHandler}
                       type="text"
                       id="defaultFormRegisterConfirmEx"
                       className="form-control w-75 ml-5 mb-4 usernameinput px-5"
-                      name="fname"
-                      placeholder="Matin Esmaili"
+                      name="fullName"
                       required
                     />
                     <div className="invalid-feedback  invalidfeedbackemail longinvalidtext">
-                      لطفا فیلد{this.state.fname} را پر کنید
+                      لطفا فیلد{this.state.fullName} را پر کنید
                     </div>
 
                     <p className="h4 text-right usernametext ">ایمیل </p>
 
                     <input
-                      // placeholder="info@bahr.com"
-                      // type="text"
-                      // id="defaultFormCardNameEx"
-                      // className="form-control w-75 ml-5 usernameinput px-5"
                       value={this.state.email}
                       onChange={this.changeHandler}
                       type="email"
@@ -99,7 +95,7 @@ class Register extends Component {
                       required
                     />
                     <div className="invalid-feedback invalidfeedbackemail">
-                      لطفا فیلد{this.state.emailtext} را پر کنید
+                      لطفا فیلد{this.state.email} را پر کنید
                     </div>
                     <p className="h4 text-right usernametext">رمزعبور</p>
                     <input
@@ -112,24 +108,40 @@ class Register extends Component {
                       placeholder="حداقل 8 کاراکتر"
                       required
                     />
-                    <div className="invalid-feedback invalidfeedbackpass">
-                      لطفا فیلد{this.state.passwordtext} را پر کنید
-                    </div>
-
-                    <p className="h4 text-right usernametext">تکرار رمز عبور</p>
+                    <p className="h4 text-right usernametext">شماره موبایل</p>
                     <input
-                      value={this.state.x}
+                      value={this.state.PhoneNumber}
                       onChange={this.changeHandler}
-                      type="password"
-                      id="defaultFormRegisterConfirmEx4"
-                      className="form-control w-75 ml-5 mb-4 passwordinput px-5"
-                      name="passwordd"
+                      type="number"
+                      id="defaultFormRegisterConfirmEx3"
+                      className="form-control w-75 ml-5 passwordinput px-5"
+                      name="PhoneNumber"
                       placeholder="حداقل 8 کاراکتر"
                       required
                     />
-                    <div className="invalid-feedback invalidfeedbackpass invalidfeedbackpass2">
-                    رمز عبور مغایرت دارد
-                    </div>
+                    <p className="h4 text-right usernametext">کد ملی</p>
+                    <input
+                      value={this.state.nationalId}
+                      onChange={this.changeHandler}
+                      type="number"
+                      id="defaultFormRegisterConfirmEx4"
+                      className="form-control w-75 ml-5 mb-4 passwordinput px-5"
+                      name="nationalId"
+                      placeholder="کد ملی"
+                      required
+                    />
+
+                    <p className="h4 text-right usernametext">سال تولد</p>
+                    <input
+                      value={this.state.birthday}
+                      onChange={this.changeHandler}
+                      type="datetime"
+                      id="defaultFormRegisterConfirmEx4"
+                      className="form-control w-75 ml-5 mb-4 passwordinput px-5"
+                      name="birthday"
+                      placeholder="حداقل 8 کاراکتر"
+                      required
+                    />
                     <div className="forgetPassR mt-2" dir="rtl">
                       {" "}
                       <div className="exclamationR">
@@ -143,8 +155,10 @@ class Register extends Component {
                         type="submit"
                         rounded
                         outline
+                        onClick={this.registerUser}
                         color=" signUpR pl-4"
                       >
+                        {this.state.isRegister ? <Redirect to="/login"/> : ''}
                         ثبت نام
                       </MDBBtn>
                       <Link className="link" to="/Login">

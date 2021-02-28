@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import http from "../http-service.api";
 
-const RegisterApi = async () => {
-    return ( 
-        <React.Fragment>
-        </React.Fragment>
-     );
-}
- 
-export default RegisterApi;
+const MainUrl = process.env.REACT_APP_PUBLIC_PATH;
+
+export const RegisterUser = async (user) => {
+  try {
+    await http.post(MainUrl + "auth/register", user);
+  } catch (error) {
+    return {};
+  }
+};
