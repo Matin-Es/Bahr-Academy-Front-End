@@ -197,9 +197,6 @@
   margin: 0 auto;
   color: #744fd6;
 }
-.right-developing:hover >img{
-  transform: scale(1.1);
-}
 .right-developing>img {
   width: 650px;
   float: right;
@@ -333,10 +330,6 @@
   background: white;
   box-shadow: 2px 1px 24px #ccc;
   transition: 0.2s;
-}
-
-.right-ahead:hover {
-  transform: scale(1.1);
 }
 
 .right-ahead>h2, .right-ahead>p {
@@ -556,9 +549,6 @@
   background: white;
   box-shadow: 2px 1px 24px #ccc;
   transition: 0.2s;
-}
-.left-complaint:hover {
-  transform: scale(1.05);
 }
 .left-complaint>h2 {
   margin-top: 20px;

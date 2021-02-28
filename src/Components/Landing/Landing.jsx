@@ -6,7 +6,7 @@ import Footer from "../Footer/Footer";
 import det from "./css/Courses.module.css";
 import base from './css/base.module.css';
 import content from './css/content.module.css';
-import anim from '../../Assets/js/anim';
+import  '../../Assets/js/anim';
 
 class Landing extends Component {
   render() {
