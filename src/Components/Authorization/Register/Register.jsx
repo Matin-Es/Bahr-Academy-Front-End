@@ -37,10 +37,10 @@ class Register extends Component {
   registerUser = async()=>{
     const userRegister = {
       fullName: this.state.fullName,
-      PhoneNumber: this.state.phoneNymber,
-      birthday: this.state.birthday,
+      phoneNumber: this.state.PhoneNumber,
+      birthDate: this.state.birthday,
       email:this.state.email,
-      nationalId: this.state.password,
+      nationalId: this.state.nationalId,
       password: this.state.password
     };
     const RegisterData = await RegisterUser(userRegister);
@@ -110,7 +110,7 @@ class Register extends Component {
                     />
                     <p className="h4 text-right usernametext">شماره موبایل</p>
                     <input
-                      value={this.state.PhoneNumber}
+                      value={this.state.phoneNumber}
                       onChange={this.changeHandler}
                       type="number"
                       id="defaultFormRegisterConfirmEx3"
@@ -158,7 +158,7 @@ class Register extends Component {
                         onClick={this.registerUser}
                         color=" signUpR pl-4"
                       >
-                        {this.state.isRegister ? <Redirect to="/login"/> : ''}
+                        {/* {this.state.isRegister ? <Redirect to="/login"/> : ''} */}
                         ثبت نام
                       </MDBBtn>
                       <Link className="link" to="/Login">

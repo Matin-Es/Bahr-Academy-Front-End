@@ -16,6 +16,8 @@ import { LogInUser } from "../../services/api/Auth/login.api";
 import { getItem } from "../../services/storage/storage";
 class Login extends Component {
   state = {
+    email: "",
+    password: "",
     igLoggedin: false,
   };
 
@@ -50,7 +52,9 @@ class Login extends Component {
 
         <div className="container">
           <h1>
-            {this.state.igLoggedin || getItem("token") ? "log in" : "please log in"}
+            {this.state.igLoggedin && getItem("token")
+              ? "log in"
+              : "please log in"}
           </h1>
           <MDBRow>
             <MDBCol className="md6L" md="6">
