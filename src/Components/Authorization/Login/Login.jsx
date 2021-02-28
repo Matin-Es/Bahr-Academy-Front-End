@@ -13,22 +13,20 @@ import {
   ToastContainer,
 } from "mdbreact";
 import { LogInUser } from "../../services/api/Auth/login.api";
-
+import { getItem } from "../../services/storage/storage";
 class Login extends Component {
   state = {
-    email: "",
-    password: "",
-    emailtext: "ایمیل",
-    passwordtext: "پسورد",
+    igLoggedin: false,
   };
 
   loginUser = async () => {
     const user = {
-      email: "example@example.com",
-      password: "12345678",
+      email: this.state.email,
+      password: this.state.password,
     };
     const Logindata = await LogInUser(user);
     console.log(Logindata);
+    this.setState({ user: Logindata, igLoggedin: true });
   };
   submitHandler = (event) => {
     event.preventDefault();
@@ -51,6 +49,9 @@ class Login extends Component {
         <Header />
 
         <div className="container">
+          <h1>
+            {this.state.igLoggedin || getItem("token") ? "log in" : "please log in"}
+          </h1>
           <MDBRow>
             <MDBCol className="md6L" md="6">
               <MDBCard className="roundedformL h-100 card">
