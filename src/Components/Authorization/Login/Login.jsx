@@ -18,7 +18,9 @@ class Login extends Component {
   state = {
     email: "",
     password: "",
-    igLoggedin: false,
+    isLoggedin: false,
+    redirect: '/user/dashboard'
+
   };
 
   loginUser = async () => {
@@ -28,7 +30,7 @@ class Login extends Component {
     };
     const Logindata = await LogInUser(user);
     console.log(Logindata);
-    this.setState({ user: Logindata, igLoggedin: true });
+    this.setState({ user: Logindata, isLoggedin: true });
   };
   submitHandler = (event) => {
     event.preventDefault();
@@ -49,7 +51,7 @@ class Login extends Component {
         <div className={classes.shape2_holder}></div>
 
         <Header />
-
+        <h4>{this.state.isLoggedIn ||getItem('token')?   <Redirect to={this.state.redirect} /> : "pls log in"}</h4>
         <div className="container">
           <MDBRow>
             <MDBCol className="md6L" md="6">
