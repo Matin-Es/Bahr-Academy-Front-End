@@ -92,7 +92,7 @@ a {
 .forgetPassR {
   position: absolute;
   left: 267px;
-  top: 400px;
+  top: 590px;
   color: #3078f5;
 }
 
@@ -105,7 +105,7 @@ a {
 }
 .invalidfeedbackpass {
   margin-top: -15px !important;
-  margin-left: 235px;
+  margin-left: 230px;
 }
 
 @media only screen and (max-width: 1366px) {
@@ -120,4 +120,14 @@ a {
 .invalidfeedbackpass2 {
   margin-left: 255px ;
   margin-top:-23px !important;
+}
+.invalidfeedbackpassMELI{
+  margin-top: -15px !important;
+  margin-left: 250px;
+}
+
+.invalidfeedbackMOB{
+  margin-top: -15px !important;
+  margin-left: 250px !important;
+  font-size: 10px !important;
 }

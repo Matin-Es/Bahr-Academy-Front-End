@@ -119,7 +119,7 @@ class Register extends Component {
                       placeholder="حداقل 8 کاراکتر"
                       required
                     />
-                    <div className="invalid-feedback invalidfeedbackemail longinvalidtext">
+                    <div className="invalid-feedback invalidfeedbackemail longinvalidtext invalidfeedbackMOB">
                       لطفا فیلد شماره موبایل را پر کنید
                     </div>
                     <p className="h4 text-right usernametext">کد ملی</p>
@@ -133,7 +133,7 @@ class Register extends Component {
                       placeholder="کد ملی"
                       required
                     />
-                    <div className="invalid-feedback  invalidfeedbackpass ">
+                    <div className="invalid-feedback  invalidfeedbackpassMELI ">
                       شماره کد ملی را پر کنید
                     </div>
                     <p className="h4 text-right usernametext">سال تولد</p>
