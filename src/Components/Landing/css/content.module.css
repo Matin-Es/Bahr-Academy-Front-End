@@ -33,12 +33,12 @@
 }
 
 .title-skill {
-  font-size: 55px;
+  font-size: 50px;
   text-align: center;
   line-height: 4px;
 }
 
-.title-skill>strong {
+.title-skill > strong {
   color: #744fd6;
   font-weight: lighter;
 }
@@ -47,7 +47,11 @@
   border-radius: 30px;
   width: 575px;
   height: 10px;
-  background: linear-gradient( 0deg, rgba(156, 90, 247, 1) 0%, rgba(70, 91, 234, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(156, 90, 247, 1) 0%,
+    rgba(70, 91, 234, 1) 100%
+  );
   margin-top: 30px;
   margin-right: 0px;
 }
@@ -66,7 +70,11 @@
   float: right;
   width: 300px;
   height: 80px;
-  background: linear-gradient( 90deg, rgba(70, 91, 234, 1) 0%, rgba(164, 90, 248, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(70, 91, 234, 1) 0%,
+    rgba(164, 90, 248, 1) 100%
+  );
   border-radius: 15px;
   line-height: 82px;
   margin-right: 4px;
@@ -82,7 +90,7 @@
   transform: scale(1.1);
 }
 
-.see-curses>img {
+.see-curses > img {
   position: absolute;
   width: 35px;
   margin-right: 20px;
@@ -98,7 +106,7 @@
   animation: laptop 1s normal forwards ease-in-out;
   transition: 0.2s;
 }
-.laptop-vector-skill:hover{
+.laptop-vector-skill:hover {
   transform: scale(1.1);
 }
 /* Grouping */
@@ -113,7 +121,7 @@
   font-family: "yek";
   font-size: 70px;
 }
-.grouping>p {
+.grouping > p {
   margin: 0 auto;
   color: #744fd6;
 }
@@ -130,13 +138,13 @@
   box-shadow: 2px 1px 24px #ccc;
   cursor: default;
   margin-right: 25px;
-  margin-top: 35px;
+  margin-top: 75px;
   transition: 0.2s;
 }
 .group:hover {
   transform: scale(1.1);
 }
-.grouping>input {
+.grouping > input {
   transition: 0.2s;
   position: absolute;
   border: 2px solid #744fd6;
@@ -153,7 +161,7 @@
   right: 502px;
   cursor: pointer;
 }
-.grouping>input:hover {
+.grouping > input:hover {
   transform: scale(1.1);
   background-color: #744fd6;
   color: #fff;
@@ -193,11 +201,18 @@
   font-size: 70px;
 }
 
-.developing>p {
-  margin: 0 auto;
+.developing > p {
+  margin: 50px auto;
   color: #744fd6;
 }
+<<<<<<< HEAD
 .right-developing>img {
+=======
+.right-developing:hover > img {
+  transform: scale(1.1);
+}
+.right-developing > img {
+>>>>>>> fcf4d071dccf212a895a6cb31748ccc090c39335
   width: 650px;
   float: right;
   margin-top: 40px;
@@ -231,7 +246,7 @@
   background-color: white;
   transition: 0.2s;
 }
-.develop:hover{
+.develop:hover {
   transform: scale(1.1);
 }
 
@@ -240,7 +255,11 @@
 }
 
 .back-img {
-  background: linear-gradient( 0deg, rgb(236, 230, 230) 20%, rgb(255, 255, 255) 80%);
+  background: linear-gradient(
+    0deg,
+    rgb(236, 230, 230) 20%,
+    rgb(255, 255, 255) 80%
+  );
   width: 90%;
   margin: 0 auto;
   margin-top: 10px;
@@ -248,32 +267,33 @@
   border-radius: 15px;
 }
 
-.react>img {
+.react > img {
   width: 110px;
   margin: 0 auto;
   margin-top: 20px;
 }
 
-.html>img, .css>img {
+.html > img,
+.css > img {
   width: 90px;
   margin: 0 auto;
   margin-top: 20px;
 }
 
-.angular>img {
+.angular > img {
   width: 95px;
   margin: 0 auto;
   margin-top: 20px;
 }
 
-.develop>h3 {
+.develop > h3 {
   font-size: 25px;
   margin-top: 18px;
   font-family: yek, Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
 
-.develop>p {
+.develop > p {
   font-size: 20px;
   color: #999999;
   float: right;
@@ -281,7 +301,7 @@
   margin-right: 30px;
 }
 
-.develop>span {
+.develop > span {
   background: url("../../../Assets/images/star.svg") no-repeat 20% 50%;
   width: 50px;
   position: absolute;
@@ -303,19 +323,19 @@
   font-size: 70px;
 }
 
-.go-ahead>p {
-  margin: 40px auto;
+.go-ahead > p {
+  margin: 60px auto;
   color: #744fd6;
 }
 
-.left-ahead>img {
+.left-ahead > img {
   width: 640px;
   float: left;
   margin-top: 40px;
   margin-left: 60px;
   transition: 0.2s;
 }
-.left-ahead>img:hover {
+.left-ahead > img:hover {
   transform: scale(1.1);
 }
 .right-ahead {
@@ -332,7 +352,16 @@
   transition: 0.2s;
 }
 
+<<<<<<< HEAD
 .right-ahead>h2, .right-ahead>p {
+=======
+.right-ahead:hover {
+  transform: scale(1.1);
+}
+
+.right-ahead > h2,
+.right-ahead > p {
+>>>>>>> fcf4d071dccf212a895a6cb31748ccc090c39335
   margin-top: 20px;
   margin-bottom: 0;
   font-size: 40px;
@@ -341,7 +370,7 @@
   font-weight: lighter;
 }
 
-.right-ahead>p {
+.right-ahead > p {
   font-size: 33px;
   font-family: "yek";
   color: #999999;
@@ -364,10 +393,11 @@
 }
 
 .input-circle {
-  background: url("../../../Assets/images/right_arrow.svg") no-repeat 50% 50% #8165cf;
+  background: url("../../../Assets/images/right_arrow.svg") no-repeat 50% 50%
+    #8165cf;
   background-size: 27px;
   position: absolute;
-  top: 169px;
+  top: 141px;
   right: 60px;
   width: 65px;
   height: 65px;
@@ -387,8 +417,8 @@
   font-size: 70px;
 }
 
-.top-professors>p {
-  margin: 40px auto;
+.top-professors > p {
+  margin: 60px auto;
   color: #744fd6;
 }
 
@@ -399,7 +429,8 @@
   height: 510px;
 }
 
-.right-side, .left-side {
+.right-side,
+.left-side {
   position: relative;
   border: 1px solid transparent;
   float: right;
@@ -409,7 +440,11 @@
 }
 
 .professor {
-  background: linear-gradient( -130deg, rgb(173, 136, 224) 0%, rgb(110, 124, 214) 100%);
+  background: linear-gradient(
+    -130deg,
+    rgb(173, 136, 224) 0%,
+    rgb(110, 124, 214) 100%
+  );
   border-radius: 15px;
   width: 280px;
   height: 180px;
@@ -418,35 +453,35 @@
   margin-top: 70px;
 }
 
-.armin>img {
+.lecturer1 > img {
   position: absolute;
   width: 125px;
   top: 10px;
   left: 87px;
 }
 
-.armin1>img {
+.lecturer3 > img {
   position: absolute;
   width: 125px;
   bottom: 126px;
   left: 87px;
 }
 
-.nazari>img {
+.lecturer2 > img {
   position: absolute;
   width: 125px;
   top: 10px;
   right: 92px;
 }
 
-.nazari1>img {
+.lecturer4 > img {
   position: absolute;
   width: 125px;
   bottom: 126px;
   right: 92px;
 }
 
-.professor>h3 {
+.professor > h3 {
   margin-top: 75px;
   font-size: 30px;
   color: white;
@@ -454,7 +489,7 @@
   font-weight: lighter;
 }
 
-.professor>p {
+.professor > p {
   margin-top: 10px;
   font-size: 22px;
   color: rgb(236, 231, 231);
@@ -463,18 +498,23 @@
 }
 
 .big-professor {
-  background: linear-gradient( -130deg, rgb(173, 136, 224) 0%, rgb(110, 124, 214) 100%);
+  position: relative;
+  background: linear-gradient(
+    -130deg,
+    rgb(173, 136, 224) 0%,
+    rgb(110, 124, 214) 100%
+  );
   border-radius: 15px;
   width: 585px;
   height: 430px;
   margin-right: 5px;
   margin-top: 70px;
-  transition: 0.2s;
+  transition: all 0.2s;
 }
 .big-professor:hover {
   transform: scale(1.05);
 }
-.big-professor>img {
+.big-professor > img {
   position: absolute;
   width: 190px;
   bottom: 345px;
@@ -482,7 +522,7 @@
   transition: 0.2s;
 }
 
-.big-professor>h3 {
+.big-professor > h3 {
   margin: 0;
   padding-top: 100px;
   font-size: 40px;
@@ -490,7 +530,7 @@
   font-family: yek;
 }
 
-.big-professor>h4 {
+.big-professor > h4 {
   margin: 10px auto;
   text-align: right;
   text-indent: 90px;
@@ -499,11 +539,12 @@
   font-family: yek;
 }
 
-.big-professor>p {
+.big-professor > p {
   width: 400px;
   margin: 20px auto;
   margin-right: 90px;
   text-align: right;
+  line-height: 40px;
   font-size: 29px;
   color: rgb(236, 234, 234);
   font-family: yek;
@@ -522,14 +563,14 @@
   font-size: 70px;
 }
 
-.suggestions-complaints>p {
-  margin: 40px auto;
+.suggestions-complaints > p {
+  margin: 60px auto;
   color: #744fd6;
 }
-.right-complaint:hover > img{
+.right-complaint:hover > img {
   transform: scale(1.05);
 }
-.right-complaint>img {
+.right-complaint > img {
   transition: 0.2s;
   width: 640px;
   float: right;
@@ -550,7 +591,14 @@
   box-shadow: 2px 1px 24px #ccc;
   transition: 0.2s;
 }
+<<<<<<< HEAD
 .left-complaint>h2 {
+=======
+.left-complaint:hover {
+  transform: scale(1.05);
+}
+.left-complaint > h2 {
+>>>>>>> fcf4d071dccf212a895a6cb31748ccc090c39335
   margin-top: 20px;
   margin-bottom: 0;
   font-size: 33px;
@@ -575,7 +623,7 @@
   direction: rtl;
 }
 
-.left-complaint>p {
+.left-complaint > p {
   margin-top: -30px;
   margin-bottom: 0;
   font-size: 33px;
@@ -604,7 +652,8 @@
 .send {
   position: relative;
   top: -30px;
-  background: rgb(173, 136, 224) url("../../../Assets/images/left-arrow.png") no-repeat 15% 50%;
+  background: rgb(173, 136, 224) url("../../../Assets/images/left-arrow.png")
+    no-repeat 20px 8px;
   background-size: 24px;
   margin-right: 290px;
   margin-top: 0;
@@ -644,7 +693,7 @@
     right: 40px;
   }
   .title-skill {
-    font-size: 45px;
+    font-size: 40px;
   }
   .border-bottom-skill {
     width: 473px;
@@ -665,7 +714,7 @@
     font-size: 25px;
     text-indent: 18px;
   }
-  .see-curses>img {
+  .see-curses > img {
     width: 30px;
     margin-right: 17px;
     margin-top: 15px;
@@ -679,7 +728,8 @@
     border: 1px solid transparent;
     font-size: 60px;
   }
-  .grouping>p, .developing>p {
+  .grouping > p,
+  .developing > p {
     margin: 20px auto;
     margin-bottom: 0;
   }
@@ -690,7 +740,7 @@
     margin: 40px auto;
     font-size: 60px;
   }
-  .right-developing>img {
+  .right-developing > img {
     width: 580px;
   }
   .left-developing {
@@ -703,17 +753,18 @@
     margin: 0 auto;
     font-size: 60px;
   }
-  .go-ahead>p {
+  .go-ahead > p {
     margin: 30px auto;
   }
-  .left-ahead>img {
+  .left-ahead > img {
     width: 560px;
   }
   .input-circle {
-    top: 161px;
+    top: 131px;
     right: 60px;
   }
-  .right-side, .left-side {
+  .right-side,
+  .left-side {
     margin-right: 25px;
   }
   .top-professors {
@@ -725,7 +776,7 @@
     border: 1px solid transparent;
     font-size: 60px;
   }
-  .right-complaint>img {
+  .right-complaint > img {
     width: 635px;
     margin-right: 20px;
   }
@@ -733,7 +784,7 @@
     position: relative;
     top: -10px;
   }
-  .left-complaint>p {
+  .left-complaint > p {
     margin-top: -15px;
   }
   #emaill-2 {
@@ -768,7 +819,7 @@
     right: 35px;
   }
   .title-skill {
-    font-size: 45px;
+    font-size: 40px;
   }
   .border-bottom-skill {
     width: 473px;
@@ -789,7 +840,7 @@
     font-size: 25px;
     text-indent: 18px;
   }
-  .see-curses>img {
+  .see-curses > img {
     width: 30px;
     margin-right: 17px;
     margin-top: 15px;
@@ -803,7 +854,8 @@
     border: 1px solid transparent;
     font-size: 60px;
   }
-  .grouping>p, .developing>p {
+  .grouping > p,
+  .developing > p {
     margin: 20px auto;
     margin-bottom: 0;
   }
@@ -814,7 +866,7 @@
     margin: 40px auto;
     font-size: 60px;
   }
-  .right-developing>img {
+  .right-developing > img {
     width: 550px;
   }
   .left-developing {
@@ -834,28 +886,29 @@
   .back-img {
     height: 110px;
   }
-  .react>img {
+  .react > img {
     width: 80px;
     margin-top: 19px;
   }
-  .html>img, .css>img {
+  .html > img,
+  .css > img {
     width: 60px;
     margin-top: 19px;
   }
-  .angular>img {
+  .angular > img {
     width: 65px;
     margin-top: 19px;
   }
-  .develop>h3 {
+  .develop > h3 {
     margin-top: 15px;
     font-size: 23px;
   }
-  .develop>p {
+  .develop > p {
     font-size: 18px;
     margin-top: 10px;
     margin-right: 18px;
   }
-  .develop>span {
+  .develop > span {
     bottom: 16px;
     left: 10px;
     font-size: 20px;
@@ -867,10 +920,10 @@
     margin: 0 auto;
     font-size: 60px;
   }
-  .go-ahead>p {
+  .go-ahead > p {
     margin: 30px auto;
   }
-  .left-ahead>img {
+  .left-ahead > img {
     width: 540px;
   }
   .top-professors {
@@ -880,7 +933,8 @@
     font-size: 60px;
     margin: 10px auto;
   }
-  .right-side, .left-side {
+  .right-side,
+  .left-side {
     margin-right: 30px;
   }
   .suggestions-complaints {
@@ -889,10 +943,10 @@
     margin: 20px auto;
     height: 620px;
   }
-  .suggestions-complaints>p {
+  .suggestions-complaints > p {
     margin: 30px auto;
   }
-  .right-complaint>img {
+  .right-complaint > img {
     width: 595px;
     margin-right: 20px;
   }
@@ -927,7 +981,7 @@
     height: 490px;
     margin: 10px auto;
   }
-  .grouping>input {
+  .grouping > input {
     border-radius: 13px;
     width: 140px;
     height: 55px;
@@ -940,7 +994,7 @@
     font-size: 50px;
     margin: 20px auto;
   }
-  .right-developing>img {
+  .right-developing > img {
     width: 520px;
     margin-top: 50px;
   }
@@ -950,13 +1004,14 @@
     height: 650px;
     font-size: 50px;
   }
-  .left-ahead>img {
+  .left-ahead > img {
     width: 500px;
   }
   .right-ahead {
     width: 440px;
   }
   .input-circle {
+    top: 120px;
     right: 45px;
   }
   .top-professors {
@@ -965,10 +1020,11 @@
     height: 630px;
     font-size: 50px;
   }
-  .top-professors>p {
+  .top-professors > p {
     margin: 10px auto;
   }
-  .right-side, .left-side {
+  .right-side,
+  .left-side {
     margin-right: 0;
   }
   .suggestions-complaints {
@@ -981,7 +1037,7 @@
     position: relative;
     top: 0px;
   }
-  .left-complaint>p {
+  .left-complaint > p {
     margin-top: 0px;
   }
   #emaill-2 {
@@ -992,7 +1048,7 @@
     position: relative;
     top: 0px;
   }
-  .right-complaint>img {
+  .right-complaint > img {
     width: 585px;
     margin-right: 30px;
   }
@@ -1020,7 +1076,7 @@
     right: 35px;
   }
   .title-skill {
-    font-size: 40px;
+    font-size: 35px;
   }
   .border-bottom-skill {
     width: 423px;
@@ -1038,7 +1094,7 @@
     line-height: 58px;
     font-size: 24px;
   }
-  .see-curses>img {
+  .see-curses > img {
     width: 25px;
     margin-right: 12px;
     margin-top: 15px;
@@ -1055,7 +1111,7 @@
     height: 490px;
     margin: 5px auto;
   }
-  .grouping>input {
+  .grouping > input {
     border-radius: 11px;
     width: 130px;
     height: 50px;
@@ -1066,9 +1122,9 @@
     width: 1075px;
     height: 700px;
     font-size: 50px;
-    margin: 5px auto;
+    margin: 50px auto;
   }
-  .right-developing>img {
+  .right-developing > img {
     width: 500px;
     margin-top: 50px;
   }
@@ -1085,7 +1141,7 @@
     height: 550px;
     font-size: 50px;
   }
-  .left-ahead>img {
+  .left-ahead > img {
     width: 450px;
   }
   .right-ahead {
@@ -1093,7 +1149,7 @@
     height: 250px;
   }
   .input-circle {
-    top: 151px;
+    top: 121px;
     right: 25px;
   }
   .top-professors {
@@ -1103,7 +1159,8 @@
     font-size: 50px;
     margin: 10px auto;
   }
-  .right-side, .left-side {
+  .right-side,
+  .left-side {
     position: relative;
     border: 1px solid transparent;
     float: right;
@@ -1118,25 +1175,25 @@
     margin-left: 12px;
     margin-top: 70px;
   }
-  .armin>img {
+  .lecturer1 > img {
     width: 105px;
     top: 20px;
   }
-  .armin1>img {
+  .lecturer3 > img {
     width: 105px;
     bottom: 136px;
   }
-  .nazari>img {
+  .lecturer2 > img {
     width: 105px;
     top: 20px;
     right: 86px;
   }
-  .nazari1>img {
+  .lecturer4 > img {
     width: 105px;
     bottom: 136px;
     right: 86px;
   }
-  .professor>h3 {
+  .professor > h3 {
     margin-top: 65px;
   }
   .big-professor {
@@ -1145,18 +1202,18 @@
     margin-right: 5px;
     margin-top: 70px;
   }
-  .big-professor>img {
+  .big-professor > img {
     width: 175px;
     bottom: 335px;
     right: 185px;
   }
-  .big-professor>h3 {
+  .big-professor > h3 {
     font-size: 35px;
   }
-  .big-professor>h4 {
+  .big-professor > h4 {
     font-size: 28px;
   }
-  .big-professor>p {
+  .big-professor > p {
     font-size: 26px;
   }
   .suggestions-complaints {
@@ -1166,7 +1223,7 @@
     height: 560px;
     margin: 0 auto;
   }
-  .right-complaint>img {
+  .right-complaint > img {
     width: 545px;
     transition: 0.2s;
   }
@@ -1205,7 +1262,7 @@
     right: 30px;
   }
   .title-skill {
-    font-size: 30px;
+    font-size: 28px;
   }
   .border-bottom-skill {
     width: 320px;
@@ -1226,7 +1283,7 @@
     font-size: 18px;
     text-indent: 13px;
   }
-  .see-curses>img {
+  .see-curses > img {
     width: 20px;
     margin-right: 9px;
     margin-top: 10px;
@@ -1253,7 +1310,7 @@
   .group:nth-child(2) {
     margin-right: 0;
   }
-  .grouping>input {
+  .grouping > input {
     border-radius: 10px;
     width: 110px;
     height: 40px;
@@ -1265,9 +1322,9 @@
     width: 975px;
     height: 600px;
     font-size: 40px;
-    margin: 5px auto;
+    margin: 50px auto;
   }
-  .right-developing>img {
+  .right-developing > img {
     width: 450px;
     margin-top: 50px;
   }
@@ -1287,25 +1344,26 @@
   .back-img {
     height: 100px;
   }
-  .react>img {
+  .react > img {
     width: 70px;
   }
-  .html>img, .css>img {
+  .html > img,
+  .css > img {
     width: 55px;
     margin-top: 19px;
   }
-  .angular>img {
+  .angular > img {
     width: 60px;
     margin-top: 19px;
   }
-  .develop>h3 {
+  .develop > h3 {
     font-size: 21px;
   }
-  .develop>p {
+  .develop > p {
     font-size: 17px;
     margin-right: 14px;
   }
-  .develop>span {
+  .develop > span {
     bottom: 11px;
     left: 5px;
   }
@@ -1315,19 +1373,20 @@
     height: 500px;
     font-size: 40px;
   }
-  .left-ahead>img {
+  .left-ahead > img {
     width: 400px;
   }
   .right-ahead {
     width: 350px;
     height: 200px;
   }
-  .right-ahead>h2, .right-ahead>p {
+  .right-ahead > h2,
+  .right-ahead > p {
     margin-top: 10px;
     margin-bottom: 0;
     font-size: 30px;
   }
-  .right-ahead>p {
+  .right-ahead > p {
     font-size: 25px;
   }
   #emaill {
@@ -1338,7 +1397,7 @@
   }
   .input-circle {
     background-size: 17px;
-    top: 112px;
+    top: 95px;
     right: 45px;
     width: 45px;
     height: 45px;
@@ -1351,7 +1410,8 @@
     font-size: 40px;
     margin: 10px auto;
   }
-  .right-side, .left-side {
+  .right-side,
+  .left-side {
     border: 1px solid transparent;
     float: right;
     width: 470px;
@@ -1365,27 +1425,27 @@
     margin-left: 12px;
     margin-top: 70px;
   }
-  .armin>img {
+  .lecturer1 > img {
     width: 95px;
     top: 25px;
     left: 75px;
   }
-  .armin1>img {
+  .lecturer3 > img {
     width: 95px;
     bottom: 131px;
     left: 75px;
   }
-  .nazari>img {
+  .lecturer2 > img {
     width: 95px;
     top: 25px;
     right: 76px;
   }
-  .nazari1>img {
+  .lecturer4 > img {
     width: 95px;
     bottom: 131px;
     right: 76px;
   }
-  .professor>h3 {
+  .professor > h3 {
     margin-top: 57px;
   }
   .big-professor {
@@ -1394,19 +1454,19 @@
     margin-right: 5px;
     margin-top: 70px;
   }
-  .big-professor>img {
+  .big-professor > img {
     width: 165px;
     bottom: 325px;
     right: 160px;
   }
-  .big-professor>h3 {
+  .big-professor > h3 {
     font-size: 30px;
   }
-  .big-professor>h4 {
+  .big-professor > h4 {
     font-size: 25px;
     text-indent: 81px;
   }
-  .big-professor>p {
+  .big-professor > p {
     width: 300px;
     font-size: 23px;
     margin-right: 81px;
@@ -1418,7 +1478,7 @@
     height: 440px;
     margin: 0 auto;
   }
-  .right-complaint>img {
+  .right-complaint > img {
     width: 405px;
     margin-top: 20px;
   }
@@ -1428,7 +1488,7 @@
     margin-top: 20px;
     margin-left: 20px;
   }
-  .left-complaint>h2 {
+  .left-complaint > h2 {
     font-size: 23px;
   }
   #message-text {
@@ -1436,7 +1496,7 @@
     width: 250px;
     height: 45px;
   }
-  .left-complaint>p {
+  .left-complaint > p {
     font-size: 23px;
   }
   #emaill-2 {
@@ -1479,7 +1539,7 @@
     display: none;
   }
   .title-skill {
-    font-size: 30px;
+    font-size: 27px;
   }
   .border-bottom-skill {
     width: 320px;
@@ -1502,7 +1562,7 @@
     text-indent: 13px;
     margin-right: 85px;
   }
-  .see-curses>img {
+  .see-curses > img {
     width: 20px;
     margin-right: 9px;
     margin-top: 10px;
@@ -1524,7 +1584,7 @@
   .group:nth-child(2) {
     margin-right: 0;
   }
-  .grouping>input {
+  .grouping > input {
     border-radius: 10px;
     width: 110px;
     height: 40px;
@@ -1536,16 +1596,16 @@
     width: 700px;
     height: 600px;
     font-size: 40px;
-    margin: 5px auto;
+    margin: 50px auto;
   }
-  .right-developing>img {
+  .right-developing > img {
     display: none;
   }
   .left-developing {
     border: 1px solid transparent;
     width: 100%;
     height: 460px;
-    margin: 30px auto;
+    margin: 50px auto;
   }
   .develop {
     width: 290px;
@@ -1556,26 +1616,27 @@
   .back-img {
     height: 100px;
   }
-  .react>img {
+  .react > img {
     width: 70px;
   }
-  .html>img, .css>img {
+  .html > img,
+  .css > img {
     width: 55px;
     margin-top: 19px;
   }
-  .angular>img {
+  .angular > img {
     width: 60px;
     margin-top: 19px;
   }
-  .develop>h3 {
+  .develop > h3 {
     font-size: 21px;
   }
-  .develop>p {
+  .develop > p {
     font-size: 17px;
     margin-right: 14px;
     margin-top: 20px;
   }
-  .develop>span {
+  .develop > span {
     bottom: 11px;
     left: 5px;
   }
@@ -1585,7 +1646,7 @@
     height: 500px;
     font-size: 40px;
   }
-  .left-ahead>img {
+  .left-ahead > img {
     width: 300px;
     margin-left: 20px;
   }
@@ -1594,12 +1655,13 @@
     height: 200px;
     margin-right: 20px;
   }
-  .right-ahead>h2, .right-ahead>p {
+  .right-ahead > h2,
+  .right-ahead > p {
     margin-top: 10px;
     margin-bottom: 0;
     font-size: 30px;
   }
-  .right-ahead>p {
+  .right-ahead > p {
     font-size: 25px;
   }
   #emaill {
@@ -1610,7 +1672,7 @@
   }
   .input-circle {
     background-size: 17px;
-    top: 112px;
+    top: 95px;
     right: 20px;
     width: 45px;
     height: 45px;
@@ -1623,12 +1685,13 @@
     font-size: 45px;
     margin: 5px auto;
   }
-  .right-side, .left-side {
+  .right-side,
+  .left-side {
     border: 1px solid transparent;
     float: right;
     width: 348px;
     height: 409px;
-    margin: 0 auto;
+    margin: 10px auto;
   }
   .professor {
     width: 157px;
@@ -1636,31 +1699,31 @@
     margin-left: 12px;
     margin-top: 70px;
   }
-  .armin>img {
+  .lecturer1 > img {
     width: 75px;
     top: 32px;
     left: 56px;
   }
-  .armin1>img {
+  .lecturer3 > img {
     width: 75px;
     bottom: 111px;
     left: 56px;
   }
-  .nazari>img {
+  .lecturer2 > img {
     width: 75px;
     top: 32px;
     right: 50px;
   }
-  .nazari1>img {
+  .lecturer4 > img {
     width: 75px;
     bottom: 111px;
     right: 50px;
   }
-  .professor>h3 {
+  .professor > h3 {
     margin-top: 43px;
     font-size: 24px;
   }
-  .professor>p {
+  .professor > p {
     margin-top: 5px;
     font-size: 20px;
   }
@@ -1670,19 +1733,19 @@
     margin: 70px auto;
     margin-bottom: 0;
   }
-  .big-professor>img {
+  .big-professor > img {
     width: 125px;
-    bottom: 280px;
-    right: 110px;
+    bottom: 260px;
+    right: 100px;
   }
-  .big-professor>h3 {
+  .big-professor > h3 {
     font-size: 26px;
   }
-  .big-professor>h4 {
+  .big-professor > h4 {
     font-size: 22px;
     text-indent: 34px;
   }
-  .big-professor>p {
+  .big-professor > p {
     width: 254px;
     font-size: 20px;
     margin-right: 34px;
@@ -1694,7 +1757,7 @@
     height: 440px;
     margin: 0 auto;
   }
-  .right-complaint>img {
+  .right-complaint > img {
     display: none;
   }
   .left-complaint {
@@ -1703,7 +1766,7 @@
     margin-top: 20px;
     margin-left: 170px;
   }
-  .left-complaint>h2 {
+  .left-complaint > h2 {
     font-size: 23px;
   }
   #message-text {
@@ -1711,7 +1774,7 @@
     width: 250px;
     height: 45px;
   }
-  .left-complaint>p {
+  .left-complaint > p {
     font-size: 23px;
   }
   #emaill-2 {
@@ -1771,12 +1834,14 @@
     font-size: 18px;
     text-indent: 10px;
   }
-  .see-curses>img {
+  .see-curses > img {
     width: 20px;
     margin-right: 7px;
     margin-top: 7px;
   }
-  .right-developing>img, .left-ahead>img, .right-complaint>img {
+  .right-developing > img,
+  .left-ahead > img,
+  .right-complaint > img {
     display: none;
   }
   .grouping {
@@ -1798,7 +1863,7 @@
   .group:nth-child(2) {
     margin-right: 0;
   }
-  .grouping>input {
+  .grouping > input {
     border-radius: 50px;
     width: 70px;
     height: 30px;
@@ -1840,28 +1905,29 @@
   .back-img {
     height: 80px;
   }
-  .react>img {
+  .react > img {
     width: 60px;
     margin-top: 13px;
   }
-  .html>img, .css>img {
+  .html > img,
+  .css > img {
     width: 48px;
     margin-top: 13px;
   }
-  .angular>img {
+  .angular > img {
     width: 53px;
     margin-top: 10px;
   }
-  .develop>h3 {
+  .develop > h3 {
     font-size: 14px;
     margin-top: 10px;
   }
-  .develop>p {
+  .develop > p {
     font-size: 12px;
     margin-right: 14px;
     margin-top: 8px;
   }
-  .develop>span {
+  .develop > span {
     background-size: 13px;
     width: 40px;
     font-size: 15px;
@@ -1874,7 +1940,7 @@
     height: 300px;
     font-size: 25px;
   }
-  .go-ahead>p {
+  .go-ahead > p {
     margin: 20px;
   }
   .right-ahead {
@@ -1882,14 +1948,15 @@
     height: 185px;
     margin: 15px;
   }
-  .right-ahead>h2, .right-ahead>p {
+  .right-ahead > h2,
+  .right-ahead > p {
     font-size: 25px;
   }
   #emaill {
     font-size: 15px;
   }
   .input-circle {
-    top: 105px;
+    top: 89px;
     right: 30px;
   }
   .top-professors {
@@ -1899,7 +1966,8 @@
     font-size: 25px;
     margin: 5px auto;
   }
-  .right-side, .left-side {
+  .right-side,
+  .left-side {
     border: 1px solid transparent;
     float: right;
     width: 350px;
@@ -1912,31 +1980,31 @@
     margin-left: 12px;
     margin-top: 70px;
   }
-  .armin>img {
+  .lecturer1 > img {
     width: 75px;
     top: 32px;
     left: 56px;
   }
-  .armin1>img {
+  .lecturer3 > img {
     width: 75px;
     bottom: 111px;
     left: 56px;
   }
-  .nazari>img {
+  .lecturer2 > img {
     width: 75px;
     top: 32px;
     right: 53px;
   }
-  .nazari1>img {
+  .lecturer4 > img {
     width: 75px;
     bottom: 111px;
     right: 53px;
   }
-  .professor>h3 {
+  .professor > h3 {
     margin-top: 43px;
     font-size: 24px;
   }
-  .professor>p {
+  .professor > p {
     margin-top: 5px;
     font-size: 20px;
   }
@@ -1946,19 +2014,19 @@
     margin: 70px auto;
     margin-bottom: 0;
   }
-  .big-professor>img {
+  .big-professor > img {
     width: 125px;
-    bottom: 280px;
-    right: 115px;
+    bottom: 260px;
+    right: 100px;
   }
-  .big-professor>h3 {
+  .big-professor > h3 {
     font-size: 26px;
   }
-  .big-professor>h4 {
+  .big-professor > h4 {
     font-size: 22px;
     text-indent: 34px;
   }
-  .big-professor>p {
+  .big-professor > p {
     width: 254px;
     font-size: 20px;
     margin-right: 34px;
@@ -1980,7 +2048,7 @@
     font-size: 15px;
     margin-top: 15px;
   }
-  .left-complaint>p {
+  .left-complaint > p {
     margin-top: 6px;
   }
   #emaill-2 {
@@ -2036,12 +2104,14 @@
     font-size: 18px;
     text-indent: 10px;
   }
-  .see-curses>img {
+  .see-curses > img {
     width: 20px;
     margin-right: 7px;
     margin-top: 7px;
   }
-  .right-developing>img, .left-ahead>img, .right-complaint>img {
+  .right-developing > img,
+  .left-ahead > img,
+  .right-complaint > img {
     display: none;
   }
   .grouping {
@@ -2063,7 +2133,7 @@
   .group:nth-child(2) {
     margin-right: 0;
   }
-  .grouping>input {
+  .grouping > input {
     border-radius: 50px;
     width: 70px;
     height: 30px;
@@ -2105,28 +2175,29 @@
   .back-img {
     height: 80px;
   }
-  .react>img {
+  .react > img {
     width: 60px;
     margin-top: 13px;
   }
-  .html>img, .css>img {
+  .html > img,
+  .css > img {
     width: 48px;
     margin-top: 13px;
   }
-  .angular>img {
+  .angular > img {
     width: 53px;
     margin-top: 10px;
   }
-  .develop>h3 {
+  .develop > h3 {
     font-size: 14px;
     margin-top: 10px;
   }
-  .develop>p {
+  .develop > p {
     font-size: 12px;
     margin-right: 14px;
     margin-top: 8px;
   }
-  .develop>span {
+  .develop > span {
     background-size: 13px;
     width: 40px;
     font-size: 15px;
@@ -2139,7 +2210,7 @@
     height: 300px;
     font-size: 25px;
   }
-  .go-ahead>p {
+  .go-ahead > p {
     margin: 20px;
   }
   .right-ahead {
@@ -2147,14 +2218,15 @@
     height: 185px;
     margin: 15px;
   }
-  .right-ahead>h2, .right-ahead>p {
+  .right-ahead > h2,
+  .right-ahead > p {
     font-size: 25px;
   }
   #emaill {
     font-size: 15px;
   }
   .input-circle {
-    top: 105px;
+    top: 89px;
     right: 30px;
   }
   .top-professors {
@@ -2164,7 +2236,8 @@
     font-size: 25px;
     margin: 5px auto;
   }
-  .right-side, .left-side {
+  .right-side,
+  .left-side {
     border: 1px solid transparent;
     float: right;
     width: 350px;
@@ -2177,31 +2250,31 @@
     margin-left: 12px;
     margin-top: 70px;
   }
-  .armin>img {
+  .lecturer1 > img {
     width: 75px;
     top: 32px;
     left: 56px;
   }
-  .armin1>img {
+  .lecturer3 > img {
     width: 75px;
     bottom: 111px;
     left: 56px;
   }
-  .nazari>img {
+  .lecturer2 > img {
     width: 75px;
     top: 32px;
     right: 53px;
   }
-  .nazari1>img {
+  .lecturer4 > img {
     width: 75px;
     bottom: 111px;
     right: 53px;
   }
-  .professor>h3 {
+  .professor > h3 {
     margin-top: 43px;
     font-size: 24px;
   }
-  .professor>p {
+  .professor > p {
     margin-top: 5px;
     font-size: 20px;
   }
@@ -2211,19 +2284,19 @@
     margin: 70px auto;
     margin-bottom: 0;
   }
-  .big-professor>img {
+  .big-professor > img {
     width: 125px;
-    bottom: 280px;
-    right: 115px;
+    bottom: 260px;
+    right: 100px;
   }
-  .big-professor>h3 {
+  .big-professor > h3 {
     font-size: 26px;
   }
-  .big-professor>h4 {
+  .big-professor > h4 {
     font-size: 22px;
     text-indent: 34px;
   }
-  .big-professor>p {
+  .big-professor > p {
     width: 254px;
     font-size: 20px;
     margin-right: 34px;
@@ -2245,7 +2318,7 @@
     font-size: 15px;
     margin-top: 15px;
   }
-  .left-complaint>p {
+  .left-complaint > p {
     margin-top: 6px;
   }
   #emaill-2 {
@@ -2301,12 +2374,14 @@
     font-size: 18px;
     text-indent: 10px;
   }
-  .see-curses>img {
+  .see-curses > img {
     width: 20px;
     margin-right: 7px;
     margin-top: 7px;
   }
-  .right-developing>img, .left-ahead>img, .right-complaint>img {
+  .right-developing > img,
+  .left-ahead > img,
+  .right-complaint > img {
     display: none;
   }
   .grouping {
@@ -2328,7 +2403,7 @@
   .group:nth-child(2) {
     margin-right: 0;
   }
-  .grouping>input {
+  .grouping > input {
     border-radius: 50px;
     width: 70px;
     height: 30px;
@@ -2370,28 +2445,29 @@
   .back-img {
     height: 80px;
   }
-  .react>img {
+  .react > img {
     width: 60px;
     margin-top: 13px;
   }
-  .html>img, .css>img {
+  .html > img,
+  .css > img {
     width: 48px;
     margin-top: 13px;
   }
-  .angular>img {
+  .angular > img {
     width: 53px;
     margin-top: 10px;
   }
-  .develop>h3 {
+  .develop > h3 {
     font-size: 14px;
     margin-top: 10px;
   }
-  .develop>p {
+  .develop > p {
     font-size: 12px;
     margin-right: 14px;
     margin-top: 9px;
   }
-  .develop>span {
+  .develop > span {
     background-size: 13px;
     width: 40px;
     font-size: 15px;
@@ -2404,7 +2480,7 @@
     height: 300px;
     font-size: 25px;
   }
-  .go-ahead>p {
+  .go-ahead > p {
     margin: 20px;
   }
   .right-ahead {
@@ -2412,14 +2488,15 @@
     height: 185px;
     margin: 15px;
   }
-  .right-ahead>h2, .right-ahead>p {
+  .right-ahead > h2,
+  .right-ahead > p {
     font-size: 25px;
   }
   #emaill {
     font-size: 15px;
   }
   .input-circle {
-    top: 105px;
+    top: 89px;
     right: 30px;
   }
   .top-professors {
@@ -2429,7 +2506,8 @@
     font-size: 25px;
     margin: 5px auto;
   }
-  .right-side, .left-side {
+  .right-side,
+  .left-side {
     border: 1px solid transparent;
     float: right;
     width: 350px;
@@ -2442,31 +2520,31 @@
     margin-left: 12px;
     margin-top: 70px;
   }
-  .armin>img {
+  .lecturer1 > img {
     width: 75px;
     top: 32px;
     left: 56px;
   }
-  .armin1>img {
+  .lecturer3 > img {
     width: 75px;
     bottom: 111px;
     left: 56px;
   }
-  .nazari>img {
+  .lecturer2 > img {
     width: 75px;
     top: 32px;
     right: 53px;
   }
-  .nazari1>img {
+  .lecturer4 > img {
     width: 75px;
     bottom: 111px;
     right: 53px;
   }
-  .professor>h3 {
+  .professor > h3 {
     margin-top: 43px;
     font-size: 24px;
   }
-  .professor>p {
+  .professor > p {
     margin-top: 5px;
     font-size: 20px;
   }
@@ -2476,19 +2554,19 @@
     margin: 70px auto;
     margin-bottom: 0;
   }
-  .big-professor>img {
+  .big-professor > img {
     width: 125px;
-    bottom: 280px;
-    right: 115px;
+    bottom: 260px;
+    right: 100px;
   }
-  .big-professor>h3 {
+  .big-professor > h3 {
     font-size: 26px;
   }
-  .big-professor>h4 {
+  .big-professor > h4 {
     font-size: 22px;
     text-indent: 34px;
   }
-  .big-professor>p {
+  .big-professor > p {
     width: 254px;
     font-size: 20px;
     margin-right: 34px;
@@ -2510,7 +2588,7 @@
     font-size: 15px;
     margin-top: 15px;
   }
-  .left-complaint>p {
+  .left-complaint > p {
     margin-top: 6px;
   }
   #emaill-2 {
