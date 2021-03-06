@@ -1,10 +1,24 @@
 import React, { Component } from "react";
 import classes from "../Authorization/Login/css/login.module.css";
 import { Link } from "react-router-dom";
+import { clearStorage, getItem } from "../../Components/services/storage/storage";
 class Header extends Component {
-  state = {};
+  state = {
+
+    isLoggedin:getItem('token')?true:false,
+
+  };
+
+  logOut=()=>{
+    clearStorage();
+    window.location = "/login";
+  }
   render() {
     return (
+
+
+      
+
       <React.Fragment>
         {/* <!-- header --> */}
 
@@ -16,6 +30,7 @@ class Header extends Component {
             <li className={`${classes.below} ${classes["1"]}`}>
               {" "}
               <Link to="/">خانه</Link>
+             
               <div className={classes["border-bottom"]}></div>
             </li>
             <li className={`${classes.below} ${classes["1"]}`}>
@@ -30,6 +45,7 @@ class Header extends Component {
           <input id={classes["search-box"]} type="search" />
           <Link to="/register">
             <div id={classes.user}></div>
+            {this.state.isLoggedin && <div id={classes.userlogout} onClick={this.logOut}></div>}
           </Link>
           <p className={classes["little-des"]}> میان هزاران دوره ی آنلاین</p>
         </div>

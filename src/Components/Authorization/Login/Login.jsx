@@ -14,6 +14,7 @@ import {
 } from "mdbreact";
 import { LogInUser } from "../../services/api/Auth/login.api";
 import { getItem } from "../../services/storage/storage";
+
 class Login extends Component {
   state = {
     email: "",
@@ -51,7 +52,7 @@ class Login extends Component {
         <div className={classes.shape2_holder}></div>
 
         <Header />
-        <h4>{this.state.isLoggedIn ||getItem('token')?   <Redirect to={this.state.redirect} /> : "pls log in"}</h4>
+        <h4>{this.state.isLoggedIn ||getItem('token')?   <Redirect to={this.state.redirect} /> : "لطفا وارد شوید"}</h4>
         <div className="container">
           <MDBRow>
             <MDBCol className="md6L" md="6">
