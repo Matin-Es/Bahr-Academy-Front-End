@@ -20,7 +20,7 @@ class Login extends Component {
     email: "",
     password: "",
     isLoggedin: false,
-    redirect: '/user/dashboard'
+    redirect: '/User/Dashboard'
 
   };
 

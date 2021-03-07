@@ -8,6 +8,7 @@ import Blog from "../Blogs/SingleBlogs/SingleBlog";
 import Courses from "../Courses/AllCourses/Courses";
 import Notfound from "../Landing/404/404";
 import Course from "../Courses/SingleCourse/SingleCourse";
+import ProtectedRoute from '../protectedRoute/ProtectedRoute'
 
 //user Autthorization
 import LoginPage from "../Authorization/Login/Login";
@@ -40,8 +41,8 @@ class Routers extends Component {
           {/* end user Autthorization */}
 
           {/*User Zone*/}
-          <Route exact path="/User/Dashboard" component={Dashboard} />
-          <Route exact path="/User/dashboard/myCourses" component={Dashboard} />
+          <ProtectedRoute exact path="/User/Dashboard" component={Dashboard} />
+          <ProtectedRoute exact path="/User/dashboard/myCourses" component={Dashboard} />
           {/*End User Zone*/}
 
           {/*Admin Zone*/}
