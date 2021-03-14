@@ -5,6 +5,7 @@ import CourseRightSide from "./CourseRightSide/CourseRightSide";
 import CourseLeftSide from "./CourseLeftSide/CourseLeftSide";
 
 
+
 class singleCourse extends Component {
   render() {
     return (

@@ -30,7 +30,7 @@ class Routers extends Component {
           <Switch>
           <Route exact path="/" component={Landing} />
           <Route exact path="/Courses" component={Courses} />
-          <Route exact path="/Course:id?" component={Course} />
+          <Route exact path="/Course/:id?" component={Course} />
           <Route exact path="/Blogs" component={Blogs} />
           <Route exact path="/Blog:id?" component={Blog} />
 

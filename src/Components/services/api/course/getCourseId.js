@@ -6,14 +6,13 @@ import http from "../http-service.api";
 
 const MainUrl = process.env.REACT_APP_PUBLIC_PATH;
 
-export const getCourses = async () => {
+export const getCourseId = async (num) => {
     try {
         // call api http://localhost:3000/api/
-        const result = await http.get(MainUrl + "term/getall ");
-        // console.log(result.data);
+        const result = await http.get(MainUrl + "term/" + num);
+        //console.log(result.data.result);
         return result.data.result;
     } catch (error) {
-        return [];
+        return null;
     }
 };
-

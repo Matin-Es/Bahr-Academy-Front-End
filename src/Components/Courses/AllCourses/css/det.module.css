@@ -175,7 +175,7 @@ body {
     margin-left: 2px;
 }
 
-.sign-btn>button {
+.sign-btn> a > button {
     outline: none;
     border: none;
     display: block;

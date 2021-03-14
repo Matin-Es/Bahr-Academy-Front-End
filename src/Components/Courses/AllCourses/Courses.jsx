@@ -33,10 +33,11 @@ const Courses = () => {
             <div key={index} className={det["items"]}>
               <div className={det["picholder"]}><img className="coursepic" src={"https://localhost:3000/api/term/getall" + item.course.image} alt={item.course.courseName}></img></div>
               <div className={det["sign-btn"]}>
-                <button>
-                  ثبت نام
-                  <a href={"/Course:" + item._id} />
-                </button>
+                <Link to={'/Course/' + item._id} >
+                  <button>
+                    ثبت نام
+                  </button>
+                </Link>
               </div>
               <div className={det["description"]}>
                 <h2>{item.course.courseName}</h2>
