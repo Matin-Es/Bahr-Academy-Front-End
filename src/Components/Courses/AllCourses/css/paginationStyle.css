@@ -1,0 +1,12 @@
+.pagination .page-link {
+  border-radius: 100rem !important;
+
+}
+.active a{
+    
+    color: white !important;
+}
+.pagination{
+    position: relative;
+    bottom: 100px;
+}
