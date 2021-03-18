@@ -6,7 +6,7 @@
     
     color: white !important;
 }
-.pagination{
-    position: relative;
+.allCoursePagination{
+    position: absolute;
     bottom: 100px;
 }

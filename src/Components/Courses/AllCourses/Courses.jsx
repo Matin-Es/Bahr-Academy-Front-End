@@ -18,6 +18,7 @@ import {
 import reactDom from "react-dom";
 import { paginate } from './../../../utils/paginate';
 
+
 class Courses extends React.Component {
   state = {
     data: [],
@@ -29,7 +30,6 @@ class Courses extends React.Component {
   loadCourses = async () => {
     const result = await getCourses();
     this.setState({ data: result });
-    console.log(result);
   };
 
   componentDidMount() {

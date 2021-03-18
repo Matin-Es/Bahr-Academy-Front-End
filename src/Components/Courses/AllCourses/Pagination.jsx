@@ -1,6 +1,7 @@
 import React from "react";
 import _ from "lodash";
 import './css/paginationStyle.css'
+import '../../../User/UserCourses/css/userCoursePagination.css'
 const Pagination = (props) => {
   const { itemsCount, pageSize,currentPage,onPageChange } = props;
 console.log(currentPage)
@@ -10,7 +11,7 @@ if(pagesCount===1) return null;
   const pages = _.range(1, pagesCount + 1);
   return (
     <nav className="mb-5">
-      <ul className="pagination">
+      <ul className="pagination ac uc">
         {pages.map((page) => (
           <li key={page} className={page===currentPage?'page-item active ml-2':'page-item ml-2'}>
             <a className="page-link" onClick={()=>onPageChange(page)}>{page}</a>
