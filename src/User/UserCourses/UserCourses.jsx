@@ -52,6 +52,8 @@ class UserCourses extends React.Component {
     const { pageSize, currentPage, data: Alldata } = this.state;
 
     const data = paginate(Alldata, currentPage, pageSize);
+
+    if (data.length === 0) return <p className="mt-5">دوره ای وجود ندارد</p>;
     return (
       <div>
         {/* respoinsive prof */}

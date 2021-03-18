@@ -41,17 +41,20 @@ this.setState({currentPage:page});
 
   
   render() {
+  
     const {pageSize,currentPage,data:Alldata}=this.state;
 
 
     const data = paginate(Alldata,currentPage,pageSize)
-  
+    if (data.length === 0) return <p className="mt-5">دوره ای وجود ندارد</p>;
     return (
       <div>
+        
         <div className={det.shape1_holder}></div>
         <Header />
         <div className={det["courses_holder"]}>
           <div className={det["courses_header"]}>دوره ها</div>
+          
           <div className={det["itemeholder"]}>
             {data.map((item, index) => (
               <div key={index} className={det["items"]}>
