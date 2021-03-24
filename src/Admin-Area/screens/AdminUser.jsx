@@ -7,10 +7,10 @@ import {
   MDBModalBody,
   MDBModalHeader,
   MDBModalFooter,
-} from "../../Assets/mdbreact/mdbreact";
-import GetAllUser from "../../Components/services/api/Admin-area/user/GetAllUser.api";
-import getTermInf from "../../Components/services/api/course/term.api";
-import AddStudentToCourse from "../../Components/services/api/Admin-area/Courses/AddStudentToCourse.api";
+} from "mdbreact";
+import GetAllUser from "../../Components/services/api/Admin area/user/GetAllUser.api";
+import getCourses from "../../Components/services/api/course/getCourses";
+// import AddStudentToCourse from "../../Components/services/api/Admin area/Courses/AddStudentToCourse.api";
 
 import { Card, CardHeader, CardTitle, CardBody } from "reactstrap";
 
@@ -18,7 +18,6 @@ import http from "../../Components/services/api/http-service.api";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
 import { Fragment } from "react";
-import ModalPage from "../../Components/modal/Modal";
 const AdminCourse = () => {
   const [user, setUser] = useState([]);
   const [term, setTerm] = useState([]);
@@ -91,36 +90,36 @@ const AdminCourse = () => {
         width: 100,
       },
     ],
-    rows:
-      user &&
-      user.map((users) => ({
-        username: users.fullName,
-        userEmail: users.email.substr(0,30) + "...",
-        nationalid: users.nationalId,
-        _id: users._id,
-        userphone: users.phoneNumber,
-        termLength: users.terms.length,
-        userRole: users.role,
-        pos: (
-          <Fragment>
-            <Link to={`/edituser/${users._id}`}>
-              <button className="btn btn-primary">تغییر</button>
-            </Link>
-            <button
-              className="btn btn-danger"
-              onClick={() => DeleteUser(users)}
-            >
-              حذف
-            </button>
-            <button
-              className="btn btn-success"
-              onClick={() => toggle(users._id)}
-            >
-              دوره ها
-            </button>
-          </Fragment>
-        ),
-      })),
+    rows: user 
+      ? user.map((users) => ({
+          username: users.fullName,
+          userEmail: users.email.substr(0, 30) + "...",
+          nationalid: users.nationalId,
+          _id: users._id,
+          userphone: users.phoneNumber,
+          termLength: users.terms.length,
+          userRole: users.role,
+          pos: (
+            <Fragment>
+              <Link to={`/edituser/${users._id}`}>
+                <button className="btn btn-primary">تغییر</button>
+              </Link>
+              <button
+                className="btn btn-danger"
+                onClick={() => DeleteUser(users)}
+              >
+                حذف
+              </button>
+              <button
+                className="btn btn-success"
+                onClick={() => toggle(users._id)}
+              >
+                دوره ها
+              </button>
+            </Fragment>
+          ),
+        }))
+      : '',
   };
 
   const LoadUser = async () => {
@@ -162,8 +161,8 @@ const AdminCourse = () => {
   };
   //  شروع دوره ها
 
-  const AddToCourse = async (userId,termId) => {
-    const add = await AddStudentToCourse(userId, termId);
+  const AddToCourse = async (userId, termId) => {
+    // const add = await AddStudentToCourse(userId, termId);
   };
   const termdata = {
     columns: [
@@ -201,7 +200,11 @@ const AdminCourse = () => {
           حذف
         </MDBBtn>
       ) : (
-        <MDBBtn rounded color="success" onClick={() => AddToCourse(userId,item._id)}>
+        <MDBBtn
+          rounded
+          color="success"
+          onClick={() => AddToCourse(userId, item._id)}
+        >
           اضافه کردن
         </MDBBtn>
       ),
@@ -213,7 +216,7 @@ const AdminCourse = () => {
 
   const toggle = async (userID) => {
     setModal(!modal);
-    const res = await getTermInf();
+    const res = await getCourses();
     const FilterCourses = res.filter(
       (course) => !course.students.some((student) => student._id === userID)
     );
@@ -254,7 +257,7 @@ const AdminCourse = () => {
       </CardHeader>
       <CardBody>
         <div className="container">
-        <MDBDataTable striped bordered small data={data} />
+          <MDBDataTable striped bordered small data={data} />
         </div>
       </CardBody>
     </Card>

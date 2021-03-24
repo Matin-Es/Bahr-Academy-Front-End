@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { useEffect, useState } from "react";
-import { getCourses } from "../../services/api/course/getCourses";
+import getCourses from "../../services/api/course/getCourses";
 import det from "./css/det.module.css";
 import Header from "../../Header/Header";
 import { isYieldExpression } from "typescript";
@@ -16,16 +16,14 @@ import {
   MDBBtn,
 } from "mdbreact";
 import reactDom from "react-dom";
-import { paginate } from './../../../utils/paginate';
-
+import { paginate } from "./../../../utils/paginate";
 
 class Courses extends React.Component {
   state = {
     data: [],
     pageSize: 3,
-    currentPage:1,
+    currentPage: 1,
   };
-  
 
   loadCourses = async () => {
     const result = await getCourses();
@@ -35,26 +33,22 @@ class Courses extends React.Component {
   componentDidMount() {
     this.loadCourses();
   }
-  handlePageChange=(page)=>{
-this.setState({currentPage:page});
-  }
+  handlePageChange = (page) => {
+    this.setState({ currentPage: page });
+  };
 
-  
   render() {
-  
-    const {pageSize,currentPage,data:Alldata}=this.state;
+    const { pageSize, currentPage, data: Alldata } = this.state;
 
-
-    const data = paginate(Alldata,currentPage,pageSize)
+    const data = paginate(Alldata, currentPage, pageSize);
     if (data.length === 0) return <p className="mt-5">دوره ای وجود ندارد</p>;
     return (
       <div>
-        
         <div className={det.shape1_holder}></div>
         <Header />
         <div className={det["courses_holder"]}>
           <div className={det["courses_header"]}>دوره ها</div>
-          
+
           <div className={det["itemeholder"]}>
             {data.map((item, index) => (
               <div key={index} className={det["items"]}>

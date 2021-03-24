@@ -9,11 +9,9 @@ import { getItem } from "../Components/services/storage/storage";
 // Route-based code splitting
 const Home = lazy(() => import("./screens/Home"));
 
-const Page2 = lazy(() => import("./screens/Page2"));
-
-const login = lazy(() => import("./screens/login/Login"));
-
 const Dashboard = lazy(() => import("./screens/Dashboard/Dashboard"));
+
+const AdminUser =  lazy(() => import("./screens/AdminUser"));
 
 // Set Layout and Component Using App Route
 const RouteConfig = ({
@@ -65,9 +63,7 @@ class AppRouter extends React.Component {
       <Router history={history}>
         <Switch>
           <AppRoute exact path="/Dashboard" component={Dashboard} />
-          <AppRoute exact path="/Dashboard/profile" component={Home} />
-          <AppRoute path="/page2" component={Page2} />
-          <AppRoute path="/pages/login" component={login} fullLayout />
+          <AppRoute exact path="/Dashboard/users" component={AdminUser} />
         </Switch>
       </Router>
     );
