@@ -12,16 +12,15 @@ import {
   MDBCardBody,
   ToastContainer,
 } from "mdbreact";
-import LogInUser from "../../services/api/Auth/login.api";
+import LoginAdmin from "../../services/api/Auth/AdminLogin.api";
 import { getItem } from "../../services/storage/storage";
 
-class Login extends Component {
+class AdminLogin extends Component {
   state = {
     email: "",
     password: "",
     isLoggedin: false,
-    redirect: '/User/Dashboard'
-
+    redirect: '/dashboard'
   };
 
   loginUser = async () => {
@@ -29,7 +28,7 @@ class Login extends Component {
       email: this.state.email,
       password: this.state.password,
     };
-    const Logindata = await LogInUser(user);
+    const Logindata = await LoginAdmin(user);
     console.log(Logindata);
     this.setState({ user: Logindata, isLoggedin: true });
   };
@@ -134,4 +133,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default AdminLogin;

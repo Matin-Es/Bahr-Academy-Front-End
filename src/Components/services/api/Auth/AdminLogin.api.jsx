@@ -4,10 +4,10 @@ import http from "../http-service.api";
 // main url of backend
 const MainUrl = process.env.REACT_APP_PUBLIC_PATH;
 
-const LogInUser = async (user) => {
+const LoginAdmin = async (user) => {
   try {
     // call api
-    const result = await http.post(MainUrl + "auth/login", user);
+    const result = await http.post(MainUrl + "auth/employee/login", user);
 
     setItem("token", result.data.result.jwtToken);
     // return jwtToken 
@@ -17,5 +17,4 @@ const LogInUser = async (user) => {
     return {};
   }
 };
-
-export default LogInUser;
+export default LoginAdmin;

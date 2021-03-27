@@ -20,7 +20,10 @@ import Dashboard from "../../User/Panelholder/Panel";
 import Editprofile from "../../User/editprofile/Editprofile";
 import MyCourses from "../../User/UserCourses/UserCourses";
 
-//
+//Admin Authorization
+
+import AdminRegister from '../Authorization/adminRegister/AdminRegister'
+import AdminLogin from '../Authorization/adminLogin/AdminLogin'
 class Routers extends Component {
   state = {};
   render() {
@@ -46,6 +49,8 @@ class Routers extends Component {
           {/*End User Zone*/}
 
           {/*Admin Zone*/}
+          <Route exact path="/AdminRegister" component={AdminRegister}/>
+          <Route exact path="/AdminLogin" component={AdminLogin}/>
           {/* <Route exact path="/Admin/Blogs" component={} />
             <Route exact path="/Admin/Masters" component={} />
 
