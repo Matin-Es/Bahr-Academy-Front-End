@@ -6,6 +6,7 @@ import { ContextLayout } from "./core/utils/context/Layout";
 import VerticalLayout from "./layouts/VerticalLayout";
 import "../Admin-Area/index.scss";
 import { getItem } from "../Components/services/storage/storage";
+import  TermsAdmin  from "../Admin-Area/screens/TermsAdmin/TermsAdmin";
 // Route-based code splitting
 const Home = lazy(() => import("./screens/Home"));
 
@@ -64,6 +65,7 @@ class AppRouter extends React.Component {
         <Switch>
           <AppRoute exact path="/Dashboard" component={Dashboard} />
           <AppRoute exact path="/Dashboard/users" component={AdminUser} />
+          <AppRoute exact path="/admin/courses" component={TermsAdmin}/>
         </Switch>
       </Router>
     );
