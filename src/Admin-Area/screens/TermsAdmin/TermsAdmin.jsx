@@ -1,9 +1,7 @@
 import React, { Component , Fragment , useEffect, useState} from "react";
 import getCourses from "../../../Components/services/api/course/getCourses";
-import det from "./css/det.module.css";
 import Header from "../../../Components/Header/Header";
 import { isYieldExpression } from "typescript";
-import Pagination from "./Pagination";
 import { Link, BrowserRouter } from "react-router-dom";
 import {
     MDBPagination,
