@@ -90,7 +90,7 @@ const AdminCourse = () => {
         width: 100,
       },
     ],
-    rows: user 
+    rows: user
       ? user.map((users) => ({
           username: users.fullName,
           userEmail: users.email.substr(0, 30) + "...",
@@ -119,7 +119,7 @@ const AdminCourse = () => {
             </Fragment>
           ),
         }))
-      : '',
+      : "",
   };
 
   const LoadUser = async () => {

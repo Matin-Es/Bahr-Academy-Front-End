@@ -6,12 +6,18 @@ import { ContextLayout } from "./core/utils/context/Layout";
 import VerticalLayout from "./layouts/VerticalLayout";
 import "../Admin-Area/index.scss";
 import { getItem } from "../Components/services/storage/storage";
+import AddKourse from './screens/CourseAdmin/AddKourse';
+import EditCourse from './screens/CourseAdmin/EditCourse';
+
+import AdminCourse from '../Admin-Area/screens/CourseAdmin/CourseAdmin'
 // Route-based code splitting
 const Home = lazy(() => import("./screens/Home"));
 
 const Dashboard = lazy(() => import("./screens/Dashboard/Dashboard"));
 
 const AdminUser =  lazy(() => import("./screens/AdminUser"));
+
+
 
 // Set Layout and Component Using App Route
 const RouteConfig = ({
@@ -64,6 +70,9 @@ class AppRouter extends React.Component {
         <Switch>
           <AppRoute exact path="/Dashboard" component={Dashboard} />
           <AppRoute exact path="/Dashboard/users" component={AdminUser} />
+          <AppRoute exact path="/admin/kourses" component={AdminCourse} />
+          <AppRoute exact path="/admin/addkourses" component={AddKourse} />
+          <AppRoute exact path="/admin/kourses/:_id" component={EditCourse} />
         </Switch>
       </Router>
     );
