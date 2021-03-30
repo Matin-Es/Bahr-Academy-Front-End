@@ -8,7 +8,7 @@ import "../Admin-Area/index.scss";
 import { getItem } from "../Components/services/storage/storage";
 import AddKourse from './screens/CourseAdmin/AddKourse';
 import EditCourse from './screens/CourseAdmin/EditCourse';
-
+import AdminTerm from './screens/TermsAdmin/TermsAdmin';
 import AdminCourse from '../Admin-Area/screens/CourseAdmin/CourseAdmin'
 // Route-based code splitting
 const Home = lazy(() => import("./screens/Home"));
@@ -16,6 +16,7 @@ const Home = lazy(() => import("./screens/Home"));
 const Dashboard = lazy(() => import("./screens/Dashboard/Dashboard"));
 
 const AdminUser =  lazy(() => import("./screens/AdminUser"));
+
 
 
 
@@ -68,27 +69,13 @@ class AppRouter extends React.Component {
       // Set the directory path if you are deploying in sub-folder
       <Router history={history}>
         <Switch>
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <AppRoute exact path="/Dashboard" component={Dashboard} />
+          <AppRoute exact path="/Dashboard" component={Dashboard} />
           <AppRoute exact path="/Dashboard/users" component={AdminUser} />
           <AppRoute exact path="/admin/kourses" component={AdminCourse} />
           <AppRoute exact path="/admin/addkourses" component={AddKourse} />
           <AppRoute exact path="/admin/kourses/:_id" component={EditCourse} />
+          <AppRoute exact path="/admin/courses" component={AdminTerm} />
+          
         </Switch>
       </Router>
     );
