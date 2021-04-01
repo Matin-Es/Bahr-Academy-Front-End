@@ -10,6 +10,7 @@ import AddKourse from './screens/CourseAdmin/AddKourse';
 import EditCourse from './screens/CourseAdmin/EditCourse';
 import AdminTerm from './screens/TermsAdmin/TermsAdmin';
 import AdminCourse from '../Admin-Area/screens/CourseAdmin/CourseAdmin'
+import AddTerm from '../Admin-Area/screens/TermsAdmin/AddTerm'
 // Route-based code splitting
 const Home = lazy(() => import("./screens/Home"));
 
@@ -73,6 +74,7 @@ class AppRouter extends React.Component {
           <AppRoute exact path="/Dashboard/users" component={AdminUser} />
           <AppRoute exact path="/admin/kourses" component={AdminCourse} />
           <AppRoute exact path="/admin/addkourses" component={AddKourse} />
+          <AppRoute exact path="/admin/addcourse" component={AddTerm} />
           <AppRoute exact path="/admin/kourses/:_id" component={EditCourse} />
           <AppRoute exact path="/admin/courses" component={AdminTerm} />
           
