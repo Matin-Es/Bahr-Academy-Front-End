@@ -9,6 +9,7 @@ import { getItem } from "../Components/services/storage/storage";
 import AddKourse from './screens/CourseAdmin/AddKourse';
 import EditCourse from './screens/CourseAdmin/EditCourse';
 import AdminTerm from './screens/TermsAdmin/TermsAdmin';
+import News from './screens/News/News';
 import AdminCourse from '../Admin-Area/screens/CourseAdmin/CourseAdmin'
 // Route-based code splitting
 const Home = lazy(() => import("./screens/Home"));
@@ -75,7 +76,7 @@ class AppRouter extends React.Component {
           <AppRoute exact path="/admin/addkourses" component={AddKourse} />
           <AppRoute exact path="/admin/kourses/:_id" component={EditCourse} />
           <AppRoute exact path="/admin/courses" component={AdminTerm} />
-          
+          <AppRoute exact path="/admin/blogs" component={News}/>
         </Switch>
       </Router>
     );
