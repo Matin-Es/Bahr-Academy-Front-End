@@ -30,7 +30,7 @@ const ConvertDateHandler = (tarikh) => {
   };
 
 
-const AdminTerm = () => {
+const AdminTerm = (props) => {
 
 const [DataCourse,setCourse] = useState([]);
 
@@ -113,12 +113,12 @@ const [DataCourse,setCourse] = useState([]);
            
             pos: (
               <Fragment>
-                {/* <Link to={`/edituser/${users._id}`}> */}
+                {/* <Link to={`/edituser/${users._id}`}> }
                   <button className="btn btn-primary">تغییر</button>
                 {/* </Link> */}
                 <button
                   className="btn btn-danger"
-                  onClick={() => DeleteCourse(DataCourse)}
+                  onClick={() => DeleteCourse(courses)}
                 >
                   حذف
                 </button>
