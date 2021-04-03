@@ -19,6 +19,7 @@ import {toast } from "react-toastify";
 import Course from '../../../Components/services/api/Kourses/courseService';
 import { Redirect } from "react-router-dom";
 import save from "../../../Components/services/api/Kourses/saveImage";
+import axios from "axios";
 
 export default class EditCourse extends Component {
 
@@ -27,7 +28,7 @@ export default class EditCourse extends Component {
     collapse: true,
     fadeIn: true,
     topics:[],
-    course: this.props.location.course, // get course prop from location because we send prop by Link
+    course:{}, // get course prop from location because we send prop by Link
     timeout: 300,
     fail:false
   };
@@ -45,14 +46,19 @@ export default class EditCourse extends Component {
   }
 
   // fill all inputs by course array
-  setFields = () => {
+  setFields =async() => {
     try {
-      const courses = this.state.course;
-      document.getElementById('text-input').value = courses.courseName;
-      document.getElementById('esp-input').value = courses.description;
-      this.setState(() => ({ topics: courses.topics }))
+      const id = this.props.match.params._id
+      const url = 'http://localhost:3000/api/course/'
+      const response = await axios.get(url+id)
+      const course = response.data.result;
+      document.getElementById('text-input').value = course.courseName;
+      document.getElementById('esp-input').value = course.description;
+      this.setState(() => ({ course: course }))
+      console.log(response)
     } catch (error) {
       this.setState(() => ({fail:true}))
+      console.log(error);
     }
   }
 
