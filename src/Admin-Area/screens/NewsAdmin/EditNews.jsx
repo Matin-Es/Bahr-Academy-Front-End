@@ -172,7 +172,7 @@ export default class EditNews extends Component {
                         </Input>
                       </Col>
                     </FormGroup>
-
+{/* 
                     <FormGroup row>
                       <Col md="3">
                         <Label htmlFor="file-input">تصویر</Label>
@@ -180,7 +180,8 @@ export default class EditNews extends Component {
                       <Col xs="12" md="9">
                         <Input type="file" id="file-input" name="image" />
                       </Col>
-                    </FormGroup>
+                    </FormGroup> */}
+                    
                   </Form>
                 </CardBody>
                 <CardFooter>
