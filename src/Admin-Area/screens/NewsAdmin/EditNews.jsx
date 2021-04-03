@@ -18,6 +18,9 @@ import newsService from "../../../Components/services/api/News/newsService";
 import { Redirect } from "react-router-dom";
 import save from "../../../Components/services/api/Kourses/saveImage";
 
+import axios from "axios";
+
+let aks = "";
 export default class EditNews extends Component {
 
   state = {
@@ -44,12 +47,16 @@ export default class EditNews extends Component {
   }
 
   // fill inputs by news in state
-  setFields(){
+  setFields =  async() => {
     try {
-      const news = this.state.news;
+      const id = this.props.match.params._id
+      const url = 'http://localhost:3000/api/news/'
+      const response = await axios.get(url + id)
+      const news = response.data.result;
       document.getElementById('news-title').value = news.title;
       document.getElementById('esp-input').value = news.text;
       document.getElementById('select').value = news.category;
+      aks = news.image;
     } catch (error) {
       this.setState(() => ({ fail:true }))
     }
@@ -77,18 +84,19 @@ export default class EditNews extends Component {
 
   // update special news by id and object witch created by inputs value
   handleSave = async () => {
-    const news = this.state.news;
+    const id = this.props.match.params._id;
+    const news = this.props.match.params._id;
     const title = document.getElementById('news-title').value;
     const text = document.getElementById('esp-input').value;
     const category = document.getElementById('select').value;
-    const file = document.querySelector('#file-input').files[0];
-    let image = '';
-    if(file === undefined) {
-      image = news.image
-    }
-    else if(!file.type.includes("image") && file !== undefined) return toast.error('لطفا عکس درست انتخاب کنید',{position:toast.POSITION.TOP_LEFT})
-    if(!title || !text || !category) return toast.error('تمامی فیلدها را پر کنید!!',{position:toast.POSITION.TOP_LEFT});
-    else{ this.SaveImage(file); image = file.name }
+    // const file = document.querySelector('#file-input').files[0];
+    let image = aks;
+    // if(file === undefined) {
+    //   image = news.image
+    // }
+    // else if(!file.type.includes("image") && file !== undefined) return toast.error('لطفا عکس درست انتخاب کنید',{position:toast.POSITION.TOP_LEFT})
+    // if(!title || !text || !category) return toast.error('تمامی فیلدها را پر کنید!!',{position:toast.POSITION.TOP_LEFT});
+    // else{ this.SaveImage(file); image = file.name }
 
     const obj={
       "title":title,
@@ -99,7 +107,7 @@ export default class EditNews extends Component {
 
      // put obj to apiUpdateNews, if it was true toast success else toast error
      try {
-      await newsService.updateNews(obj,news._id);
+      await newsService.updateNews(obj,id);
       toast('با موفقیت ویرایش شد',{position:toast.POSITION.TOP_LEFT});
     } catch (error) {
       console.log(error)
