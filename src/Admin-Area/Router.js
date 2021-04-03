@@ -9,7 +9,9 @@ import { getItem } from "../Components/services/storage/storage";
 import AddKourse from './screens/CourseAdmin/AddKourse';
 import EditCourse from './screens/CourseAdmin/EditCourse';
 import AdminTerm from './screens/TermsAdmin/TermsAdmin';
-import News from './screens/News/News';
+import NewsAdmin from './screens/NewsAdmin/NewsAdmin';
+import AddNews from './screens/NewsAdmin/AddNews';
+import EditNews from './screens/NewsAdmin/EditNews';
 import AdminCourse from '../Admin-Area/screens/CourseAdmin/CourseAdmin'
 import AddTerm from '../Admin-Area/screens/TermsAdmin/AddTerm'
 // Route-based code splitting
@@ -78,7 +80,10 @@ class AppRouter extends React.Component {
           <AppRoute exact path="/admin/addcourse" component={AddTerm} />
           <AppRoute exact path="/admin/kourses/:_id" component={EditCourse} />
           <AppRoute exact path="/admin/courses" component={AdminTerm} />
-          <AppRoute exact path="/admin/blogs" component={News}/>
+          <AppRoute exact path="/admin/blogs" component={NewsAdmin}/>
+          <AppRoute exact path="/admin/addblogs" component={AddNews}/>
+          <AppRoute exact path="/admin/blogs/:_id" component={EditNews}/>
+
         </Switch>
       </Router>
     );

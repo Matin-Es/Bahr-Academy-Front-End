@@ -1,5 +1,5 @@
 import React, { Component, Fragment, useEffect, useState } from "react";
-import getNews from "./../../../Components/services/api/News/getNews";
+import getNews from "../../../Components/services/api/News/getNews";
 import Header from "../../../Components/Header/Header";
 import { isYieldExpression } from "typescript";
 import { Link, BrowserRouter } from "react-router-dom";
@@ -17,7 +17,7 @@ import reactDom from "react-dom";
 import http from "../../../Components/services/api/http-service.api";
 import { toast } from "react-toastify";
 
-const News = (props) => {
+const NewsAdmin = (props) => {
   const [DataNews, setNews] = useState([]);
 
   const MainUrl = process.env.REACT_APP_PUBLIC_PATH;
@@ -29,7 +29,7 @@ const News = (props) => {
     setNews(posts);
     try {
       await http.delete(MainUrl + "news/" + webnews._id);
-      toast.success("   خبر با موفقیت حذف شد");
+      toast.success("خبر با موفقیت حذف شد");
     } catch (error) {
       if (error.response && error.response.status === 404)
         toast.error("این خبر از لیست خبر ها قبلا پاک شده است");
@@ -78,9 +78,9 @@ const News = (props) => {
 
           pos: (
             <Fragment>
-              {/* <Link to={`/edituser/${users._id}`}> */}
-              <button className="btn btn-primary">تغییر</button>
-              {/* </Link> */}
+              <Link to={`/admin/blogs/${News._id}`}>
+                <button className="btn btn-primary">تغییر</button>
+              </Link>
               <button
                 className="btn btn-danger"
                 onClick={() => DeleteNews(News)}
@@ -98,4 +98,4 @@ const News = (props) => {
   return <MDBDataTable striped bordered small data={data} />;
 };
 
-export default News;
+export default NewsAdmin;
