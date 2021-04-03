@@ -1,17 +1,17 @@
-import React, { Component , Fragment , useEffect, useState} from "react";
+import React, { Component, Fragment, useEffect, useState } from "react";
 import getCourses from "../../../Components/services/api/course/getCourses";
 import Header from "../../../Components/Header/Header";
 import { isYieldExpression } from "typescript";
 import { Link, BrowserRouter } from "react-router-dom";
 import {
-    MDBPagination,
-    MDBPageItem,
-    MDBPageNav,
-    MDBCol,
-    MDBRow,
-    MDBIcon,
-    MDBBtn,
-    MDBDataTable,
+  MDBPagination,
+  MDBPageItem,
+  MDBPageNav,
+  MDBCol,
+  MDBRow,
+  MDBIcon,
+  MDBBtn,
+  MDBDataTable,
 } from "mdbreact";
 import reactDom from "react-dom";
 import http from "../../../Components/services/api/http-service.api";
@@ -19,20 +19,20 @@ import { toast } from "react-toastify";
 
 
 const ConvertDateHandler = (tarikh) => {
-    const dateObj = new Date(tarikh);
+  const dateObj = new Date(tarikh);
 
-    const day = dateObj.getDate();
-    const month = dateObj.getMonth();
-    const year = dateObj.getFullYear();
+  const day = dateObj.getDate();
+  const month = dateObj.getMonth();
+  const year = dateObj.getFullYear();
 
-    let newdate = year + "/" + month + "/" + day;
-    return newdate;
-  };
+  let newdate = year + "/" + month + "/" + day;
+  return newdate;
+};
 
 
 const AdminTerm = (props) => {
 
-const [DataCourse,setCourse] = useState([]);
+  const [DataCourse, setCourse] = useState([]);
 
   const MainUrl = process.env.REACT_APP_PUBLIC_PATH;
 
@@ -50,94 +50,94 @@ const [DataCourse,setCourse] = useState([]);
       setCourse(originalPosts);
     }
   };
-  const x = async() => {
-    let y =await getCourses()
+  const x = async () => {
+    let y = await getCourses()
     setCourse(y)
   }
 
-    const data = {
-        columns: [
-            {
-                label: 'نام',
-                field: 'name',
-                sort: 'asc',
-                width: 150
-            },
-            {
-                label: 'ظرفیت',
-                field: 'capacity',
-                sort: 'asc',
-                width: 270
-            },
-            {
-                label: 'نام مدرس',
-                field: 'teachername',
-                sort: 'asc',
-                width: 200
-            },
-            {
-                label: 'دانش آموزان',
-                field: 'students',
-                sort: 'asc',
-                width: 100
-            },
-            {
-                label: 'تاریخ شروع',
-                field: 'date',
-                sort: 'asc',
-                width: 150
-            },
-            {
-                label: 'هزینه',
-                field: 'salary',
-                sort: 'asc',
-                width: 100
-            },
-            {
-                label: 'ویرایش',
-                field: 'pos',
-                sort: 'asc',
-                width: 100
-            }
-        ],
-        
-        rows:  DataCourse
-        ? DataCourse.map((courses) => ({
-            name: courses.course.courseName,
-            capacity : courses.capacity,
-            teachername: courses.teacher.fullName,
-            students : courses.students.length,
-            date :  ConvertDateHandler(courses.startDate),
-            salary : courses.cost,
-        
-           
-            pos: (
-              <Fragment>
-                {/* <Link to={`/edituser/${users._id}`}> }
-                  <button className="btn btn-primary">تغییر</button>
-                {/* </Link> */}
-                <button
-                  className="btn btn-danger"
-                  onClick={() => DeleteCourse(courses)}
-                >
-                  حذف
+  const data = {
+    columns: [
+      {
+        label: 'نام',
+        field: 'name',
+        sort: 'asc',
+        width: 150
+      },
+      {
+        label: 'ظرفیت',
+        field: 'capacity',
+        sort: 'asc',
+        width: 270
+      },
+      {
+        label: 'نام مدرس',
+        field: 'teachername',
+        sort: 'asc',
+        width: 200
+      },
+      {
+        label: 'دانش آموزان',
+        field: 'students',
+        sort: 'asc',
+        width: 100
+      },
+      {
+        label: 'تاریخ شروع',
+        field: 'date',
+        sort: 'asc',
+        width: 150
+      },
+      {
+        label: 'هزینه',
+        field: 'salary',
+        sort: 'asc',
+        width: 100
+      },
+      {
+        label: 'ویرایش',
+        field: 'pos',
+        sort: 'asc',
+        width: 100
+      }
+    ],
+
+    rows: DataCourse
+      ? DataCourse.map((courses) => ({
+        name: courses.title,
+        capacity: courses.capacity,
+        teachername: courses.teacher.fullName,
+        students: courses.students.length,
+        date: ConvertDateHandler(courses.startDate),
+        salary: courses.cost,
+
+
+        pos: (
+          <Fragment>
+            <Link to={`/admin/Courses/${courses._id}`}>
+              <button className="btn btn-primary">تغییر</button>
+            </Link>
+            <button
+              className="btn btn-danger"
+              onClick={() => DeleteCourse(courses)}
+            >
+              حذف
                 </button>
-               
-              </Fragment>
-            ),
-          }))
-        : "",
-        
-    };
-    useEffect(()=>{x()},[])
-    return (
-        <MDBDataTable
-            striped
-            bordered
-            small
-            data={data}
-        />
-    );
+
+          </Fragment>
+        ),
+      }))
+      : "",
+
+  };
+  useEffect(() => { x() }, [])
+  return (
+    <MDBDataTable
+      striped
+      bordered
+      small
+      data={data}
+    />
+  );
 }
 
 export default AdminTerm;

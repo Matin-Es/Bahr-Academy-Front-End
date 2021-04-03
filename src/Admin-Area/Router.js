@@ -8,6 +8,7 @@ import "../Admin-Area/index.scss";
 import { getItem } from "../Components/services/storage/storage";
 import AddKourse from './screens/CourseAdmin/AddKourse';
 import EditCourse from './screens/CourseAdmin/EditCourse';
+import EditTerm from './screens/TermsAdmin/EditTerm';
 import AdminTerm from './screens/TermsAdmin/TermsAdmin';
 import AdminCourse from '../Admin-Area/screens/CourseAdmin/CourseAdmin'
 import AddTerm from '../Admin-Area/screens/TermsAdmin/AddTerm'
@@ -76,6 +77,7 @@ class AppRouter extends React.Component {
           <AppRoute exact path="/admin/addkourses" component={AddKourse} />
           <AppRoute exact path="/admin/addcourse" component={AddTerm} />
           <AppRoute exact path="/admin/kourses/:_id" component={EditCourse} />
+          <AppRoute exact path="/admin/Courses/:_id" component={EditTerm} />
           <AppRoute exact path="/admin/courses" component={AdminTerm} />
           
         </Switch>
