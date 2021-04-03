@@ -14,9 +14,9 @@ import {
   Row
 } from "reactstrap";
 import { toast } from "react-toastify";
-import newsService from "../../../core/services/newsService";
+import newsService from "../../../Components/services/api/News/newsService";
 import { Redirect } from "react-router-dom";
-import save from "../../../core/services/saveImage";
+import save from "../../../Components/services/api/Kourses/saveImage";
 
 export default class EditNews extends Component {
 
