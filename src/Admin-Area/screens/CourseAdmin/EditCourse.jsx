@@ -120,7 +120,7 @@ export default class EditCourse extends Component {
       toast('با موفقیت ثبت شد',{position:toast.POSITION.TOP_LEFT});
     } catch (error) {
       console.log(error)
-      toast('nonononono',{position:toast.POSITION.TOP_LEFT});
+      toast('ارور',{position:toast.POSITION.TOP_LEFT});
     }
 
 

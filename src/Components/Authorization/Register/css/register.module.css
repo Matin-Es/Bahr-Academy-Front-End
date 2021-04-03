@@ -67,6 +67,7 @@ body {
   right: -20px;
   width: 400px;
   height: 448px;
+  margin-bottom: -120px;
   transform: rotate(180deg);
 }
 
