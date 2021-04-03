@@ -14,6 +14,8 @@ import {
     MDBDataTable,
 } from "mdbreact";
 import reactDom from "react-dom";
+import http from "../../../Components/services/api/http-service.api";
+import { toast } from "react-toastify";
 
 
 const ConvertDateHandler = (tarikh) => {
@@ -27,24 +29,27 @@ const ConvertDateHandler = (tarikh) => {
     return newdate;
   };
 
+
 const AdminTerm = () => {
-
-//     const [datatable, setData] = useState([]);
-
-//     const loadCourses = async () => {
-//         const result = await getCourses();
-//         setData(result);
-//         console.log(data.res);
-
-//     };
-
-
-//     useEffect(() => {
-//         loadCourses();
-//     }, []);
 
 const [DataCourse,setCourse] = useState([]);
 
+  const MainUrl = process.env.REACT_APP_PUBLIC_PATH;
+
+  const DeleteCourse = async (myterm) => {
+    const originalPosts = DataCourse;
+
+    const posts = DataCourse.filter((p) => p._id !== myterm._id);
+    setCourse(posts);
+    try {
+      await http.delete(MainUrl + "term/" + myterm._id);
+      toast.success("   دوره با موفقیت حذف شد");
+    } catch (ex) {
+      if (ex.response && ex.response.status === 404)
+        toast.error("این دوره از لیست دوره ها قبلا پاک شده است");
+      setCourse(originalPosts);
+    }
+  };
   const x = async() => {
     let y =await getCourses()
     setCourse(y)
@@ -113,7 +118,7 @@ const [DataCourse,setCourse] = useState([]);
                 {/* </Link> */}
                 <button
                   className="btn btn-danger"
-                  // onClick={() => DeleteUser(users)}
+                  onClick={() => DeleteCourse(DataCourse)}
                 >
                   حذف
                 </button>
