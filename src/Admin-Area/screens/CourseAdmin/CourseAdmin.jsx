@@ -85,7 +85,7 @@ const CourseAdmin = (props) => {
     rows: kourse
       ? kourse.map((kourses) => ({
           courseName: kourses.courseName,
-          description: kourses.description,
+          description: kourses.description.length>50?kourses.description.substr(0,50)+'...':kourses.description,
           _id: kourses._id,
           createDate: ConvertDateHandler(kourses.createDate),
           topics: kourses.topics,
