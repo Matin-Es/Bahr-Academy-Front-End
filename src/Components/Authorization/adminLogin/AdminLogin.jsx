@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import classes from "./css/login.module.css";
-import { Link ,Redirect} from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import Header from "../../Header/Header";
 import "./css/mdb_log.css";
 import "./css/mdb_res.css";
@@ -20,7 +20,7 @@ class AdminLogin extends Component {
     email: "",
     password: "",
     isLoggedin: false,
-    redirect: '/dashboard'
+    redirect: "/dashboard",
   };
 
   loginUser = async () => {
@@ -51,7 +51,13 @@ class AdminLogin extends Component {
         <div className={classes.shape2_holder}></div>
 
         <Header />
-        <h4>{this.state.isLoggedIn ||getItem('token')?   <Redirect to={this.state.redirect} /> : "لطفا وارد شوید"}</h4>
+        <h4>
+          {this.state.isLoggedIn || getItem("token") ? (
+            <Redirect to={this.state.redirect} />
+          ) : (
+            "لطفا وارد شوید"
+          )}
+        </h4>
         <div className="container">
           <MDBRow>
             <MDBCol className="md6L" md="6">
@@ -102,19 +108,24 @@ class AdminLogin extends Component {
                     </div>
                     <div className="text-center py-4 mt-1">
                       <Link to="/Register">
-                        <MDBBtn rounded outline color=" signUpL pl-4">
+                        <button type="button" class="btn btn-light">
+                          {" "}
                           ثبت نام
-                        </MDBBtn>
+                        </button>
                       </Link>
-                      <MDBBtn
+
+                      <button
+                        type="button"
+                        class="btn btn-primary"
                         onClick={loginUser}
                         type="submit"
                         rounded
                         outline
                         color=" signInL"
                       >
+                        {" "}
                         ورود
-                      </MDBBtn>
+                      </button>
                     </div>
                     <ToastContainer
                       position="top-right"

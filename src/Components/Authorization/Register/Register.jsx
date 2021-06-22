@@ -159,21 +159,20 @@ class Register extends Component {
                         </div>
                         مرا به خاطر بسپار
                       </div>
-                      <MDBBtn
-                        type="submit"
-                        rounded
-                        outline
+
+                      <button
+                        type="button"
+                        class="btn btn-primary"
                         onClick={this.registerUser}
-                        color=" signUpR pl-4"
                       >
-                        {/* {this.state.isRegister ? <Redirect to="/login"/> : ''} */}
+                        {" "}
                         ثبت نام
-                      </MDBBtn>
+                      </button>
                       <Link className="link" to="/Login">
                         {" "}
-                        <MDBBtn rounded outline color=" signInR">
+                        <button type="button" class="btn btn-light">
                           ورود
-                        </MDBBtn>
+                        </button>
                       </Link>
                     </div>
                     <ToastContainer

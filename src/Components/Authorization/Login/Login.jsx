@@ -103,19 +103,10 @@ class Login extends Component {
                     </div>
                     <div className="text-center py-4 mt-1">
                       <Link to="/Register">
-                        <MDBBtn rounded outline color=" signUpL pl-4">
-                          ثبت نام
-                        </MDBBtn>
+                   <button type="button" class="btn btn-light">ثبت نام</button>
                       </Link>
-                      <MDBBtn
-                        onClick={loginUser}
-                        type="submit"
-                        rounded
-                        outline
-                        color=" signInL"
-                      >
-                        ورود
-                      </MDBBtn>
+                  
+                      <button type="button" class="btn btn-primary" onClick={loginUser}>ورود</button>
                     </div>
                     <ToastContainer
                       position="top-right"

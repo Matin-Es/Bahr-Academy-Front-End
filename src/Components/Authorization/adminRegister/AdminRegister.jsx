@@ -21,8 +21,8 @@ class AdminRegister extends Component {
     email: "",
     nationalId: "",
     password: "",
-    address:"",
-    role:"",
+    address: "",
+    role: "",
     isRegister: false,
   };
 
@@ -44,8 +44,8 @@ class AdminRegister extends Component {
       email: this.state.email,
       nationalId: this.state.nationalId,
       password: this.state.password,
-      address:this.state.address,
-      role:'admin',
+      address: this.state.address,
+      role: "admin",
     };
     const RegisterData = await RegisterAdmin(userRegister);
     this.setState({ RegisterData, isRegister: true });
@@ -170,7 +170,7 @@ class AdminRegister extends Component {
                     </div>
                     <p className="h4 text-right usernametext">رول</p>
                     <input
-                      value={'admin'}
+                      value={"admin"}
                       onChange={this.changeHandler}
                       type="text"
                       id="defaultFormRegisterConfirmEx4"
@@ -191,21 +191,23 @@ class AdminRegister extends Component {
                         </div>
                         مرا به خاطر بسپار
                       </div>
-                      <MDBBtn
+
+                      <button
+                        type="button"
+                        class="btn btn-primary"
                         type="submit"
                         rounded
                         outline
                         onClick={this.registerUser}
                         color=" signUpR pl-4"
                       >
-                        {/* {this.state.isRegister ? <Redirect to="/login"/> : ''} */}
                         ثبت نام
-                      </MDBBtn>
+                      </button>
                       <Link className="link" to="/Login">
                         {" "}
-                        <MDBBtn rounded outline color=" signInR">
+                        <button type="button" class="btn btn-light">
                           ورود
-                        </MDBBtn>
+                        </button>
                       </Link>
                     </div>
                     <ToastContainer
