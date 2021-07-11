@@ -70,14 +70,8 @@ class ForgetPass extends Component {
                     </div>
 
                     <div className="text-center py-1 mt-1">
-                      <MDBBtn
-                        type="submit"
-                        rounded
-                        outline
-                        color=" signUp pl-4"
-                      >
-                        بازیابی رمز
-                      </MDBBtn>
+                    
+                      <button type="button" class="btn btn-primary">   بازیابی رمز</button>
                     </div>
                     <ToastContainer
                       position="top-right"
