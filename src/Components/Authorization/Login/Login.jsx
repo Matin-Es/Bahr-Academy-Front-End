@@ -10,8 +10,9 @@ import {
   MDBBtn,
   MDBCard,
   MDBCardBody,
-  ToastContainer,
+ 
 } from "mdbreact";
+  import { ToastContainer, toast } from 'react-toastify';
 import LogInUser from "../../services/api/Auth/login.api";
 import { getItem } from "../../services/storage/storage";
 

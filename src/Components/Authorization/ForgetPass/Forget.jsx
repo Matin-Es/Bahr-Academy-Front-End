@@ -10,10 +10,10 @@ import {
   MDBBtn,
   MDBCard,
   MDBCardBody,
-  toast,
-  ToastContainer,
+  
   MDBIcon,
 } from "mdbreact";
+import { ToastContainer, toast } from 'react-toastify';
 
 class ForgetPass extends Component {
   state = {

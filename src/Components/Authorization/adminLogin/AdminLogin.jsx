@@ -10,10 +10,11 @@ import {
   MDBBtn,
   MDBCard,
   MDBCardBody,
-  ToastContainer,
+
 } from "mdbreact";
 import LoginAdmin from "../../services/api/Auth/AdminLogin.api";
 import { getItem } from "../../services/storage/storage";
+import { ToastContainer, toast } from 'react-toastify';
 
 class AdminLogin extends Component {
   state = {
@@ -118,7 +119,7 @@ class AdminLogin extends Component {
                         type="button"
                         class="btn btn-primary"
                         onClick={loginUser}
-                        type="submit"
+                        // type="submit"
                         rounded
                         outline
                         color=" signInL"

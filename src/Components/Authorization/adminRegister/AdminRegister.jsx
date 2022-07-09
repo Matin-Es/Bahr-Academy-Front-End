@@ -9,9 +9,10 @@ import {
   MDBBtn,
   MDBCard,
   MDBCardBody,
-  ToastContainer,
+  
 } from "mdbreact";
 import RegisterAdmin from "../../services/api/Auth/AdminRegister.api";
+import { ToastContainer, toast } from 'react-toastify';
 
 class AdminRegister extends Component {
   state = {
@@ -195,7 +196,7 @@ class AdminRegister extends Component {
                       <button
                         type="button"
                         class="btn btn-primary"
-                        type="submit"
+                        // type="submit"
                         rounded
                         outline
                         onClick={this.registerUser}

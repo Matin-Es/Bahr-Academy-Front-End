@@ -9,9 +9,9 @@ import {
   MDBBtn,
   MDBCard,
   MDBCardBody,
-  ToastContainer,
 } from "mdbreact";
 import { RegisterUser } from "../../services/api/Auth/Register.api";
+import { ToastContainer, toast } from 'react-toastify';
 
 class Register extends Component {
   state = {

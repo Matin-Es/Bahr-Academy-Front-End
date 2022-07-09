@@ -3,7 +3,6 @@ import {
 
   MDBIcon,
   MDBBtn,
-  ToastContainer,
 } from "mdbreact";
 
 //styles
@@ -11,6 +10,7 @@ import "../css/Courses.css";
 import "../css/dash.css";
 import "../css/Courses.css";
 import EditprofForm from "./form/EditprofileForm copy";
+import { ToastContainer, toast } from 'react-toastify';
 
 //images
 class Editprofile extends Component {
